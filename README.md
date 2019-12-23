@@ -14,3 +14,15 @@ React Native base app to help crews manage their missions and crew rests. Join t
 
 ### Bussin' Around
 The bus schedule for the Deid. Currently working on open sourceing the source code, [Download it on the App Store](https://apps.apple.com/us/app/bussin-around/id1277005292?ls=1). 
+
+
+## Team Guidelines
+* We build code to help Airmen, they are our customers not our OPRs/EPRs!
+* We open source as much as possible [cio.gov] (https://sourcecode.cio.gov/OSS/) [code.mil] (https://code.mil)
+* We are responsible users of existing open source code
+* We help each other
+
+
+##Have questions or want to join us?
+Send an email to AirmenCoders [at] us.af.mil, we would love to hear from you!
+
