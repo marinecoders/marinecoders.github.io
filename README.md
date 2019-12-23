@@ -23,6 +23,6 @@ The bus schedule for the Deid. Currently working on open sourceing the source co
 * We help each other
 
 
-##Have questions or want to join us?
+## Have questions or want to join us?
 Send an email to AirmenCoders [at] us.af.mil, we would love to hear from you!
 
