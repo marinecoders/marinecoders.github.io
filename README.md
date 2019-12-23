@@ -18,7 +18,7 @@ The bus schedule for the Deid. Currently working on open sourceing the source co
 
 ## Team Guidelines
 * We build code to help Airmen, they are our customers not our OPRs/EPRs!
-* We open source as much as possible [cio.gov] (https://sourcecode.cio.gov/OSS/) [code.mil] (https://code.mil)
+* We open source as much as possible [cio.gov](https://sourcecode.cio.gov/OSS/) [code.mil](https://code.mil)
 * We are responsible users of existing open source code
 * We help each other
 
