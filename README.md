@@ -9,6 +9,10 @@ An app to help USAF Aircrew study their Master Question File tests. Currently ha
 
 Want to help add more aircraft? Contact us at AirmenCoders [at] us.af.mil
 
+### Hawg Ops - Mission and Flight Planning
+An app built to help mission crews generate scenarios for sorties. IPs, Patches, OSS/IN all can use this to plot out threats, friendly locations, and more to create CAS and CSAR scenarios. Future expansion includes a Weather Gonkulator.
+[Source Code](https://github.com/airmencoders/hawgops)
+
 ### Mission Tools
 React Native base app to help crews manage their missions and crew rests. Join the team by contacting us or checking out the in-progress  [Source Code ](https://github.com/airmencoders/missiontools)
 
