@@ -1,7 +1,10 @@
 # MQF - Built by Airmen
 
 ## Frequently Asked Questions
-[What MWSs does the app include?](#What-MWSs-does-the-app-include)
+[What MWSs does the app include?](#what-mwss-does-the-app-include)
+[What bases does the app include?](#what-bases-does-the-app-include)
+[How do I update the app?](#how-do-i-update-the-app)
+[I have a better picture for my MWS, how do I add it?](#i-have-a-better-picture-for-my-mws-how-do-i-add-it)
 
 #### What MWSs does the app include?
 * C-17 (Pilot & Loadmaster)
