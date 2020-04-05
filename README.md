@@ -2,6 +2,10 @@
 
 We are a group of U.S. Air Force Airmen who use code to improve the lives of our fellow Airmen.
 
+## Learn Software Development
+[Our Getting Started Resources](https://airmencoders.us/learn)
+
+
 ## Our Current Projects
 
 ### MQF - Built by Airmen
