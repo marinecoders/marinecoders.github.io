@@ -2,6 +2,9 @@
 
 We are a group of U.S. Air Force Airmen who use code to improve the lives of our fellow Airmen.
 
+## Free Pluralsight courses for the month of April!
+https://www.pluralsight.com/offer/2020/free-april-month
+
 ## Learn Software Development
 [Our Getting Started Resources](https://airmencoders.us/learn)
 
