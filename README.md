@@ -5,7 +5,7 @@ We are a group of U.S. Air Force Airmen who use code to improve the lives of our
 ## AF Coding Internships!!!
 ![Future is now poster](https://github.com/airmencoders/airmencoders.github.io/blob/master/images/Internships.jpeg?raw=true)
 
-(Register here)[https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform]
+[Register here](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform)
 
 ### Free Pluralsight courses for the month of April!
 <a href="https://www.pluralsight.com/offer/2020/free-april-month">![https://www.pluralsight.com/offer/2020/free-april-month](https://raw.githubusercontent.com/airmencoders/airmencoders.github.io/master/images/0.gif)</a>
