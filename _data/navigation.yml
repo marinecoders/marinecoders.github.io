@@ -1,7 +1,7 @@
 main:
     - title: "Internships"
-      url: /internships
+      url: /internships/
     - title: "MQF App"
-      url: /MQF
+      url: /projects/mqf/
     - title: "Learn"
       url: /learn/
