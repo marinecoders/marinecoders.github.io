@@ -4,4 +4,4 @@ main:
     - title: "MQF App"
       url: /MQF
     - title: "Learn"
-    url: /learn
+      url: /MQF
