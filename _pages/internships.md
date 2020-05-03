@@ -6,11 +6,11 @@ title: "AF Coding Internships"
 Fellow Coders,
 Multiple AF Software Factories are offering internships this spring/summer to motivated Airmen who want to boost their development skills. 
 
-**Who** Anyone in the DoD, we are focusing on "big A" Airmen.  
-**What** Software internships to boost your or your Airmen's skills  
-**When** 25 May & 1 June start dates, length varies by program  
-**Where** With the participating units listed below, due to COVID all internships will be full time virtual.  
-**Why** Software touches everything we do in the military and we believe this is a great to improve our collective skills and knowledge. Learn more about the Air Force's overall software efforts here: <https://software.af.mil>.  
+**Who:** Anyone in the DoD, we are focusing on "big A" Airmen.  
+**What:** Software internships to boost your or your Airmen's skills  
+**When:** 25 May & 1 June start dates, length varies by program  
+**Where:** With the participating units listed below, due to COVID all internships will be full time virtual.  
+**Why:** Software touches everything we do in the military and we believe this is a great to improve our collective skills and knowledge. Learn more about the Air Force's overall software efforts here: <https://software.af.mil>.  
 
 [APPLY HERE](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform) | [AMA Q&A](https://docs.google.com/document/d/1NwCyP9VU-_hMBIxS-ybHW4dczB6aXrF7UVgjoUVEikA/)
 
