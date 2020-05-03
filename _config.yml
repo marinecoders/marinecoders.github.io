@@ -70,6 +70,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: "side"
   # _pages
   - scope:
       path: "_pages"
