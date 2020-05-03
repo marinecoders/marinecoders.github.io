@@ -10,15 +10,7 @@ main:
     - title: software.af.mil
       url: https://software.af.mil
 
-
 side:
     - title: Projects
       children:
-        - title: "MQF App"
-          url: /projects/mqf
-        - title: "Hawg Ops"
-          url: /projects/
-        - title: "Bussin' Around"
-          url: /projects/
-        - title: "DSN Europe"
-          url: /projects/
+
