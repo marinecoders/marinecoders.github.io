@@ -11,7 +11,7 @@ minimal_mistakes_skin: default
 search: true
 
 # Build settings
-# markdown: kramdown
+markdown: kramdown
 remote_theme: airmencoders/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -25,14 +25,14 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
