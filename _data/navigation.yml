@@ -15,10 +15,10 @@ side:
     - title: Projects
       children:
         - title: "MQF App"
-            url: /projects/mqf
+          url: /projects/mqf
         - title: "Hawg Ops"
-            url: /projects/
+          url: /projects/
         - title: "Bussin' Around"
-            url: /projects/
+          url: /projects/
         - title: "DSN Europe"
-            url: /projects/
+          url: /projects/
