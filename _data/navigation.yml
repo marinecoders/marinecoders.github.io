@@ -13,7 +13,7 @@ main:
 
 side:
     - title: Projects
-    children:
+      children:
         - title: "MQF App"
             url: /projects/mqf
         - title: "Hawg Ops"
