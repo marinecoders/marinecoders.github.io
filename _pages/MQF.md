@@ -15,6 +15,10 @@ title: "MQF - Built by Airmen"
 * KC-135 (Pilot & Boom Operator)
 * KC-10 (Pilot, Flight Engineer, & Boom Operator)
 * KC-46 (Pilot)
+* C-130H (Pilot, LM Coming Soon)
+* C-5 (Pilot, Flight Engineer, & Loadmaster)
+* Aeromedical Evacuation
+* C-130J (Pilot & Loadmaster)
 
 Help us add more by reaching out to AirmenCoders [at] us.af.mil. 
 
@@ -22,6 +26,7 @@ Help us add more by reaching out to AirmenCoders [at] us.af.mil.
 * KCHS
 * KTCM
 * EGUN
+* ETAR
 * MAF Wide (the HHQ published MQFs)
 
 #### How do I update the app?
@@ -30,4 +35,4 @@ Open the BlackBerry Work Apps app and tap into the MQF listing. Then tap "Prepai
 ![Update Image 1](/update1.jpeg) ![Update Image 2](/update2.jpeg)
 
 #### I have a better picture for my MWS, how do I add it?
-Send us an email at AirmenCoders [at] us.af.mil. Please note that we only accept images that you took (and release the rights to) and images published by DoD Public Affairs via channels like DVIDs.
+Send us an email at AirmenCoders [at] afwerx.af.mil. Please note that we only accept images that you took (and release the rights to) and images published by DoD Public Affairs via channels like DVIDs.
