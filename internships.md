@@ -4,6 +4,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 
 [APPLY HERE](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform) | [AMA Q&A](https://docs.google.com/document/d/1NwCyP9VU-_hMBIxS-ybHW4dczB6aXrF7UVgjoUVEikA/)
 
+
 ### Timeline:
 * Apply - Open Now
     * [Kessel Run](https://kesselrun.bamboohr.com/jobs/view.php?id=83) (Kessel Run applications will follow their own timeline)
@@ -13,7 +14,15 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 * Admission - Rolling 
 * Internships Begin - 25 May (Kessel Run) & 1 June (Platform One, LevelUP, TRON, Corsair Ranch, & Space CAMP)
 
-  
+
+### Participating Units
+* [Kessel Run](https://kesselrun.af.mil)
+* [Platform One](https://software.af.mil/team/platformone/)
+* [LevelUP](https://software.af.mil/softwarefactory/platform-one-by-levelup/)
+* [Corsair Ranch](https://corsairranch.io)
+* [BESPIN](https://software.af.mil/softwarefactory/bespin/)
+* [Space CAMP](https://software.af.mil/softwarefactory/spacecamp/)
+* [TRON](https://tronaf.dev)
     
     
 
