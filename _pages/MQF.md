@@ -1,4 +1,8 @@
-# MQF - Built by Airmen
+---
+permalink: /projects/mqf/
+title: "MQF - Built by Airmen"
+---
+
 
 ## Frequently Asked Questions
 * [What MWSs does the app include?](#what-mwss-does-the-app-include)

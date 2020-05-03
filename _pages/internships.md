@@ -1,8 +1,8 @@
 ---
 permalink: /internships/
-title: "Internships"
+title: "AF Coding Internships"
 ---
-## AF Coding Internships!!!
+
 Fellow Coders,
 Multiple AF Software Factories are offering internships this spring/summer to motivated Airmen who want to boost their development skills. 
 
