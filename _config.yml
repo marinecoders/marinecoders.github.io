@@ -11,7 +11,7 @@ minimal_mistakes_skin: default
 search: true
 
 # Build settings
-markdown: kramdown
+markdown: markdown
 remote_theme: airmencoders/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
