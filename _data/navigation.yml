@@ -13,4 +13,5 @@ main:
 side:
     - title: Projects
       children:
-
+        - title: "MQF APP"
+          url: "/projects/mqf"
