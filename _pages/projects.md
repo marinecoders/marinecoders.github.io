@@ -3,7 +3,6 @@ permalink: /projects/
 title: "Our Projects"
 ---
 
-## Our Current Projects
 
 ### MQF - Built by Airmen
 An app to help USAF Aircrew study their Master Question File tests. Currently has data for C-17s with plans for several more MAF aircraft. Check out our FAQs here: [MQF FAQs](https://airmencoders.us/projects/mqf). View the [Source Code ](https://github.com/airmencoders/MQF).
