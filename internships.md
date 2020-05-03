@@ -11,7 +11,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 * Interviews - Start 4 May
     * Interview sign up link available after completing tech assesment
 * Admission - Rolling 
-* Internships Begin - 25 May (Kessel Run) & 1 June (Platform 1, LevelUP, TRON, Corsair Ranch, & SPACE Camp)
+* Internships Begin - 25 May (Kessel Run) & 1 June (Platform One, LevelUP, TRON, Corsair Ranch, & Space CAMP)
 
   
     
