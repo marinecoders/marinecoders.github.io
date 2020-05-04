@@ -1,5 +1,5 @@
 ---
-title:  "Announcement: Coding Indernships Available"
+title:  "Announcement: Coding Internships Available"
 ---
 
 # Join Us 24 April for an AF Coding Internship AMA
