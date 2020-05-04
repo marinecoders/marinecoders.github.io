@@ -17,3 +17,7 @@ side:
           url: "/projects/mqf"
         - title: "Hawg Ops"
           url: "projects/#hawg-ops---mission-and-flight-planning"
+        - title: "Bussin' Around"
+          url: "projects/#hawg-ops---bussin-around"
+        - title: "DSN Europe"
+          url: "projects/#hawg-ops---dsn-europe"
