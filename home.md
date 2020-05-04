@@ -1,10 +1,10 @@
 ---
 layout: splash
 feature_row:
-  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/MQFAppLogo.png
+    alt: "MQF App Logo"
+    title: "Projects"
+    excerpt: "Learn more about our projects.
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder 2"
