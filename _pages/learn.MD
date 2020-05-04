@@ -1,6 +1,7 @@
 ---
 permalink: /learn/
 title: "Learning to Code"
+toc: true
 ---
 
 ## Great Resources for Learning Modern Software Development

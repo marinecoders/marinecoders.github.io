@@ -16,7 +16,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 [APPLY HERE](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform){: .btn .btn--success}  [AMA Q&A](https://docs.google.com/document/d/1NwCyP9VU-_hMBIxS-ybHW4dczB6aXrF7UVgjoUVEikA/){: .btn .btn--info}
 
 
-### Timeline:
+### Timeline
 * Apply - Open Now
     * [Kessel Run](https://kesselrun.bamboohr.com/jobs/view.php?id=83) (Kessel Run applications will follow their own timeline)
     * [Platform One, Space CAMP, Level UP, TRON, & Corsair Ranch](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform)
