@@ -1,7 +1,7 @@
 ---
 layout: splash
 feature_row:
-  - image_path: /assets/images/MQFAppLogo.png
+  - image_path: /assets/images/MQFAppLogo250.png
     alt: "MQF App Logo"
     title: "Projects"
     excerpt: "Learn more about our projects."
