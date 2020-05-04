@@ -25,7 +25,9 @@ We are a group of U.S. Air Force Airmen who use code to improve the lives of our
 
 {% include feature_row %}
 
-{{ content }}
+{% for post in posts %}
+  {% include archive-single.html %}
+{% endfor %}
 
 ## Team Guidelines
 * We build code to help Airmen, they are our customers not our OPRs/EPRs!
