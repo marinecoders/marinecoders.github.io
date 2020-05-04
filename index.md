@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: splash
 feature_row:
   - title: "Projects"
     excerpt: "Learn more about our projects."
