@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Announcement: Coding Indernships Available"
 ---
 
