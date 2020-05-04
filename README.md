@@ -2,7 +2,7 @@
 
 We are a group of U.S. Air Force Airmen who use code to improve the lives of our fellow Airmen.
 
-![Airmen Coders logo with #BuiltByAirmen](/assets/images/AirmenCodersFull.png){: .align-center}
+![Airmen Coders logo with #BuiltByAirmen](/assets/images/AirmenCodersFull.png)
 
 ## AF Coding Internships!!!
 ![Future is now poster](https://github.com/airmencoders/airmencoders.github.io/blob/master/images/Internships.jpeg?raw=true)
