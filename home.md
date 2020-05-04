@@ -4,7 +4,7 @@ feature_row:
   - image_path: /assets/MQFAppLogo.png
     alt: "MQF App Logo"
     title: "Projects"
-    excerpt: "Learn more about our projects.
+    excerpt: "Learn more about our projects."
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder 2"
