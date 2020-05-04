@@ -15,3 +15,5 @@ side:
       children:
         - title: "MQF APP"
           url: "/projects/mqf"
+        - title: "Hawg Ops"
+          url: "projects/#hawg-ops---mission-and-flight-planning"
