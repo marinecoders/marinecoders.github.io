@@ -1,6 +1,7 @@
 ---
 permalink: /internships/
 title: "AF Coding Internships"
+toc: true
 ---
 
 Fellow Coders,
