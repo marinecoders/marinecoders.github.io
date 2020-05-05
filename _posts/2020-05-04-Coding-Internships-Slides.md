@@ -1,5 +1,5 @@
 ---
-title:  "Coding Internships Slides Posted
+title:  "Coding Internships Slides Posted"
 categories: [internship, announcements, news]
 tags: [coding, internships, internship, ama]
 ---
