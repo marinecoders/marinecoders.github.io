@@ -9,7 +9,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 
 **Who:** Anyone in the DoD, we are focusing on "big A" Airmen.  
 **What:** Software internships to boost your or your Airmen's skills  
-**When:** 25 May & 1 June start dates, length varies by program  
+**When:** 1 June start dates, length varies by program  
 **Where:** With the participating units listed below, due to COVID all internships will be full time virtual.  
 **Why:** Software touches everything we do in the military and we believe this is a great to improve our collective skills and knowledge. Learn more about the Air Force's overall software efforts here: <https://software.af.mil>.  
 
@@ -24,7 +24,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 * Interviews - Start 4 May
     * Interview sign up link available after completing tech assesment
 * Admission - Rolling 
-* Internships Begin - 25 May (Kessel Run & BESPIN) & 1 June (Platform One, LevelUP, TRON, Corsair Ranch, & Space CAMP)
+* Internships Begin - 25 May (BESPIN) & 1 June (Platform One, Kessel Run, LevelUP, TRON, Corsair Ranch, & Space CAMP)
 
 
 ### Participating Units
