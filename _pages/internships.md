@@ -22,9 +22,9 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
     * [Kessel Run](https://kesselrun.bamboohr.com/jobs/view.php?id=83) (Kessel Run applications will follow their own timeline)
     * [BESPIN](https://forms.gle/yALYG7pFvTscC18g7) (BESPIN applications will also follow their own timeline)
     * [Platform One, Space CAMP, Level UP, TRON, & Corsair Ranch](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform)
-* Interviews - 4 May - 18 May
+* Interviews - 4 May - 18 May at 1200 EST
     * Interview sign up link available after completing tech assesment
-* Offers Sent - 18 May
+* Offers Sent to Commanders - 18 May
 * Responses due - 22 May
 * Internships Begin - 25 May (BESPIN) & 1 June (Platform One, Kessel Run, LevelUP, TRON, Corsair Ranch, & Space CAMP)
 
