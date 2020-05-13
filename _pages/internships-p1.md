@@ -1,10 +1,13 @@
 ---
-permalink: /internships/p1
+permalink: /internships/p1/
 title: "AF Coding Internships - Platform One & Nodes"
 toc: true
 ---
 
 ### Platform One & Nodes Details
+**What do I need to do to participate?**
+Please fill out the Google sheet that was distributed to sign up. If you cannot access the sheet, please reach out to both Eric Robinson (eric.robinson@afwerx.af.mil) and Becky Mantell (becky.mantell@galvanize.com) to indicate your interest in participating. From there, you will be set up with Prep Work on Galvanize’s Learning Management platform (Learn) to begin course prep work. Finally, you will be asked to take an assessment to determine if you are ready to begin the course. 
+
 **How long is the course?**
 12 Weeks
  

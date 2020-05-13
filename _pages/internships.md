@@ -9,7 +9,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 
 **Who:** Anyone in the DoD, we are focusing on "big A" Airmen.  
 **What:** Software internships to boost your or your Airmen's skills  
-**When:** 1 June start dates, length varies by program  
+**When:** 25 May & 1 June start dates, length varies by program  
 **Where:** With the participating units listed below, due to COVID all internships will be full time virtual.  
 **Why:** Software touches everything we do in the military and we believe this is a great to improve our collective skills and knowledge. Learn more about the Air Force's overall software efforts here: <https://software.af.mil>.  
 
@@ -38,7 +38,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 * [TRON](https://tronaf.dev)
     
 ### Program Details
-[Platform 1 & Nodes](/p1/){: .btn .btn--info}
+[Platform 1 & Nodes](/internships/p1/){: .btn .btn--info}
     
 
 
