@@ -25,7 +25,8 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 * Interviews - 4 May - 18 May at 1200 EST
     * Interview sign up link available after completing tech assesment
 * Offers Sent to Commanders - 18 May
-* Responses due - 22 May
+  * Commanders will receive an email containing a MOU for their decision. Commanders will be afforded several days to notify their Airmen.
+* Signed MOUs due - 22 May
 * Internships Begin - 25 May (BESPIN) & 1 June (Platform One, Kessel Run, LevelUP, TRON, Corsair Ranch, & Space CAMP)
 
 
