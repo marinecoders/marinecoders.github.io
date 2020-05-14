@@ -7,7 +7,7 @@ toc: true
 
 **[Announcement: 15 May AMA Scheduled](https://airmencoders.us/internship/announcements/news/second-internship-ama/)!**
   
-  
+
 
 Fellow Coders,
 Multiple AF Software Factories are offering internships this spring/summer to motivated Airmen who want to boost their development skills. 
@@ -24,14 +24,14 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 ### Timeline
 * Apply - Open Now
     * [Kessel Run](https://kesselrun.bamboohr.com/jobs/view.php?id=83) (Kessel Run applications will follow their own timeline)
-    * [BESPIN](https://forms.gle/yALYG7pFvTscC18g7) (BESPIN applications will also follow their own timeline)
+    * [BESPIN](https://www.surveymonkey.com/r/DrudonnaiOSBootcampSelfNominate) (BESPIN applications will also follow their own timeline)
     * [Platform One, Space CAMP, Level UP, TRON, & Corsair Ranch](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform)
 * Interviews - 4 May - 18 May at 1200 EST
     * Interview sign up link available after completing tech assesment
 * Offers Sent to Commanders - 18 May
   * Commanders will receive an email containing a MOU for their decision. Commanders will be afforded several days to notify their Airmen.
 * Signed MOUs due - 22 May
-* Internships Begin - 25 May (BESPIN) & 1 June (Platform One, Kessel Run, LevelUP, TRON, Corsair Ranch, & Space CAMP)
+* Internships Begin - 1 June (Platform One, Kessel Run, LevelUP, TRON, Corsair Ranch, & Space CAMP) & 7 June (BESPIN)
 
 ### AMA Poster
  ![Future is now poster](/assets/images/CodingAMAFlyer15May.png)
