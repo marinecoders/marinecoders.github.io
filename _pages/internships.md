@@ -40,7 +40,7 @@ Multiple AF Software Factories are offering internships this spring/summer to mo
 * [TRON](https://tronaf.dev)
     
 ### Program Details
-[Platform 1 & Nodes](/internships/p1/){: .btn .btn--info}
+[Platform 1 & Nodes](/internships/p1/){: .btn .btn--info}  
 This includes Platform One, SpaceCAMP, LevelUP, TRON, & Corsair Ranch.
 
 [BESPIN](/internships/bespin/){: .btn .btn--info}
