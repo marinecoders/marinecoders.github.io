@@ -9,7 +9,7 @@ toc: true
 Please fill out the Google sheet that was distributed to sign up. If you cannot access the sheet, please reach out to both Eric Robinson (eric.robinson@afwerx.af.mil) and Becky Mantell (becky.mantell@galvanize.com) to indicate your interest in participating. From there, you will be set up with Prep Work on Galvanize’s Learning Management platform (Learn) to begin course prep work. Finally, you will be asked to take an assessment to determine if you are ready to begin the course. 
 
 #### How long is the program?
-The course is 12 Weeks. Depending on what your Commander chooses you can then have an internship portion for another 3-6 months either full or part time.
+The course is 12 Weeks. Depending on what your Commander chooses you can then have an internship portion for another 6 months full time or 3 months full time, followed by 6 months part time.
  
 #### Is the course 8hrs a day 5 days a week?
 Yes (Monday-Friday). 0800 - 1700 CST.
