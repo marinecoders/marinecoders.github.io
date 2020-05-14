@@ -3,7 +3,11 @@ permalink: /internships/
 title: "AF Coding Internships"
 toc: true
 ---
-**[Announcement: 15 May AMA Scheduled](https://airmencoders.us/internship/announcements/news/second-internship-ama/)**
+  
+
+**[Announcement: 15 May AMA Scheduled](https://airmencoders.us/internship/announcements/news/second-internship-ama/)!**
+  
+  
 
 Fellow Coders,
 Multiple AF Software Factories are offering internships this spring/summer to motivated Airmen who want to boost their development skills. 
