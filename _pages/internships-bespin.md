@@ -1,5 +1,5 @@
 ---
-permalink: /internships/p1/
+permalink: /internships/bespin/
 title: "AF Coding Internship - BESPIN"
 toc: true
 ---
