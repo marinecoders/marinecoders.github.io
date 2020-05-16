@@ -4,10 +4,13 @@ title: "AF Coding Internship - Information for Commanders"
 toc: true
 ---
 
-### Information for Commanders
+
 
 #### Why?
 >In the current global landscape, if we fail to aggressively & immediately expand and nurture our internal digital talent, we will be faced with an insurmountable knowledge gap vis a vis our peers and adversaries. Attacking this problem requires an end-to-end solution for Airmen to interact with, understand, and contribute to programs across multiple domains in more than a simple project management capacity.
+
+- LAUREN B. KNAUSENBERGER, SES, USAF
+  Chief Transformation Officer, USAF
 
 #### Do I have to send my Airmen?
 No.
