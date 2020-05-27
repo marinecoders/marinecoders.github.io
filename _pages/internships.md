@@ -5,7 +5,7 @@ toc: true
 ---
   
 
-**[Announcement: 15 May AMA Scheduled](https://airmencoders.us/internship/announcements/news/second-internship-ama/)!**
+**First cohort full! Thanks for the great response.**
   
 
 
