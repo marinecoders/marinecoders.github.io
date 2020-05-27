@@ -16,6 +16,7 @@ Useful links to get you started - no federal indorsment intended or implied. Con
 #### Web
 * [React - Offical Website](https://reactjs.org)
 * [Angular - Official Website](https://angular.io)
+* [DigitalU](http://digitalu.af.mil)
 
 #### Mobile
 * [iOS for Begginers](https://www.raywenderlich.com/ios/paths/learn)
@@ -23,8 +24,11 @@ Useful links to get you started - no federal indorsment intended or implied. Con
 
 
 ### Back End
-More coming soon
+* [DigitalU](http://digitalu.af.mil)
+
 
 ### Platforms
 * [Kubernetes - AF Overview](https://software.af.mil/training/kubernetes/)
 * [Kubernetes - Official Website](https://kubernetes.io)
+* [DigitalU](http://digitalu.af.mil)
+
