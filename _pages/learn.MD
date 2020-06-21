@@ -19,7 +19,7 @@ Useful links to get you started - no federal indorsment intended or implied. Con
 * [DigitalU](http://digitalu.af.mil)
 
 #### Mobile
-* [iOS for Begginers](https://www.raywenderlich.com/ios/paths/learn)
+* [iOS for Beginners](https://www.raywenderlich.com/ios/paths/learn)
 * [iOS Tutorial from Apple](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/)
 
 
