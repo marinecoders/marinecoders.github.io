@@ -1,13 +1,10 @@
-
+# This is Airmen Coders website repo
 
 We are a group of U.S. Air Force Airmen who use code to improve the lives of our fellow Airmen.
 
 ![Airmen Coders logo with #BuiltByAirmen](/assets/images/AirmenCodersFull.png)
 
-## AF Coding Internships!!!
-![Future is now poster](https://github.com/airmencoders/airmencoders.github.io/blob/master/images/Internships.jpeg?raw=true)
 
-[APPLY HERE](https://docs.google.com/forms/d/e/1FAIpQLSeZ6kcvm21TIrMdmDH-41XwIcEuz2otaJSthURZHnFhMnvKyQ/viewform) | [AMA Q&A](https://docs.google.com/document/d/1NwCyP9VU-_hMBIxS-ybHW4dczB6aXrF7UVgjoUVEikA/)
 
 
 ## Learn Software Development
