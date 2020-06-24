@@ -19,7 +19,7 @@ feature_row:
 ---
   
 <br /><br />
-![Airmen Coders logo with #BuiltByAirmen](/assets/images/AirmenCodersFull500x276.png){: .align-center}  
+![Airmen Coders logo with #BuiltByAirmen](/assets/images/Marine_Coders_Logo.jpg){: .align-center}  
 
 <p align="center">We are a group of U.S. Air Force Airmen who use code to improve the lives of our fellow Airmen.</p>
 <br /><br />
