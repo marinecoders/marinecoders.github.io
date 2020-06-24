@@ -21,7 +21,7 @@ feature_row:
 <br /><br />
 ![Airmen Coders logo with #BuiltByAirmen](/assets/images/Marine_Coders_Logo.jpg){: .align-center}  
 
-<p align="center">We are a group of U.S. Air Force Airmen who use code to improve the lives of our fellow Airmen.</p>
+<p align="center">We are a group of U.S. Marines who use code to improve the lives of our fellow Marines.</p>
 <br /><br />
 {% include feature_row %}
   
