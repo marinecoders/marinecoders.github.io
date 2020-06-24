@@ -1,11 +1,11 @@
 title: Airmen Coders
-logo: "/assets/images/ACLogoSmallWhiteBG.png"
+logo: "/assets/images/ega_small.png"
 
 
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Airmen Coders - #BuiltByAirmen
-subtitle: "#BuiltByAirmen"
+  Marine Coders - #BuiltByAirmen
+subtitle: "#BuiltByMarines"
 minimal_mistakes_skin: default
 search: true
 
@@ -43,19 +43,19 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Airmen Coders"
-  avatar : "/assets/images/AirmenCodersFull.png"
-  bio    : "Enabling any Airmen to code"
+  name   : "Marine Coders"
+  avatar : "/assets/images/Marine_Coders_Logo.jpg"
+  bio    : "Enabling any Marine to code"
 
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/AirmenCoders"
+      url: "https://github.com/USMC-Coders"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/company/airmencoders/"
+      url: "https://www.linkedin.com/company/usmc-coders/"
 
 defaults:
   # _posts
