@@ -20,9 +20,6 @@ feature_row:
   
 <br /><br />
 ![Marine Coders logo](/assets/images/Marine_Coders_Logo.jpg){: .align-center}  
-
-<p align="center">We are a group of U.S. Marines who use code to improve the lives of our fellow Marines.</p>
-<br /><br />
 {% include feature_row %}
   
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
