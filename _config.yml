@@ -11,7 +11,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: airmencoders/minimal-mistakes
+remote_theme: marinecoders/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -52,7 +52,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/USMC-Coders"
+      url: "https://github.com/marinecoders"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/company/usmc-coders/"
