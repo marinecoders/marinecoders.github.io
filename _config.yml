@@ -11,7 +11,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: usmc-coders/minimal-mistakes
+remote_theme: airmencoders/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
