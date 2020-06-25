@@ -1,6 +1,6 @@
 # This is Marine Coders website repo
 
-We are a group of U.S. Marineswho use code to improve the lives of our fellow Marines.
+We are a group of U.S. Marines who use code to improve the lives of our fellow Marines.
 
 ![Airmen Coders logo with #BuiltByAirmen](/assets/images/Marine_Coders_Logo.jpg)
 
