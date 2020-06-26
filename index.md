@@ -37,11 +37,12 @@ feature_row:
 {% include paginator.html %}
 
 ## Team Guidelines
-* We build code to help Marines, they are our customers not our Pros/Cons or FITREPS! (index)
+* We build code to help Marines not our Pros/Cons or FITREPS!
 * We open source as much as possible [cio.gov](https://sourcecode.cio.gov/OSS/) [code.mil](https://code.mil)
 * We are responsible users of existing open source code
 * We help each other
+* Cybersecurity is important
 
 
 ## Have questions or want to join us?
-Send an email to AirmenCoders [at] us.af.mil, we would love to hear from you!
+Send an email to collin.chew [at] usmc.mil / andrew.hutcheon [at] usmc.mil, we would love to hear from you!
