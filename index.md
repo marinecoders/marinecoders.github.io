@@ -11,7 +11,7 @@ feature_row:
     url: "/learn/"
     btn_label: "Start Learning"
     btn_class: "btn--inverse"
-  - title: "AF Software"
+  - title: "DoD DevSecOps"
     excerpt: "Learn more about the Department of Defense's software goals and enabling platforms on the Chief Software Officer's website."
     url: "https://software.af.mil"
     btn_label: "CSO Website"
