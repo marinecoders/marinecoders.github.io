@@ -5,6 +5,6 @@ main:
       url: "/projects/"
     - title: "Learn"
       url: /learn/
-    - title: software.af.mil
+    - title: DoD DevSecOps
       url: https://software.af.mil
 
