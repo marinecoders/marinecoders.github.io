@@ -3,21 +3,19 @@ main:
       url: /internships/
     - title: "Projects"
       url: "/projects/"
-    - title: "MQF App"
-      url: /projects/mqf/
     - title: "Learn"
       url: /learn/
     - title: software.af.mil
       url: https://software.af.mil
 
-side:
-    - title: Projects
-      children:
-        - title: "MQF APP"
-          url: "/projects/mqf"
-        - title: "Hawg Ops"
-          url: "projects/#hawg-ops---mission-and-flight-planning"
-        - title: "Bussin' Around"
-          url: "projects/#hawg-ops---bussin-around"
-        - title: "DSN Europe"
-          url: "projects/#hawg-ops---dsn-europe"
+#side:
+#   - title: Projects
+#      children:
+#        - title: "MQF APP"
+#          url: "/projects/mqf"
+#        - title: "Hawg Ops"
+#          url: "projects/#hawg-ops---mission-and-flight-planning"
+#        - title: "Bussin' Around"
+#          url: "projects/#hawg-ops---bussin-around"
+#        - title: "DSN Europe"
+#          url: "projects/#hawg-ops---dsn-europe"
