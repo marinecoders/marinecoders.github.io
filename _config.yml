@@ -1,4 +1,4 @@
-title: Marine Coders
+title: MARINE CODERS
 #logo: "/assets/images/Marine_Coders_Logo.jpg"
 
 
@@ -43,8 +43,8 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Marine Coders"
-  avatar : "/assets/images/Marine_Coders_Logo.jpg"
+  name   : "MARINE CODERS"
+  avatar : "/assets/images/MarineCoders.png"
   bio    : "Enabling any Marine to code"
 
 
