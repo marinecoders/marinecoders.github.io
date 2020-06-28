@@ -5,7 +5,7 @@ toc: true
 ---
 
 ## Great Resources for Learning Modern Software Development
-Useful links to get you started - no federal indorsment intended or implied. Contact us to help point you in the right direction for your project.
+Useful links to get you started - no federal endorsment intended or implied. Contact us to help point you in the right direction for your project.
 ### Methodology
 * [Agile](https://software.af.mil/training/training-agile/)
 * [DevOps](https://software.af.mil/training/devops/)
