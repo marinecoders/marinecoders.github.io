@@ -15,14 +15,19 @@
 </head>
 
 <body>
-
+    <div class="container" style="background-color: lightslategray">
+        
     <h1>Naval Letter Format Generator</h1>
 
     <fieldset>
         <legend> File Name Information: </legend>
         <label>
-            Enter Your Desired Filename:
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Enter Your Desired Filename:</span>
             <input class="form-control" type="text" name="Filename" size="30" maxlength="30">
+                </div>
+            </div>
         </label>
         <br />
     </fieldset>
@@ -67,18 +72,30 @@
             <fieldset>
                 <legend> Reply Block: </legend>
                 <label>
-                    From (Full Identifier or Billet and Unit Name):
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">From (Full Identifier or Billet and Unit Name):</span>
                     <input class="form-control" type="text" name="From" size="60" maxlength="150">
+                    </div>
+                    </div>
                         </label>
                 <br />
                 <label>
-                    To (Billet and unit Name or identifier here):
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">To (Billet and unit Name or identifier here):</span>
                     <input class="form-control" type="text" name="To" size="60" maxlength="150">
+                        </div>
+                        </div>
                         </label>
                 <br />
                 <label>
-                    Enter The Subject (ALWAYS IN ALL CAPS):
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Subject (ALWAYS IN ALL CAPS):</span>
                     <input class="form-control" type="text" name="Subj" size="60" maxlength="150">
+                    </div>
+                    </div>
                 </label>
             </fieldset>
             
@@ -146,7 +163,7 @@
                 </div>
 
        		<div class="label" id="BodyTextBoxContainer">
-                <textarea class="form-control" rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks">
+                <textarea class="form-control" rows = "8" cols = "40" id="BodyBlocks" name="BodyBlocks">
                 </textarea>
 		            
 	<label for = "bodylvl">
@@ -238,7 +255,7 @@
             });
         }
     </script>
-
+</div>
 </body>
 
 </html>
