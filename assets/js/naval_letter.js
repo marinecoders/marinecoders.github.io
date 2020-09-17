@@ -1,6 +1,5 @@
 // this is a test
 function generate() {
-
     var filename = document.getElementById("filename").value;
     if (filename === "") {
         filename = "NavalLetterGeneratedFile.docx";
@@ -21,7 +20,20 @@ function generate() {
     var section = {
         properties: {},
         children: [],
+        margins: {
+            top: "1in",
+            bottom: "1in",
+            right: "1in",
+            left: "1in",
+        }
     };
+
+    section.headers = {
+        default: new docx.Header({
+            children: makeHeaderEntities(),
+        }),
+    };
+
     section.children.push.apply(section.children, makeHeaderSection(ssic, replyCode, date));
     section.children.push.apply(section.children, makeReplyBlock(from, to, subj));
 
@@ -42,6 +54,47 @@ function generate() {
     });
 }
 
+function makeHeaderEntities() {
+    // return a list
+    entities = [];
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "UNITED STATES MARINE CORPS",
+            bold: true,
+            font: "Times New Roman",
+            size: 20,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "U.S. MARINE CORPS FORCES CYBERSPACE COMMAND",
+            font: "Times New Roman",
+            size: 16,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "9800 SAVAGE ROAD SUITE 6410",
+            font: "Times New Roman",
+            size: 16,
+            alignment: docx.AlignmentType.CENTER,
+        })],    
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "FORT GEORGE G. MEADE, MD 20755-6000",
+            font: "Times New Roman",
+            size: 16,
+            alignment: docx.AlignmentType.CENTER,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    })); 
+    return entities;
+}
+    
 function makeTextRun(text, font, size) {
     return new docx.TextRun({
         text: text,
