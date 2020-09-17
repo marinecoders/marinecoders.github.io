@@ -9,4 +9,4 @@ The application allows a user to enter all the standard Naval Letter fields, the
 
 [Naval Letter Format Generator](https://marinecoders.github.io/_pages/naval_letter_js_test.html)
 
-![Marine Coders Naval Letter Format Hackathon](/images/hackathon.jpg)
+![Marine Coders Naval Letter Format Hackathon](/images/Hackathon.jpg){: .align-center}  
