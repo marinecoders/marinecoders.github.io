@@ -4,8 +4,8 @@ function GetDynamicViaTextBox(value){
             '<input type="button" value="Remove" onclick = "RemoveViaTextBox(this)" >'
 }
 
-function ShowHideDiv() {
-	var chkYes = document.getElementById("rad1");
+function ShowHideDiv(Id) {
+	var chkYes = document.getElementById(Id);
 	var dvPassport = document.getElementById("ViaTextBoxContainer");
 	dvPassport.style.display = chkYes.checked ? "block" : "none";
 }
