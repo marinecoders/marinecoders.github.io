@@ -15,14 +15,14 @@
 </head>
 
 <body style="background-color:#3b3b3b;">
-    <div class="container" style="background-color: lightslategray">
+    <div class="container" style="background-color: black">
         
     <img src="../images/Marine_Coders_Logo.jpg" class="img-fluid" alt="Responsive image">
 
     <h1 text-center>Naval Letter Format Generator</h1>
 
     <fieldset>
-        <legend> File Name Information: </legend>
+        <legend class="text-white"> File Name Information: </legend>
         <label>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -48,7 +48,6 @@
                     </div>
                 </div>
                 </label>
-                <br />
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -57,7 +56,6 @@
                         </div>
                         </div>
                 </label>
-                <br />
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -81,7 +79,6 @@
                     </div>
                     </div>
                         </label>
-                <br />
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -90,7 +87,6 @@
                         </div>
                         </div>
                         </label>
-                <br />
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -127,9 +123,9 @@
 		<input type="radio" name="ifRef" checked="checked" id="rad4" value="no" onclick="ShowHideDiv('rad3','RefTextBoxContainer')"> No</label>
 
 		<div style="display: none;" class="label" id="RefTextBoxContainer">
-                <label>
-                    Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
-		<input id="btnAdd" type="button" value="Add Ref" onclick="AddRefTextBox()" />
+                    <label>
+                        Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
+            <input id="btnAdd" type="button" value="Add Ref" onclick="AddRefTextBox()" />
 		<input class="form-control" name = "RefTextBox" size="60" type="text"/>
 
 		</br>
