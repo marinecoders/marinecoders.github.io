@@ -4,17 +4,32 @@
     <script src="https://unpkg.com/docx@5.0.2/build/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
     <script src="../assets/js/naval_letter.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color:#3b3b3b;">
+    <div class="container" style="background-color: slategray">
+        
+    <img src="../assets/images/MarineCoders.png" class="img-fluid" alt="Responsive image">
 
-    <h1>DOCX browser Word document generation</h1>
+    <h1  style="text-align:center">Naval Letter Format Generator</h1>
 
     <fieldset>
-        <legend> File Name Information: </legend>
+        <legend > File Name Information: </legend>
         <label>
-            Enter Your Desired Filename:
-            <input type="text" name="Filename" id="filename" value="NavalLetterGeneratedFile" size="30" maxlength="30">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Enter Your Desired Filename:</span>
+            <input class="form-control" type="text" name="Filename" id="filename" size="30" maxlength="30">
+                </div>
+            </div>
         </label>
         <br />
     </fieldset>
@@ -24,20 +39,33 @@
            
             <!-- Header Information -->
             <fieldset>
-                <legend> Header Information: </legend>
+                <legend > Header Information: </legend>
                 <label>
-                    Enter Your SSIC:
-                    <input type="text" name="SSIC" id="ssic" size="30" maxlength="4">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter your SSIC:</span>
+                    <input class="form-control" type="text" name="SSIC" id="ssic" size="30" maxlength="4">
+                    </div>
+                </div>
                 </label>
-                <br />
+                <br/>
                 <label>
-                    Enter Your Reply Code:
-                    <input type="text" name="ReplyCode" id="reply" size="30" maxlength="10">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter Your Reply Code:</span>
+                    <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="10">
+                        </div>
+                        </div>
                 </label>
-                <br />
+                <br/>
                 <label>
-                    Enter The Date (DD Mmm YY):
-                    <input type="text" name="Date" id="date" size="30" maxlength="9">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Date (DD Mmm YY):</span>
+                    <input class="form-control" type="text" name="Date" id="date" size="30" maxlength="9">
+                </div>
+            </div>
                         </label>
             </fieldset>
             
@@ -45,20 +73,33 @@
             
             <!-- Reply Information -->
             <fieldset>
-                <legend> Reply Block: </legend>
+                <legend > Reply Block: </legend>
                 <label>
-                    From (Full Identifier or Billet and Unit Name):
-                    <input type="text" name="From" id="from" size="60" maxlength="150">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">From (Full Identifier or Billet and Unit Name):</span>
+                    <input class="form-control" type="text" name="From" id="from" size="60" maxlength="150">
+                    </div>
+                    </div>
                         </label>
-                <br />
+                        <br/>
                 <label>
-                    To (Billet and unit Name or identifier here):
-                    <input type="text" name="To" id="to" size="60" maxlength="150">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">To (Billet and unit Name or identifier here):</span>
+                    <input class="form-control" type="text" name="To" id="to" size="60" maxlength="150">
+                        </div>
+                        </div>
                         </label>
-                <br />
+                        <br/>
                 <label>
-                    Enter The Subject (ALWAYS IN ALL CAPS):
-                    <input type="text" name="Subj" id="subj" size="60" maxlength="150">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Subject (ALWAYS IN ALL CAPS):</span>
+                    <input class="form-control" type="text" name="Subj" id="subj" size="60" maxlength="150">
+                    </div>
+                    </div>
                 </label>
             </fieldset>
             
@@ -66,45 +107,46 @@
             
             <!-- Optional Portions -->
             <fieldset>
-                <legend> Optional Items: </legend>
+                <legend > Optional Items: </legend>
                 
-        <label>Do you have a VIA ?</label>
-      
-              <input type="radio" name="ifVia" id="rad1" value="yes"> Yes </label>
-		<input type="radio" name="ifVia" checked="checked" id="rad2" value="no"> No</label> <div class="label" id="ViaTextBoxContainer">
-				<label>
-                    Enter The Via (Title, name of activity (Code), location when needed):
-                </label>
+		<label >Do you have a VIA?</label>
+  		<input type="radio" name="ifVia" id="rad1" value="yes" onclick="ShowHideDiv('rad1','ViaTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifVia" checked="checked" id="rad2" value="no" onclick="ShowHideDiv('rad1','ViaTextBoxContainer')"> No</label>
+
+		<div style="display: none;" class="label" id="ViaTextBoxContainer">
+		<label >
+            Enter The Via (Title, name of activity (Code), location when needed):
+        </label>
 		<input id="btnAdd" type="button" value="Add Via" onclick="AddViaTextBox()" />
-		<input name = "ViaTextBox" size="60" type="text"/>
+		<input class="form-control" name = "ViaTextBox" size="60" type="text"/>
 
 		</br>
-        </div>
+		</div>
 
 </br>
-		<label>Do you have References ?</label>
-  		<input type="radio" name="ifRef" id="rad3" value="yes"> Yes </label>
-		<input type="radio" name="ifRef" checked="checked" id="rad4" value="no"> No</label>
+		<label >Do you have References ?</label>
+  		<input type="radio" name="ifRef" id="rad3" value="yes" onclick="ShowHideDiv('rad3','RefTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifRef" checked="checked" id="rad4" value="no" onclick="ShowHideDiv('rad3','RefTextBoxContainer')"> No</label>
 
-		<div class="label" id="RefTextBoxContainer">
-                <label>
-                    Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
-		<input id="btnAdd" type="button" value="Add Ref" onclick="AddRefTextBox()" />
-		<input name = "RefTextBox" size="60" type="text"/>
+		<div style="display: none;" class="label" id="RefTextBoxContainer">
+                    <label >
+                        Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
+            <input id="btnAdd" type="button" value="Add Ref" onclick="AddRefTextBox()" />
+		<input class="form-control" name = "RefTextBox" size="60" type="text"/>
 
 		</br>
 		</div>
                 <br />
      
-		<label>Do you have Enclosures?</label>
-  		<input type="radio" name="ifEncl" id="rad5" value="yes"> Yes </label>
-		<input type="radio" name="ifEncl" checked="checked" id="rad6" value="no"> No</label>
+		<label >Do you have Enclosures?</label>
+  		<input type="radio" name="ifEncl" id="rad5" value="yes" onclick="ShowHideDiv('rad5','EnclTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifEncl" checked="checked" id="rad6" value="no" onclick="ShowHideDiv('rad5','EnclTextBoxContainer')"> No</label>
 
-		<div class="label" id="EnclTextBoxContainer">
-                <label>
+		<div style="display: none;" class="label" id="EnclTextBoxContainer">
+                <label >
                    Enter The Enclosures (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
 		<input id="btnAdd" type="button" value="Add Encl" onclick="AddEnclTextBox()" />
-		<input name = "EnclTextBox" size="60" type="text"/>
+		<input class="form-control" name = "EnclTextBox" size="60" type="text"/>
 
 		</br>
 		</div>
@@ -116,19 +158,19 @@
             
             <!-- Body of the message -->
             <fieldset>
-                <legend> Body Block: </legend>
+                <legend > Body Block: </legend>
                 
                 <div>
-                <label for = "body">
+                <label  for = "body">
                     Enter a body paragraph:
                 </label>
                 </div>
 
        		<div class="label" id="BodyTextBoxContainer">
-                <textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks" value="">
+                <textarea class="form-control" rows = "8" cols = "40" id="BodyBlocks" name="BodyBlocks">
                 </textarea>
 		            
-	<label for = "bodylvl">
+	<label  for = "bodylvl">
                     Select the body level:
                 </label>
 	<select id="BodyLevel" name="BodyLevel" >
@@ -158,26 +200,30 @@
 <br />
 
 <fieldset>
-                <legend> Closing Block: </legend>
+                <legend > Closing Block: </legend>
 		</br>
                 <div>
-                <label>
-                    Enter The Signature (FI. MI. LNAME):
-                    <input type="text" name="Sig" id="sig" size="60" maxlength="150">
+                <label >
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Signature (FI. MI. LNAME):</span>
+                    <input class="form-control" type="text" name="Sig" id="sig" size="60" maxlength="150">
+                    </div>
+                    </div>
                 </label>
                 </div>
                 
 
 </br>
-<label>Do you have Copy To?</label>
-  		<input type="radio" name="ifCopy" id="rad7" value="yes"> Yes </label>
-		<input type="radio" name="ifCopy" checked="checked" id="rad8" value="no"> No</label>
+<label >Do you have Copy To?</label>
+  		<input type="radio" name="ifCopy" id="rad7" value="yes" onclick="ShowHideDiv('rad7','CopyTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifCopy" checked="checked" id="rad8" value="no" onclick="ShowHideDiv('rad7','CopyTextBoxContainer')"> No</label>
 
-		<div class="label" id="CopyTextBoxContainer">
-                <label>
+		<div style="display: none;" class="label" id="CopyTextBoxContainer">
+                <label    >
                    Enter An Adressee (Billet and unit Name or identifier here):
 		<input id="btnAdd" type="button" value="Add Copy To" onclick="AddCopyTextBox()" />
-		<input name = "CopyTextBox" size="60" type="text"/>
+		<input class="form-control" name = "CopyTextBox" size="60" type="text"/>
 		</br>
 		</div>
                 <br />

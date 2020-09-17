@@ -220,6 +220,15 @@ function GetDynamicViaTextBox(value){
     return '<input name = "ViaTextBox" size="60" type="text" value = "' + value + '" >' +
             '<input type="button" value="Remove" onclick = "RemoveViaTextBox(this)" >'
 }
+
+function ShowHideDiv(Id, Id2) {
+
+	var chkYes = document.getElementById(Id);
+	var dvPassport = document.getElementById(Id2);
+	dvPassport.style.display = chkYes.checked ? "block" : "none";
+}
+
+
 function AddViaTextBox() {
     var div = document.createElement('DIV');
     div.innerHTML = GetDynamicViaTextBox("");
@@ -289,76 +298,3 @@ function AddBodyTextBox() {
 function RemoveBodyTextBox(div) {
     document.getElementById("BodyTextBoxContainer").removeChild(div.parentNode);
 }
-
-//Turn Hidden Inputs On/Off
-	if(document.all && !document.getElementById) { //IE4 support
-  		document.getElementById = function(id) { return document.all[id]; }
-	}
-	function dss_addLoadEvent(fn) {
-  		if(typeof(fn)!="function")return;
-  			var tempFunc=window.onload;
-  			window.onload=function() {
-    		if(typeof(tempFunc)=="function")tempFunc();
-    			fn();
-  		}
-	}
-
-	dss_addLoadEvent(function() {
-  		if(!document.getElementById) return;
-  		var f = document.getElementById('NLFform');
-  		// hide the text area and its parent label
- 		 document.getElementById('ViaTextBoxContainer').style.display = 'none';
-		document.getElementById('RefTextBoxContainer').style.display = 'none';
-		document.getElementById('EnclTextBoxContainer').style.display = 'none';
-		document.getElementById('CopyTextBoxContainer').style.display = 'none';
-  		// get a reference to the radio button group
-  		var rads = f.elements['ifVia'];
-  		for(var i=0;i<rads.length;i++) {
-    		// we add the event handler to each button in the group
-    			rads[i].onkeyup=rads[i].onclick=function(){
-      			if(!this.checked) return;
-      			var el = document.getElementById('ViaTextBoxContainer');
-      			el.style.display = (this.value=="yes")?'':'none';
-    }
-    // in case, for any reason, one of the radio buttons is already checked
-    rads[i].onclick();
-  }
-
-  		var rads = f.elements['ifRef'];
-  		for(var i=0;i<rads.length;i++) {
-    		// we add the event handler to each button in the group
-    			rads[i].onkeyup=rads[i].onclick=function(){
-      			if(!this.checked) return;
-      			var el = document.getElementById('RefTextBoxContainer');
-      			el.style.display = (this.value=="yes")?'':'none';
-    }
-    // in case, for any reason, one of the radio buttons is already checked
-    rads[i].onclick();
-  }
-
-  		var rads = f.elements['ifEncl'];
-  		for(var i=0;i<rads.length;i++) {
-    		// we add the event handler to each button in the group
-    			rads[i].onkeyup=rads[i].onclick=function(){
-      			if(!this.checked) return;
-      			var el = document.getElementById('EnclTextBoxContainer');
-      			el.style.display = (this.value=="yes")?'':'none';
-    }
-    // in case, for any reason, one of the radio buttons is already checked
-    rads[i].onclick();
-  }
-
-  		var rads = f.elements['ifCopy'];
-  		for(var i=0;i<rads.length;i++) {
-    		// we add the event handler to each button in the group
-    			rads[i].onkeyup=rads[i].onclick=function(){
-      			if(!this.checked) return;
-      			var el = document.getElementById('CopyTextBoxContainer');
-      			el.style.display = (this.value=="yes")?'':'none';
-    }
-    // in case, for any reason, one of the radio buttons is already checked
-    rads[i].onclick();
-  }
-
-});
-
