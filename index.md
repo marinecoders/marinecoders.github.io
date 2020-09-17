@@ -45,4 +45,4 @@ feature_row:
 
 
 ## Have questions or want to join us?
-Send an email to collin.chew [at] usmc.mil / andrew.hutcheon [at] usmc.mil, we would love to hear from you!
+Join us in our chat channel, [Marine Coders Chat](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr), or send an email to collin.chew [at] usmc.mil / andrew.hutcheon [at] usmc.mil.  We would love to hear from you!
