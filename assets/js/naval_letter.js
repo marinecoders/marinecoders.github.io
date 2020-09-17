@@ -14,7 +14,7 @@ function generate() {
     var from = document.getElementById("from").value;
     var to = document.getElementById("to").value;
     var subj = document.getElementById("subj").value;
-    var sig = document.getElementById("sig");
+    var sig = document.getElementById("sig").value;
 
     const doc = new docx.Document();
 
@@ -24,8 +24,16 @@ function generate() {
     };
     section.children.push.apply(section.children, makeHeaderSection(ssic, replyCode, date));
     section.children.push.apply(section.children, makeReplyBlock(from, to, subj));
-    //doc.addSection(makeHeaderSection(ssic, replyCode, date));
-    //doc.addSection(makeReplyBlock(from, to, subj));
+
+    // put the references and enclosures piece here
+
+    bodyTexts = Array.from(document.querySelectorAll('[id=BodyBlocks]'));
+    bodyLevels = Array.from(document.querySelectorAll('[id=BodyLevel]'));
+    section.children.push.apply(section.children, makeBodies(bodyTexts, bodyLevels));
+
+    section.children.push.apply(section.children, makeSignatureSection(sig));
+    
+    
     doc.addSection(section);
 
     docx.Packer.toBlob(doc).then(blob => {
@@ -48,6 +56,64 @@ function makeDefaultTextRun(text) {
         font: "Times New Roman",
         size: 24,
     });
+}
+
+function makeSignatureSection(sig) {
+    paragraphs = [];
+    // two returns (body paragaph will leave one return above)
+    paragraphs.push(new docx.Paragraph({text: ""}));
+    paragraphs.push(new docx.Paragraph({text: ""}));
+    paragraphs.push(new docx.Paragraph({
+        children: [makeDefaultTextRun(sig)],
+        indent: {
+            start: "3.25in",
+        },
+    }));
+    return paragraphs;
+}
+
+function makeBodies(bodyTexts, bodyLevels) {
+    bodyZipped = bodyTexts.map(function(e, i) {
+        return [e, bodyLevels[i]];
+    });
+
+    paragraphs = [];
+    topLevelNum = 1;
+    midLevelNum = 97;
+    botLevelNum = 1;
+    bodyZipped.forEach(element => {
+        var selector = element[1];
+        var level = selector.options[selector.selectedIndex].value;
+        if (level === "1") {
+            var start = topLevelNum.toString() + ".  ";
+            makeBodyPara(paragraphs, start, element[0].value);
+            // update indenting
+            topLevelNum++;
+            midLevelNum = 97;
+            botLevelNum = 1;
+        } else if (level == "2") {
+            var start = "       " + String.fromCharCode(midLevelNum) + ".  ";
+            makeBodyPara(paragraphs, start, element[0].value);
+            // update indenting
+            midLevelNum++;
+            botLevelNum = 1;
+        } else if (level == "3") {
+            var start = "             (" + botLevelNum.toString() + ") ";
+            makeBodyPara(paragraphs, start, element[0].value);
+            // update indenting
+            botLevelNum++;
+        }
+    });
+    return paragraphs;
+}
+
+function makeBodyPara(paragraphs, start, value) {
+    var para = new docx.Paragraph({
+        children: [makeDefaultTextRun(start + value)],
+    });
+    paragraphs.push(para);
+    paragraphs.push(new docx.Paragraph({text: ""}));
+
 }
 
 function makeReplyBlock(from, to, subj) {
