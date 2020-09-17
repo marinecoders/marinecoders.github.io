@@ -1,4 +1,221 @@
 // this is a test
+function generate() {
+    var filename = document.getElementById("filename").value;
+    if (filename === "") {
+        filename = "NavalLetterGeneratedFile.docx";
+    }
+    if (!filename.endsWith('.docx')) {
+        filename = filename + '.docx';
+    }
+    var ssic = document.getElementById("ssic").value;
+    var replyCode = document.getElementById("reply").value;
+    var date = document.getElementById("date").value;
+    var from = document.getElementById("from").value;
+    var to = document.getElementById("to").value;
+    var subj = document.getElementById("subj").value;
+    var sig = document.getElementById("sig").value;
+
+    const doc = new docx.Document();
+
+    var section = {
+        properties: {},
+        children: [],
+        margins: {
+            top: "1in",
+            bottom: "1in",
+            right: "1in",
+            left: "1in",
+        }
+    };
+
+    section.headers = {
+        default: new docx.Header({
+            children: makeHeaderEntities(),
+        }),
+    };
+
+    section.children.push.apply(section.children, makeHeaderSection(ssic, replyCode, date));
+    section.children.push.apply(section.children, makeReplyBlock(from, to, subj));
+
+    // put the references and enclosures piece here
+
+    bodyTexts = Array.from(document.querySelectorAll('[id=BodyBlocks]'));
+    bodyLevels = Array.from(document.querySelectorAll('[id=BodyLevel]'));
+    section.children.push.apply(section.children, makeBodies(bodyTexts, bodyLevels));
+
+    section.children.push.apply(section.children, makeSignatureSection(sig));
+    
+    
+    doc.addSection(section);
+
+    docx.Packer.toBlob(doc).then(blob => {
+        saveAs(blob, filename);
+        console.log("document downloaded");
+    });
+}
+
+function makeHeaderEntities() {
+    // return a list
+    entities = [];
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "UNITED STATES MARINE CORPS",
+            bold: true,
+            font: "Times New Roman",
+            size: 20,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "U.S. MARINE CORPS FORCES CYBERSPACE COMMAND",
+            font: "Times New Roman",
+            size: 16,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "9800 SAVAGE ROAD SUITE 6410",
+            font: "Times New Roman",
+            size: 16,
+            alignment: docx.AlignmentType.CENTER,
+        })],    
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "FORT GEORGE G. MEADE, MD 20755-6000",
+            font: "Times New Roman",
+            size: 16,
+            alignment: docx.AlignmentType.CENTER,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    })); 
+    return entities;
+}
+    
+function makeTextRun(text, font, size) {
+    return new docx.TextRun({
+        text: text,
+        font: font,
+        size: size,
+    });
+}
+
+function makeDefaultTextRun(text) {
+    return new docx.TextRun({
+        text: text,
+        font: "Times New Roman",
+        size: 24,
+    });
+}
+
+function makeSignatureSection(sig) {
+    paragraphs = [];
+    // two returns (body paragaph will leave one return above)
+    paragraphs.push(new docx.Paragraph({text: ""}));
+    paragraphs.push(new docx.Paragraph({text: ""}));
+    paragraphs.push(new docx.Paragraph({
+        children: [makeDefaultTextRun(sig)],
+        indent: {
+            start: "3.25in",
+        },
+    }));
+    return paragraphs;
+}
+
+function makeBodies(bodyTexts, bodyLevels) {
+    bodyZipped = bodyTexts.map(function(e, i) {
+        return [e, bodyLevels[i]];
+    });
+
+    paragraphs = [];
+    topLevelNum = 1;
+    midLevelNum = 97;
+    botLevelNum = 1;
+    bodyZipped.forEach(element => {
+        var selector = element[1];
+        var level = selector.options[selector.selectedIndex].value;
+        if (level === "1") {
+            var start = topLevelNum.toString() + ".  ";
+            makeBodyPara(paragraphs, start, element[0].value);
+            // update indenting
+            topLevelNum++;
+            midLevelNum = 97;
+            botLevelNum = 1;
+        } else if (level == "2") {
+            var start = "       " + String.fromCharCode(midLevelNum) + ".  ";
+            makeBodyPara(paragraphs, start, element[0].value);
+            // update indenting
+            midLevelNum++;
+            botLevelNum = 1;
+        } else if (level == "3") {
+            var start = "             (" + botLevelNum.toString() + ") ";
+            makeBodyPara(paragraphs, start, element[0].value);
+            // update indenting
+            botLevelNum++;
+        }
+    });
+    return paragraphs;
+}
+
+function makeBodyPara(paragraphs, start, value) {
+    var para = new docx.Paragraph({
+        children: [makeDefaultTextRun(start + value)],
+    });
+    paragraphs.push(para);
+    paragraphs.push(new docx.Paragraph({text: ""}));
+
+}
+
+function makeReplyBlock(from, to, subj) {
+   return [
+       new docx.Paragraph({
+           children: [makeDefaultTextRun("From:  " + from)],
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun("To:      " + to)],
+        }),
+        new docx.Paragraph({text: ""}),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun("Subj:   " + subj.toUpperCase())],
+        }),
+        new docx.Paragraph({text: ""}), 
+    ];
+}
+
+function makeHeaderSection(ssic, replyCode, date) {
+   return [
+        new docx.Paragraph({text: ""}),
+        new docx.Paragraph({
+            children: [makeTextRun("IN REPLY REFER TO:", "Times New Roman", 10)],
+            indent: {
+                start: "5.19in",
+            }
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun(ssic)],
+            indent: {
+                start: "5.19in",
+            }
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun(replyCode)],
+            indent: {
+                start: "5.19in"
+            }
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun(date)],
+            indent: {
+                start: "5.19in"
+            }
+        }),
+        new docx.Paragraph({text: ""}),
+   ];
+}
+
 function GetDynamicViaTextBox(value){
     return '<input name = "ViaTextBox" size="60" type="text" value = "' + value + '" >' +
             '<input type="button" value="Remove" onclick = "RemoveViaTextBox(this)" >'
@@ -81,5 +298,3 @@ function AddBodyTextBox() {
 function RemoveBodyTextBox(div) {
     document.getElementById("BodyTextBoxContainer").removeChild(div.parentNode);
 }
-
-;

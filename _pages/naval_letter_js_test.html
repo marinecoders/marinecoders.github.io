@@ -27,7 +27,7 @@
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon3">Enter Your Desired Filename:</span>
-            <input class="form-control" type="text" name="Filename" size="30" maxlength="30">
+            <input class="form-control" type="text" name="Filename" id="filename" size="30" maxlength="30">
                 </div>
             </div>
         </label>
@@ -44,7 +44,7 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter your SSIC:</span>
-                    <input class="form-control" type="text" name="SSIC" size="30" maxlength="4">
+                    <input class="form-control" type="text" name="SSIC" id="ssic" size="30" maxlength="4">
                     </div>
                 </div>
                 </label>
@@ -53,16 +53,17 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter Your Reply Code:</span>
-                    <input class="form-control" type="text" name="ReplyCode" size="30" maxlength="10">
+                    <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="10">
                         </div>
                         </div>
                 </label>
                 <br/>
                 <label>
+
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter The Date (DD Mmm YY):</span>
-                    <input class="form-control" type="text" name="Date" size="30" maxlength="9">
+                    <input class="form-control" type="text" name="Date" id="date" size="30" maxlength="9">
                 </div>
             </div>
                         </label>
@@ -77,16 +78,17 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">From (Full Identifier or Billet and Unit Name):</span>
-                    <input class="form-control" type="text" name="From" size="60" maxlength="150">
+                    <input class="form-control" type="text" name="From" id="from" size="60" maxlength="150">
                     </div>
                     </div>
                         </label>
                         <br/>
                 <label>
+
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">To (Billet and unit Name or identifier here):</span>
-                    <input class="form-control" type="text" name="To" size="60" maxlength="150">
+                    <input class="form-control" type="text" name="To" id="to" size="60" maxlength="150">
                         </div>
                         </div>
                         </label>
@@ -95,7 +97,7 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter The Subject (ALWAYS IN ALL CAPS):</span>
-                    <input class="form-control" type="text" name="Subj" size="60" maxlength="150">
+                    <input class="form-control" type="text" name="Subj" id="subj" size="60" maxlength="150">
                     </div>
                     </div>
                 </label>
@@ -205,7 +207,7 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter The Signature (FI. MI. LNAME):</span>
-                    <input class="form-control" type="text" name="Sig" size="60" maxlength="150">
+                    <input class="form-control" type="text" name="Sig" id="sig" size="60" maxlength="150">
                     </div>
                     </div>
                 </label>
@@ -230,38 +232,6 @@
             <br />
 
     <button type="button" onclick="generate()">Click to generate document</button>
-
-    <script>
-        function generate() {
-            const doc = new docx.Document();
-            
-            doc.addSection({
-                properties: {},
-                children: [
-                    new docx.Paragraph({
-                        children: [
-                            new docx.TextRun("Hello World"),
-                            new docx.TextRun({
-                                text: document.getElementById("title").value,
-                                bold: true,
-                            }),
-                            new docx.TextRun({
-                                text: "\tGithub is the best",
-                                bold: true,
-                            }),
-                        ],
-                    }),
-                ],
-            });
-
-            docx.Packer.toBlob(doc).then(blob => {
-                console.log(blob);
-                saveAs(blob, "example.docx");
-                console.log("Document created successfully");
-            });
-        }
-    </script>
-</div>
 </body>
 
 </html>
