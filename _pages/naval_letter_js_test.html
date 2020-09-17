@@ -19,10 +19,10 @@
         
     <img src="../assets/images/MarineCoders.png" class="img-fluid" alt="Responsive image">
 
-    <h1 class="text-white" style="text-align:center">Naval Letter Format Generator</h1>
+    <h1 class="text-dark" style="text-align:center">Naval Letter Format Generator</h1>
 
     <fieldset>
-        <legend class="text-white"> File Name Information: </legend>
+        <legend class="text-dark"> File Name Information: </legend>
         <label>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -39,7 +39,7 @@
            
             <!-- Header Information -->
             <fieldset>
-                <legend class="text-white"> Header Information: </legend>
+                <legend class="text-dark"> Header Information: </legend>
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -57,6 +57,7 @@
                         </div>
                         </div>
                 </label>
+                <br/>
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -71,7 +72,7 @@
             
             <!-- Reply Information -->
             <fieldset>
-                <legend class="text-white"> Reply Block: </legend>
+                <legend class="text-dark"> Reply Block: </legend>
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -80,6 +81,7 @@
                     </div>
                     </div>
                         </label>
+                        <br/>
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -88,6 +90,7 @@
                         </div>
                         </div>
                         </label>
+                        <br/>
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -102,14 +105,14 @@
             
             <!-- Optional Portions -->
             <fieldset>
-                <legend class="text-white"> Optional Items: </legend>
+                <legend class="text-dark"> Optional Items: </legend>
                 
-		<label class="text-white">Do you have a VIA?</label>
+		<label class="text-dark">Do you have a VIA?</label>
   		<input type="radio" name="ifVia" id="rad1" value="yes" onclick="ShowHideDiv('rad1','ViaTextBoxContainer')"> Yes </label>
 		<input type="radio" name="ifVia" checked="checked" id="rad2" value="no" onclick="ShowHideDiv('rad1','ViaTextBoxContainer')"> No</label>
 
 		<div style="display: none;" class="label" id="ViaTextBoxContainer">
-		<label class="text-white">
+		<label class="text-dark">
             Enter The Via (Title, name of activity (Code), location when needed):
         </label>
 		<input id="btnAdd" type="button" value="Add Via" onclick="AddViaTextBox()" />
@@ -119,12 +122,12 @@
 		</div>
 
 </br>
-		<label class="text-white">Do you have References ?</label>
+		<label class="text-dark">Do you have References ?</label>
   		<input type="radio" name="ifRef" id="rad3" value="yes" onclick="ShowHideDiv('rad3','RefTextBoxContainer')"> Yes </label>
 		<input type="radio" name="ifRef" checked="checked" id="rad4" value="no" onclick="ShowHideDiv('rad3','RefTextBoxContainer')"> No</label>
 
 		<div style="display: none;" class="label" id="RefTextBoxContainer">
-                    <label class="text-white">
+                    <label class="text-dark">
                         Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
             <input id="btnAdd" type="button" value="Add Ref" onclick="AddRefTextBox()" />
 		<input class="form-control" name = "RefTextBox" size="60" type="text"/>
@@ -133,12 +136,12 @@
 		</div>
                 <br />
      
-		<label class="text-white">Do you have Enclosures?</label>
+		<label class="text-dark">Do you have Enclosures?</label>
   		<input type="radio" name="ifEncl" id="rad5" value="yes" onclick="ShowHideDiv('rad5','EnclTextBoxContainer')"> Yes </label>
 		<input type="radio" name="ifEncl" checked="checked" id="rad6" value="no" onclick="ShowHideDiv('rad5','EnclTextBoxContainer')"> No</label>
 
 		<div style="display: none;" class="label" id="EnclTextBoxContainer">
-                <label class="text-white">
+                <label class="text-dark">
                    Enter The Enclosures (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
 		<input id="btnAdd" type="button" value="Add Encl" onclick="AddEnclTextBox()" />
 		<input class="form-control" name = "EnclTextBox" size="60" type="text"/>
@@ -153,10 +156,10 @@
             
             <!-- Body of the message -->
             <fieldset>
-                <legend class="text-white"> Body Block: </legend>
+                <legend class="text-dark"> Body Block: </legend>
                 
                 <div>
-                <label class="text-white" for = "body">
+                <label class="text-dark" for = "body">
                     Enter a body paragraph:
                 </label>
                 </div>
@@ -165,7 +168,7 @@
                 <textarea class="form-control" rows = "8" cols = "40" id="BodyBlocks" name="BodyBlocks">
                 </textarea>
 		            
-	<label class="text-white" for = "bodylvl">
+	<label class="text-dark" for = "bodylvl">
                     Select the body level:
                 </label>
 	<select id="BodyLevel" name="BodyLevel" >
@@ -195,23 +198,27 @@
 <br />
 
 <fieldset>
-                <legend class="text-white"> Closing Block: </legend>
+                <legend class="text-dark"> Closing Block: </legend>
 		</br>
                 <div>
-                <label class="text-white">
-                    Enter The Signature (FI. MI. LNAME):
+                <label class="text-dark">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Signature (FI. MI. LNAME):</span>
                     <input class="form-control" type="text" name="Sig" size="60" maxlength="150">
+                    </div>
+                    </div>
                 </label>
                 </div>
                 
 
 </br>
-<label class="text-white">Do you have Copy To?</label>
+<label class="text-dark">Do you have Copy To?</label>
   		<input type="radio" name="ifCopy" id="rad7" value="yes" onclick="ShowHideDiv('rad7','CopyTextBoxContainer')"> Yes </label>
 		<input type="radio" name="ifCopy" checked="checked" id="rad8" value="no" onclick="ShowHideDiv('rad7','CopyTextBoxContainer')"> No</label>
 
 		<div style="display: none;" class="label" id="CopyTextBoxContainer">
-                <label class="text-white"   >
+                <label class="text-dark"   >
                    Enter An Adressee (Billet and unit Name or identifier here):
 		<input id="btnAdd" type="button" value="Add Copy To" onclick="AddCopyTextBox()" />
 		<input class="form-control" name = "CopyTextBox" size="60" type="text"/>
