@@ -14,7 +14,7 @@
         <legend> File Name Information: </legend>
         <label>
             Enter Your Desired Filename:
-            <input type="text" name="Filename" size="30" maxlength="30">
+            <input type="text" name="Filename" id="filename" value="NavalLetterGeneratedFile" size="30" maxlength="30">
         </label>
         <br />
     </fieldset>
@@ -27,17 +27,17 @@
                 <legend> Header Information: </legend>
                 <label>
                     Enter Your SSIC:
-                    <input type="text" name="SSIC" size="30" maxlength="4">
+                    <input type="text" name="SSIC" id="ssic" size="30" value="3500" maxlength="4">
                 </label>
                 <br />
                 <label>
                     Enter Your Reply Code:
-                    <input type="text" name="ReplyCode" size="30" maxlength="10">
+                    <input type="text" name="ReplyCode" id="reply" size="30" value="C474" maxlength="10">
                 </label>
                 <br />
                 <label>
                     Enter The Date (DD Mmm YY):
-                    <input type="text" name="Date" size="30" maxlength="9">
+                    <input type="text" name="Date" id="date" value="17 Sep 20" size="30" maxlength="9">
                         </label>
             </fieldset>
             
@@ -48,17 +48,17 @@
                 <legend> Reply Block: </legend>
                 <label>
                     From (Full Identifier or Billet and Unit Name):
-                    <input type="text" name="From" size="60" maxlength="150">
+                    <input type="text" name="From" id="from" value="Carter Burn" size="60" maxlength="150">
                         </label>
                 <br />
                 <label>
                     To (Billet and unit Name or identifier here):
-                    <input type="text" name="To" size="60" maxlength="150">
+                    <input type="text" name="To" id="to" value="Carter Burn" size="60" maxlength="150">
                         </label>
                 <br />
                 <label>
                     Enter The Subject (ALWAYS IN ALL CAPS):
-                    <input type="text" name="Subj" size="60" maxlength="150">
+                    <input type="text" name="Subj" id="subj" value="My Naval Letter" size="60" maxlength="150">
                 </label>
             </fieldset>
             
@@ -163,7 +163,7 @@
                 <div>
                 <label>
                     Enter The Signature (FI. MI. LNAME):
-                    <input type="text" name="Sig" size="60" maxlength="150">
+                    <input type="text" name="Sig" id="sig" size="60" maxlength="150">
                 </label>
                 </div>
                 
@@ -186,38 +186,6 @@
             <br />
 
     <button type="button" onclick="generate()">Click to generate document</button>
-
-    <script>
-        function generate() {
-            const doc = new docx.Document();
-            
-            doc.addSection({
-                properties: {},
-                children: [
-                    new docx.Paragraph({
-                        children: [
-                            new docx.TextRun("Hello World"),
-                            new docx.TextRun({
-                                text: document.getElementById("title").value,
-                                bold: true,
-                            }),
-                            new docx.TextRun({
-                                text: "\tGithub is the best",
-                                bold: true,
-                            }),
-                        ],
-                    }),
-                ],
-            });
-
-            docx.Packer.toBlob(doc).then(blob => {
-                console.log(blob);
-                saveAs(blob, "example.docx");
-                console.log("Document created successfully");
-            });
-        }
-    </script>
-
 </body>
 
 </html>

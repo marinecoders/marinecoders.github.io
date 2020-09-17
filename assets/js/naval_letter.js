@@ -1,4 +1,102 @@
 // this is a test
+function generate() {
+
+    var filename = document.getElementById("filename").value;
+    if (filename === "") {
+        filename = "NavalLetterGeneratedFile.docx";
+    }
+    if (!filename.endsWith('.docx')) {
+        filename = filename + '.docx';
+    }
+    var ssic = document.getElementById("ssic").value;
+    var replyCode = document.getElementById("reply").value;
+    var date = document.getElementById("date").value;
+    var from = document.getElementById("from").value;
+    var to = document.getElementById("to").value;
+    var subj = document.getElementById("subj").value;
+    var sig = document.getElementById("sig");
+
+    const doc = new docx.Document();
+
+    var section = {
+        properties: {},
+        children: [],
+    };
+    section.children.push.apply(section.children, makeHeaderSection(ssic, replyCode, date));
+    section.children.push.apply(section.children, makeReplyBlock(from, to, subj));
+    //doc.addSection(makeHeaderSection(ssic, replyCode, date));
+    //doc.addSection(makeReplyBlock(from, to, subj));
+    doc.addSection(section);
+
+    docx.Packer.toBlob(doc).then(blob => {
+        saveAs(blob, filename);
+        console.log("document downloaded");
+    });
+}
+
+function makeTextRun(text, font, size) {
+    return new docx.TextRun({
+        text: text,
+        font: font,
+        size: size,
+    });
+}
+
+function makeDefaultTextRun(text) {
+    return new docx.TextRun({
+        text: text,
+        font: "Times New Roman",
+        size: 24,
+    });
+}
+
+function makeReplyBlock(from, to, subj) {
+   return [
+       new docx.Paragraph({
+           children: [makeDefaultTextRun("From:  " + from)],
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun("To:      " + to)],
+        }),
+        new docx.Paragraph({text: ""}),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun("Subj:   " + subj.toUpperCase())],
+        }),
+        new docx.Paragraph({text: ""}), 
+    ];
+}
+
+function makeHeaderSection(ssic, replyCode, date) {
+   return [
+        new docx.Paragraph({text: ""}),
+        new docx.Paragraph({
+            children: [makeTextRun("IN REPLY REFER TO:", "Times New Roman", 10)],
+            indent: {
+                start: "5.19in",
+            }
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun(ssic)],
+            indent: {
+                start: "5.19in",
+            }
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun(replyCode)],
+            indent: {
+                start: "5.19in"
+            }
+        }),
+        new docx.Paragraph({
+            children: [makeDefaultTextRun(date)],
+            indent: {
+                start: "5.19in"
+            }
+        }),
+        new docx.Paragraph({text: ""}),
+   ];
+}
+
 function GetDynamicViaTextBox(value){
     return '<input name = "ViaTextBox" size="60" type="text" value = "' + value + '" >' +
             '<input type="button" value="Remove" onclick = "RemoveViaTextBox(this)" >'
@@ -144,3 +242,4 @@ function RemoveBodyTextBox(div) {
   }
 
 });
+
