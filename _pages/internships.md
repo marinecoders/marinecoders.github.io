@@ -1,7 +1,7 @@
 ---
 permalink: /internships/
 title: "AF Coding Internships"
-toc: true
+toc: false
 ---
   
   
