@@ -7,7 +7,7 @@ toc: true
 **Deputy Commandant Information, IC4, will release a MARADMIN to formally solicit this residency opportunity to all Marines! We will post immediately when available.  The information below is what was officially published by Platform One [here](https://medium.com/@platformone/call-for-6-month-residency-candidates-d0af121ddb0b)**
 
 ### Platform One Fall Residency
-#### What do I need to do to participate?
+## What do I need to do to participate?
 Are you ready to take the leap? Consider joining Platform One and the DevSecOps Initiative in the experience of a lifetime by joining us for a 6-month remote Residency. Here’s your chance to learn a skill, hone a talent, experience a different culture and put your fingerprints on the transformation of DoD in one of the most crucial moments yet.
 
 ## Consider becoming a Resident with Platform One and the DevSecOps Initiative.
@@ -21,21 +21,24 @@ Please note that at this time, we cannot accept industry or non-government appli
 * Executive & Chief Support Staff
 * Acquisitions & Contracting
 * Dojo DoD / Culture / Engagement
-### To apply:
+
+## To apply:
 Write a single page Letter of Intent (on a separate document, not the body of email) detailing your:
 Your current role/rank/organization
 * Job preference of choice (from above categories)
 * Background
 * Experiences
 * Interests and goals
-### WHY this opportunity is important to you in further developing your
+
+## WHY this opportunity is important to you in further developing your
 * DevSecOps knowledge
 * What weapon systems you hope to support in the future?
-### Title your email subject line: “6-Month Residency Program Application”
+
+## Title your email subject line: “6-Month Residency Program Application”
 * Attach your Letter of Intent
 * CC Your Supervisor (Required)
 * Send your email to futures@afwerx.af.mil
-### Additional details:
+## Additional details:
 You must be available to start your 6-month residency between August 30 and October 30, 2020.
 Applicants who are selected for the next step will receive an invitation for an interview.
 Questions? Please contact Molly Cain at molly.cain@afwerx.af.mil.
