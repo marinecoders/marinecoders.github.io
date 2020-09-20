@@ -1,5 +1,5 @@
 ---
-permalink: /internships/
+permalink: /internships-archive/
 title: "AF Coding Internships"
 toc: false
 ---
