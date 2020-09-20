@@ -1,5 +1,5 @@
 ---
-permalink: /internships/p1/
+permalink: /internships/
 title: "Department of Defense Coding Internships - Platform One & Nodes"
 toc: true
 ---
