@@ -1,38 +1,43 @@
 ---
 permalink: /internships/p1/
-title: "AF Coding Internships - Platform One & Nodes"
+title: "Department of Defense Coding Internships - Platform One & Nodes"
 toc: true
 ---
 
-### Platform One & Nodes Details
-#### What do I need to do to participate?
-Please fill out the Google sheet that was distributed to sign up. If you cannot access the sheet, please reach out to both Eric Robinson (eric.robinson@afwerx.af.mil) and Becky Mantell (becky.mantell@galvanize.com) to indicate your interest in participating. From there, you will be set up with Prep Work on Galvanize’s Learning Management platform (Learn) to begin course prep work. Finally, you will be asked to take an assessment to determine if you are ready to begin the course. 
+**Deputy Commandant Information, IC4, will release a MARADMIN to formally solicit this residency opportunity to all Marines! We will post immediately when available.  The information below is what was officially published by Platform One [here](https://medium.com/@platformone/call-for-6-month-residency-candidates-d0af121ddb0b)**
 
-#### How long is the program?
-The course is 12 Weeks. Depending on what your Commander chooses you can then have an internship portion for another 6 months full time or 3 months full time, followed by 6 months part time.
- 
-#### Is the course 8hrs a day 5 days a week?
-Yes (Monday-Friday). 0800 - 1700 CST.
- 
-#### Where is the course located? 
-The first course will be fully remote, locations may be added for future courses. 
- 
-#### What is the goal of the course? 
-By the end of this course you will be able to build and deploy full stack web applications.
- 
-#### What are the prerequisites to take this course? 
-The course expects a basic level of javascript knowledge in order to start, this can all be self taught via the prep work that was provided. If you are successful in the prep work, then you should be able to pass the entry assessment.
- 
-#### Do I need to complete the prep work? 
-The prep work is used to make sure that anyone with sufficient drive is able to show their ability to learn the baseline knowledge needed for the course. If you are already proficient in JavaScript, you can take the assessment without doing the prep work, or just do parts of the prep work that you want to brush up on.
- 
-#### Required hardware/software? 
-* A stable, broadband Internet connection
-* Latest (or two versions back) MacOS OR Windows running Windows Subsystem for Linux
-* A webcam
-* A microphone (internal works, external works better)
-* Headphones (headset preferred)
-* Mattermost desktop app
-* Node.js (we can help you install)
-* Zoom desktop app
+### Platform One Fall Residency
+#### What do I need to do to participate?
+Are you ready to take the leap? Consider joining Platform One and the DevSecOps Initiative in the experience of a lifetime by joining us for a 6-month remote Residency. Here’s your chance to learn a skill, hone a talent, experience a different culture and put your fingerprints on the transformation of DoD in one of the most crucial moments yet.
+
+## Consider becoming a Resident with Platform One and the DevSecOps Initiative.
+Beginning today, all interested candidates are invited apply for our 100% remote (we fund any required travel during your time with us), 6-month residency program.
+This is one of our most popular programs — and one of our personal favorites as well. You will be immersed in our fast-paced, #missionobsessed and fun culture. You will be critical to the success of our growing network of committed, value-driven and collaborative organizations and individuals working toward shared goals.
+Please note that at this time, we cannot accept industry or non-government applicants. All military and civilian (federal) individuals in the following subject areas are encouraged to apply:
+* Software Development
+* Product Management
+* User-Centric Design
+* Cybersecurity
+* Executive & Chief Support Staff
+* Acquisitions & Contracting
+* Dojo DoD / Culture / Engagement
+### To apply:
+Write a single page Letter of Intent (on a separate document, not the body of email) detailing your:
+Your current role/rank/organization
+* Job preference of choice (from above categories)
+* Background
+* Experiences
+* Interests and goals
+### WHY this opportunity is important to you in further developing your
+* DevSecOps knowledge
+* What weapon systems you hope to support in the future?
+### Title your email subject line: “6-Month Residency Program Application”
+* Attach your Letter of Intent
+* CC Your Supervisor (Required)
+* Send your email to futures@afwerx.af.mil
+### Additional details:
+You must be available to start your 6-month residency between August 30 and October 30, 2020.
+Applicants who are selected for the next step will receive an invitation for an interview.
+Questions? Please contact Molly Cain at molly.cain@afwerx.af.mil.
+Also, veteran Marine Platform One residents, collin.chew@afwerx.af.mil, or andrew.hutcheon@usmc.mil, can answer any additional questions you may have!
 
