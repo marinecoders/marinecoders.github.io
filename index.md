@@ -37,7 +37,7 @@ feature_row:
 {% include paginator.html %}
 
 ## Team Guidelines
-* We build code to help Marines not our Pros/Cons or FITREPS!
+* We build code to help Marines, not our Pros/Cons or FITREPS!
 * We open source as much as possible [cio.gov](https://sourcecode.cio.gov/OSS/) [code.mil](https://code.mil)
 * We are responsible users of existing open source code
 * We help each other
