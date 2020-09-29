@@ -1,3 +1,26 @@
+const docx = require("docx");
+const fs = require("fs");
+
+function generate(){
+  //const doc = new docx.Document();
+
+  //const image = docx.Media.addImage(doc, fs.readFileSync("../../images/DoD Header Seal.png"));
+  /*doc.addSection({
+    children: [new docx.Paragraph(image)],
+  });
+  */
+
+  console.log(document.getElementById("filename").value);
+
+  /*docx.Packer.toBlob(doc).then(blob => {
+    saveAs(blob, "myfile");
+    console.log("document downloaded");
+  });
+  */
+}
+
+module.exports = {generateDoc: generate};
+/*
 // this is a test
 function generate() {
     var filename = document.getElementById("filename").value;
@@ -298,3 +321,4 @@ function AddBodyTextBox() {
 function RemoveBodyTextBox(div) {
     document.getElementById("BodyTextBoxContainer").removeChild(div.parentNode);
 }
+*/
