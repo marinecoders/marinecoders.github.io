@@ -1,100 +1,64 @@
-// this is a test
-function generate() {
-    var filename = document.getElementById("filename").value;
-    if (filename === "") {
-        filename = "NavalLetterGeneratedFile.docx";
+const docx = require("docx");
+const fs = require("fs");
+
+module.exports = {generateDoc: generate, addVia: AddViaTextBox,
+  addRef: AddRefTextBox, addEnc: AddEnclTextBox, addBody: AddBodyTextBox,
+  addCopy: AddCopyTextBox, showHideDiv: ShowHideDiv, removeVia: RemoveViaTextBox,
+  removeEnc: RemoveEnclTextBox, removeRef: RemoveRefTextBox, removeBody: RemoveBodyTextBox,
+  removeCopy: RemoveCopyTextBox}
+
+function generate(){
+  var filename = document.getElementById("filename").value;
+  if (filename === "") {
+    filename = "NavalLetterGeneratedFile.docx";
+  }
+  if (!filename.endsWith(".docx")) {
+    filename = filename + ".docx";
+  }
+
+  const doc = new docx.Document();
+
+  var section = {
+    properties: {},
+    children: [],
+    margins: {
+      top: "1in",
+      bottom: "1in",
+      right: "1in",
+      left: "1in",
     }
-    if (!filename.endsWith('.docx')) {
-        filename = filename + '.docx';
-    }
-    var ssic = document.getElementById("ssic").value;
-    var replyCode = document.getElementById("reply").value;
-    var date = document.getElementById("date").value;
-    var from = document.getElementById("from").value;
-    var to = document.getElementById("to").value;
-    var subj = document.getElementById("subj").value;
-    var sig = document.getElementById("sig").value;
+  };
 
-    const doc = new docx.Document();
+  section.headers = {
+    default: new docx.Header({
+      children: makeHeaderEntities(doc),
+    }),
+  };
 
-    var section = {
-        properties: {},
-        children: [],
-        margins: {
-            top: "1in",
-            bottom: "1in",
-            right: "1in",
-            left: "1in",
-        }
-    };
+  // document content
+  section.children.push.apply(section.children, makeHeaderSection(document.getElementById("ssic").value,
+    document.getElementById("reply").value, document.getElementById("date").value));
+  section.children.push.apply(section.children, makeReplyBlock(document.getElementById("from").value,
+    document.getElementById("to").value, document.getElementById("subj").value));
 
-    section.headers = {
-        default: new docx.Header({
-            children: makeHeaderEntities(),
-        }),
-    };
+  // references, enclosures, vias here
 
-    section.children.push.apply(section.children, makeHeaderSection(ssic, replyCode, date));
-    section.children.push.apply(section.children, makeReplyBlock(from, to, subj));
+  bodyTexts = Array.from(document.querySelectorAll('[id=BodyBlocks]'));
+  bodyLevels = Array.from(document.querySelectorAll('[id=BodyLevel]'));
+  section.children.push.apply(section.children, makeBodies(bodyTexts, bodyLevels));
 
-    // put the references and enclosures piece here
+  section.children.push.apply(section.children, makeSignatureSection(document.getElementById("sig").value));
 
-    bodyTexts = Array.from(document.querySelectorAll('[id=BodyBlocks]'));
-    bodyLevels = Array.from(document.querySelectorAll('[id=BodyLevel]'));
-    section.children.push.apply(section.children, makeBodies(bodyTexts, bodyLevels));
+  // copy to's here
+  
+  doc.addSection(section);
 
-    section.children.push.apply(section.children, makeSignatureSection(sig));
-    
-    
-    doc.addSection(section);
-
-    docx.Packer.toBlob(doc).then(blob => {
-        saveAs(blob, filename);
-        console.log("document downloaded");
-    });
+  docx.Packer.toBlob(doc).then(blob => {
+    saveAs(blob, filename);
+    console.log("document downloaded");
+  });
 }
 
-function makeHeaderEntities() {
-    // return a list
-    entities = [];
-    entities.push(new docx.Paragraph({
-        children: [new docx.TextRun({
-            text: "UNITED STATES MARINE CORPS",
-            bold: true,
-            font: "Times New Roman",
-            size: 20,
-        })],
-        alignment: docx.AlignmentType.CENTER,
-    }));
-    entities.push(new docx.Paragraph({
-        children: [new docx.TextRun({
-            text: "U.S. MARINE CORPS FORCES CYBERSPACE COMMAND",
-            font: "Times New Roman",
-            size: 16,
-        })],
-        alignment: docx.AlignmentType.CENTER,
-    }));
-    entities.push(new docx.Paragraph({
-        children: [new docx.TextRun({
-            text: "9800 SAVAGE ROAD SUITE 6410",
-            font: "Times New Roman",
-            size: 16,
-            alignment: docx.AlignmentType.CENTER,
-        })],    
-        alignment: docx.AlignmentType.CENTER,
-    }));
-    entities.push(new docx.Paragraph({
-        children: [new docx.TextRun({
-            text: "FORT GEORGE G. MEADE, MD 20755-6000",
-            font: "Times New Roman",
-            size: 16,
-            alignment: docx.AlignmentType.CENTER,
-        })],
-        alignment: docx.AlignmentType.CENTER,
-    })); 
-    return entities;
-}
-    
 function makeTextRun(text, font, size) {
     return new docx.TextRun({
         text: text,
@@ -216,9 +180,64 @@ function makeHeaderSection(ssic, replyCode, date) {
    ];
 }
 
+function makeHeaderEntities(doc) {
+  // return a list
+  entities = [];
+  const image = docx.Media.addImage(doc, fs.readFileSync("../../images/DoD Header Seal.png"), 101.92, 100, {
+    floating: {
+      horizontalPosition: {
+        offset: 457200,
+      },
+      verticalPosition: {
+        offset: 457200,
+      },
+    },
+  });
+
+  entities.push(new docx.Paragraph(image));
+
+  entities.push(new docx.Paragraph({
+      children: [new docx.TextRun({
+          text: "UNITED STATES MARINE CORPS",
+          bold: true,
+          font: "Times New Roman",
+          size: 20,
+      })],
+      alignment: docx.AlignmentType.CENTER,
+  }));
+  entities.push(new docx.Paragraph({
+      children: [new docx.TextRun({
+          text: "U.S. MARINE CORPS FORCES CYBERSPACE COMMAND",
+          font: "Times New Roman",
+          size: 16,
+      })],
+      alignment: docx.AlignmentType.CENTER,
+  }));
+  entities.push(new docx.Paragraph({
+      children: [new docx.TextRun({
+          text: "9800 SAVAGE ROAD SUITE 6410",
+          font: "Times New Roman",
+          size: 16,
+          alignment: docx.AlignmentType.CENTER,
+      })],    
+      alignment: docx.AlignmentType.CENTER,
+  }));
+  entities.push(new docx.Paragraph({
+      children: [new docx.TextRun({
+          text: "FORT GEORGE G. MEADE, MD 20755-6000",
+          font: "Times New Roman",
+          size: 16,
+          alignment: docx.AlignmentType.CENTER,
+      })],
+      alignment: docx.AlignmentType.CENTER,
+  })); 
+  return entities;
+}
+
+
 function GetDynamicViaTextBox(value){
     return '<input name = "ViaTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "RemoveViaTextBox(this)" >'
+            '<input type="button" value="Remove" onclick = "generatorBundle.removeVia(this)" >'
 }
 
 function ShowHideDiv(Id, Id2) {
@@ -242,7 +261,7 @@ function RemoveViaTextBox(div) {
 //Ref Text Boxes
 function GetDynamicRefTextBox(value){
     return '<input name = "RefTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "RemoveRefTextBox(this)" >'
+            '<input type="button" value="Remove" onclick = "generatorBundle.removeRef(this)" >'
 }
 function AddRefTextBox() {
     var div = document.createElement('DIV');
@@ -257,7 +276,7 @@ function RemoveRefTextBox(div) {
 //Encl Text Boxes
 function GetDynamicEnclTextBox(value){
     return '<input name = "EnclTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "RemoveEnclTextBox(this)" >'
+            '<input type="button" value="Remove" onclick = "generatorBundle.removeEnc(this)" >'
 }
 function AddEnclTextBox() {
     var div = document.createElement('DIV');
@@ -272,7 +291,7 @@ function RemoveEnclTextBox(div) {
 //Copy Text Boxes
 function GetDynamicCopyTextBox(value){
     return '<input name = "CopyTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "RemoveCopyTextBox(this)" >'
+            '<input type="button" value="Remove" onclick = "generatorBundle.removeCopy(this)" >'
 }
 function AddCopyTextBox() {
     var div = document.createElement('DIV');
@@ -286,7 +305,7 @@ function RemoveCopyTextBox(div) {
 
 //Body Text Boxes
 function GetDynamicBodyTextBox(value){
-    return '<textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks"> </textarea>' + '<label for = "bodylvl"> Select the body level: </label>' + '<select id="BodyLevel" name="BodyLevel" >' + '<option SELECTED value=1>1</option>' + '<option value=2>2</option>' + '<option value=3>3</option>' + '</select>' + '<input type="button" value="Remove Paragraph" onclick = "RemoveBodyTextBox(this)" >' 
+    return '<textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks"> </textarea>' + '<label for = "bodylvl"> Select the body level: </label>' + '<select id="BodyLevel" name="BodyLevel" >' + '<option SELECTED value=1>1</option>' + '<option value=2>2</option>' + '<option value=3>3</option>' + '</select>' + '<input type="button" value="Remove Paragraph" onclick = "generatorBundle.removeBody(this)" >' 
 }
 
 function AddBodyTextBox() {

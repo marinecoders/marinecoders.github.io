@@ -22,10 +22,14 @@ Useful links to get you started - no federal endorsement intended or implied. Co
 * [iOS for Beginners](https://www.raywenderlich.com/ios/paths/learn)
 * [iOS Tutorial from Apple](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/)
 
+### Daily Practice
+* [LeetCode](https://leetcode.com/)
 
 ### Back End
 * [DigitalU](http://digitalu.af.mil)
 
+### Transitioning Service Members
+* [Operation Code](https://operationcode.org)
 
 ### Platforms
 * [Kubernetes - AF Overview](https://software.af.mil/training/kubernetes/)
