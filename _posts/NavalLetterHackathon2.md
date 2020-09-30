@@ -10,6 +10,6 @@ Marine Coders hosted its second hackathon to finalize the Naval Letter Format Ge
   The application is now accessible here: 
 [Naval Letter Format Generator](https://naval-letter.il2.dsop.io)
 
-In addition to the work on the Naval Letter Format Generator, the team updated content and developed a plan to implement a subscription mailing list on the Marine Coders static site](https://marinecoders.github.io/).
+In addition to the work on the Naval Letter Format Generator, the team updated content and developed a plan to implement a subscription mailing list on the [Marine Coders static site](https://marinecoders.github.io/).
 
 ![Marine Coders Naval Letter Format Hackathon](/images/hackathon_group.jpg){: .align-center}  
