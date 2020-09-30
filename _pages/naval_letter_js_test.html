@@ -38,14 +38,14 @@
 
     <!-- Destination e-mail address? -->
            
-    <!-- Header Information -->
+    <!-- Header Address Information -->
     <fieldset>
         <legend > Address Information: </legend>
         <label>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon3">Line 1 (Unit Name):</span>
-            <input class="form-control" type="text" name="SSIC" id="ssic" size="30" maxlength="4">
+            <input class="form-control" type="text" name="line1" id="line1" size="30" >
             </div>
         </div>
         </label>
@@ -54,7 +54,7 @@
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon3">Line 2 (Address Line 1):</span>
-            <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="10">
+            <input class="form-control" type="text" name="line2" id="line2" size="30" >
                 </div>
                 </div>
         </label>
@@ -64,7 +64,7 @@
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon3">Line 3 (Address Line 2):</span>
-            <input class="form-control" type="text" name="Date" id="date" size="30" maxlength="9">
+            <input class="form-control"  type="text" name="line3" id="line3" size="30" >
         </div>
     </div>
                 </label>
@@ -89,7 +89,7 @@
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter Your Reply Code:</span>
-                    <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="10">
+                    <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="13">
                         </div>
                         </div>
                 </label>
@@ -168,7 +168,7 @@
                     <label >
                         Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
             <input id="btnAdd" type="button" value="Add Ref" onclick="generatorBundle.addRef()" />
-		<input class="form-control" name = "RefTextBox" size="60" type="text"/>
+		<input class="form-control" name = "RefTextBox"  size="60" type="text"/>
 
 		</br>
 		</div>
@@ -182,7 +182,7 @@
                 <label >
                    Enter The Enclosures (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
 		<input id="btnAdd" type="button" value="Add Encl" onclick="generatorBundle.addEnc()" />
-		<input class="form-control" name = "EnclTextBox" size="60" type="text"/>
+		<input class="form-control" name = "EnclTextBox"  size="60" type="text"/>
 
 		</br>
 		</div>

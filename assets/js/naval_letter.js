@@ -1,62 +1,85 @@
 const docx = require("docx");
 const fs = require("fs");
 
-module.exports = {generateDoc: generate, addVia: AddViaTextBox,
-  addRef: AddRefTextBox, addEnc: AddEnclTextBox, addBody: AddBodyTextBox,
-  addCopy: AddCopyTextBox, showHideDiv: ShowHideDiv, removeVia: RemoveViaTextBox,
-  removeEnc: RemoveEnclTextBox, removeRef: RemoveRefTextBox, removeBody: RemoveBodyTextBox,
-  removeCopy: RemoveCopyTextBox}
+module.exports = {
+    generateDoc: generate,
+    addVia: AddViaTextBox,
+    addRef: AddRefTextBox,
+    addEnc: AddEnclTextBox,
+    addBody: AddBodyTextBox,
+    addCopy: AddCopyTextBox,
+    showHideDiv: ShowHideDiv,
+    removeVia: RemoveViaTextBox,
+    removeEnc: RemoveEnclTextBox,
+    removeRef: RemoveRefTextBox,
+    removeBody: RemoveBodyTextBox,
+    removeCopy: RemoveCopyTextBox
+}
 
-function generate(){
-  var filename = document.getElementById("filename").value;
-  if (filename === "") {
-    filename = "NavalLetterGeneratedFile.docx";
-  }
-  if (!filename.endsWith(".docx")) {
-    filename = filename + ".docx";
-  }
-
-  const doc = new docx.Document();
-
-  var section = {
-    properties: {},
-    children: [],
-    margins: {
-      top: "1in",
-      bottom: "1in",
-      right: "1in",
-      left: "1in",
+function generate() {
+    var filename = document.getElementById("filename").value;
+    if (filename === "") {
+        filename = "NavalLetterGeneratedFile.docx";
     }
-  };
+    if (!filename.endsWith(".docx")) {
+        filename = filename + ".docx";
+    }
 
-  section.headers = {
-    default: new docx.Header({
-      children: makeHeaderEntities(doc),
-    }),
-  };
+    const doc = new docx.Document();
 
-  // document content
-  section.children.push.apply(section.children, makeHeaderSection(document.getElementById("ssic").value,
-    document.getElementById("reply").value, document.getElementById("date").value));
-  section.children.push.apply(section.children, makeReplyBlock(document.getElementById("from").value,
-    document.getElementById("to").value, document.getElementById("subj").value));
+    var section = {
+        properties: {},
+        children: [],
+        margins: {
+            top: "1in",
+            bottom: "1in",
+            right: "1in",
+            left: "1in",
+        }
+    };
 
-  // references, enclosures, vias here
+    section.headers = {
+        default: new docx.Header({
+            children: makeHeaderEntities(doc,
+                document.getElementById("line1").value,
+                document.getElementById("line2").value,
+                document.getElementById("line3").value
+            ),
+        }),
+    };
 
-  bodyTexts = Array.from(document.querySelectorAll('[id=BodyBlocks]'));
-  bodyLevels = Array.from(document.querySelectorAll('[id=BodyLevel]'));
-  section.children.push.apply(section.children, makeBodies(bodyTexts, bodyLevels));
+    // document content
+    section.children.push.apply(section.children, makeHeaderSection(
+        document.getElementById("ssic").value,
+        document.getElementById("reply").value,
+        document.getElementById("date").value
+    ));
+    section.children.push.apply(section.children, makeReplyBlock(
+        document.getElementById("from").value,
+        document.getElementById("to").value,
+        document.getElementById("subj").value,
+        //Get Vias, there can be multiple vias
+        document.getElementsByName("ViaTextBox"),
+        //Get Refs, there can be multiple refs
+        document.getElementsByName("RefTextBox"),
+        //Get Enclosures, there can be multiple encls.
+        document.getElementsByName("EnclTextBox")
+    ));
 
-  section.children.push.apply(section.children, makeSignatureSection(document.getElementById("sig").value));
+    // references, enclosures, vias here
+    bodyTexts = Array.from(document.querySelectorAll('[id=BodyBlocks]'));
+    bodyLevels = Array.from(document.querySelectorAll('[id=BodyLevel]'));
+    section.children.push.apply(section.children, makeBodies(bodyTexts, bodyLevels));
 
-  // copy to's here
-  
-  doc.addSection(section);
+    section.children.push.apply(section.children, makeSignatureSection(document.getElementById("sig").value));
 
-  docx.Packer.toBlob(doc).then(blob => {
-    saveAs(blob, filename);
-    console.log("document downloaded");
-  });
+    // copy to's here
+    doc.addSection(section);
+
+    docx.Packer.toBlob(doc).then(blob => {
+        saveAs(blob, filename);
+        console.log("document downloaded");
+    });
 }
 
 function makeTextRun(text, font, size) {
@@ -78,8 +101,8 @@ function makeDefaultTextRun(text) {
 function makeSignatureSection(sig) {
     paragraphs = [];
     // two returns (body paragaph will leave one return above)
-    paragraphs.push(new docx.Paragraph({text: ""}));
-    paragraphs.push(new docx.Paragraph({text: ""}));
+    paragraphs.push(new docx.Paragraph({ text: "" }));
+    paragraphs.push(new docx.Paragraph({ text: "" }));
     paragraphs.push(new docx.Paragraph({
         children: [makeDefaultTextRun(sig)],
         indent: {
@@ -90,7 +113,7 @@ function makeSignatureSection(sig) {
 }
 
 function makeBodies(bodyTexts, bodyLevels) {
-    bodyZipped = bodyTexts.map(function(e, i) {
+    bodyZipped = bodyTexts.map(function (e, i) {
         return [e, bodyLevels[i]];
     });
 
@@ -129,29 +152,100 @@ function makeBodyPara(paragraphs, start, value) {
         children: [makeDefaultTextRun(start + value)],
     });
     paragraphs.push(para);
-    paragraphs.push(new docx.Paragraph({text: ""}));
+    paragraphs.push(new docx.Paragraph({ text: "" }));
 
 }
 
-function makeReplyBlock(from, to, subj) {
-   return [
-       new docx.Paragraph({
-           children: [makeDefaultTextRun("From:  " + from)],
-        }),
-        new docx.Paragraph({
-            children: [makeDefaultTextRun("To:      " + to)],
-        }),
-        new docx.Paragraph({text: ""}),
-        new docx.Paragraph({
-            children: [makeDefaultTextRun("Subj:   " + subj.toUpperCase())],
-        }),
-        new docx.Paragraph({text: ""}), 
-    ];
+function makeReplyBlock(from, to, subj, vias, refs, encls) {
+    var output = [];
+    
+
+    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("From:      " + to)], }));
+    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("To:      " + to)], }));
+
+    //Add Vias
+    //Check if via yes box is checked
+    if (document.getElementById("rad1").checked) {
+        console.log("Num vias detected: " + vias.length );
+        for (i = 0; i < vias.length; i++) { //Add a via line for every via Box
+            if(vias.length == 1) {//If only 1 via, no numbers
+                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Via:     " + vias[i].value)], }));
+            }
+            else if(vias.length > 1) {//2 or more vias, add numbers
+                if(i == 0) { 
+                    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Via:     (" + (i+1) + ") " + vias[i].value)], }));
+                } else {
+                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ") " + vias[i].value)], 
+                    indent: {
+                        start: ".5in",
+                    }
+            }));
+                }
+            }
+        }
+    }
+    //Add Refs
+    //Check if refs yes box is checked
+    if (document.getElementById("rad3").checked) {
+        console.log("Num refs detected: " + refs.length );
+        for (i = 0; i < refs.length; i++) { //Add a via line for every via Box
+            var outputLetterBlock;
+
+            if(i < 26) {
+                var letter = String.fromCharCode(i+97); //Add 97 to get to ASCI code a, which is (97)
+                outputLetterBlock = "(" + letter + ")";
+            }
+            if(i >= 26) {
+                var column = Math.floor(i / 26); 
+                var remainder = i % 26;
+                var letter = String.fromCharCode(remainder+97); //Add 97 to get to ASCI code a, which is (97)
+                outputLetterBlock = "(";
+                for(y = 0; y < column; y++) {
+                    outputLetterBlock += "a";
+                }
+                outputLetterBlock += letter + ")"
+            }
+            if(i == 0) { 
+                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Ref:    " + outputLetterBlock + refs[i].value)], }));
+            } else {
+            output.push(new docx.Paragraph({ children: [makeDefaultTextRun(outputLetterBlock + refs[i].value)], 
+                indent: {
+                    start: ".5in",
+                }
+        }));
+            }
+        }
+    }
+    
+
+    //Add enclosures
+    //Check if encls  yes box is checked
+    if (document.getElementById("rad5").checked) {
+        console.log("Num encls detected: " + encls.length );
+        output.push(new docx.Paragraph({ text: "" }));
+        for (i = 0; i < encls.length; i++) { //Add a via line for every via Box
+            if(i == 0) { 
+                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Encl:   (" + (i+1) + ") " + encls[i].value)], }));
+            } else {
+            output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ") " + encls[i].value)], 
+                indent: {
+                    start: ".5in",
+                }
+        }));
+            }
+        }
+    }
+
+    output.push(new docx.Paragraph({ text: "" }));
+    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Subj:   " + subj.toUpperCase())], }));
+    output.push(new docx.Paragraph({ text: "" }));
+    
+    return output;
 }
 
 function makeHeaderSection(ssic, replyCode, date) {
-   return [
-        new docx.Paragraph({text: ""}),
+    return [
+        new docx.Paragraph({ text: "" }),
         new docx.Paragraph({
             children: [makeTextRun("IN REPLY REFER TO:", "Times New Roman", 10)],
             indent: {
@@ -176,75 +270,75 @@ function makeHeaderSection(ssic, replyCode, date) {
                 start: "5.19in"
             }
         }),
-        new docx.Paragraph({text: ""}),
-   ];
+        new docx.Paragraph({ text: "" }),
+    ];
 }
 
-function makeHeaderEntities(doc) {
-  // return a list
-  entities = [];
-  const image = docx.Media.addImage(doc, fs.readFileSync("../../images/DoD Header Seal.png"), 101.92, 100, {
-    floating: {
-      horizontalPosition: {
-        offset: 457200,
-      },
-      verticalPosition: {
-        offset: 457200,
-      },
-    },
-  });
+function makeHeaderEntities(doc, line1, line2, line3) {
+    // return a list
+    entities = [];
+    const image = docx.Media.addImage(doc, fs.readFileSync("../../images/DoD Header Seal.png"), 101.92, 100, {
+        floating: {
+            horizontalPosition: {
+                offset: 457200,
+            },
+            verticalPosition: {
+                offset: 457200,
+            },
+        },
+    });
 
-  entities.push(new docx.Paragraph(image));
+    entities.push(new docx.Paragraph(image));
 
-  entities.push(new docx.Paragraph({
-      children: [new docx.TextRun({
-          text: "UNITED STATES MARINE CORPS",
-          bold: true,
-          font: "Times New Roman",
-          size: 20,
-      })],
-      alignment: docx.AlignmentType.CENTER,
-  }));
-  entities.push(new docx.Paragraph({
-      children: [new docx.TextRun({
-          text: "U.S. MARINE CORPS FORCES CYBERSPACE COMMAND",
-          font: "Times New Roman",
-          size: 16,
-      })],
-      alignment: docx.AlignmentType.CENTER,
-  }));
-  entities.push(new docx.Paragraph({
-      children: [new docx.TextRun({
-          text: "9800 SAVAGE ROAD SUITE 6410",
-          font: "Times New Roman",
-          size: 16,
-          alignment: docx.AlignmentType.CENTER,
-      })],    
-      alignment: docx.AlignmentType.CENTER,
-  }));
-  entities.push(new docx.Paragraph({
-      children: [new docx.TextRun({
-          text: "FORT GEORGE G. MEADE, MD 20755-6000",
-          font: "Times New Roman",
-          size: 16,
-          alignment: docx.AlignmentType.CENTER,
-      })],
-      alignment: docx.AlignmentType.CENTER,
-  })); 
-  return entities;
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: "UNITED STATES MARINE CORPS",
+            bold: true,
+            font: "Times New Roman",
+            size: 20,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: line1,
+            font: "Times New Roman",
+            size: 16,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: line2,
+            font: "Times New Roman",
+            size: 16,
+            alignment: docx.AlignmentType.CENTER,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    entities.push(new docx.Paragraph({
+        children: [new docx.TextRun({
+            text: line3,
+            font: "Times New Roman",
+            size: 16,
+            alignment: docx.AlignmentType.CENTER,
+        })],
+        alignment: docx.AlignmentType.CENTER,
+    }));
+    return entities;
 }
 
 
-function GetDynamicViaTextBox(value){
+function GetDynamicViaTextBox(value) {
     return '<input name = "ViaTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "generatorBundle.removeVia(this)" >'
+        '<input type="button" value="Remove" onclick = "generatorBundle.removeVia(this)" >'
 }
 
 function ShowHideDiv(Id, Id2) {
 
-	var chkYes = document.getElementById(Id);
-	var dvPassport = document.getElementById(Id2);
-	dvPassport.style.display = chkYes.checked ? "block" : "none";
+    var chkYes = document.getElementById(Id);
+    var dvPassport = document.getElementById(Id2);
+    dvPassport.style.display = chkYes.checked ? "block" : "none";
 }
 
 
@@ -253,15 +347,15 @@ function AddViaTextBox() {
     div.innerHTML = GetDynamicViaTextBox("");
     document.getElementById("ViaTextBoxContainer").appendChild(div);
 }
- 
+
 function RemoveViaTextBox(div) {
     document.getElementById("ViaTextBoxContainer").removeChild(div.parentNode);
 }
- 
+
 //Ref Text Boxes
-function GetDynamicRefTextBox(value){
+function GetDynamicRefTextBox(value) {
     return '<input name = "RefTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "generatorBundle.removeRef(this)" >'
+        '<input type="button" value="Remove" onclick = "generatorBundle.removeRef(this)" >'
 }
 function AddRefTextBox() {
     var div = document.createElement('DIV');
@@ -274,9 +368,9 @@ function RemoveRefTextBox(div) {
 }
 
 //Encl Text Boxes
-function GetDynamicEnclTextBox(value){
+function GetDynamicEnclTextBox(value) {
     return '<input name = "EnclTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "generatorBundle.removeEnc(this)" >'
+        '<input type="button" value="Remove" onclick = "generatorBundle.removeEnc(this)" >'
 }
 function AddEnclTextBox() {
     var div = document.createElement('DIV');
@@ -289,9 +383,9 @@ function RemoveEnclTextBox(div) {
 }
 
 //Copy Text Boxes
-function GetDynamicCopyTextBox(value){
+function GetDynamicCopyTextBox(value) {
     return '<input name = "CopyTextBox" size="60" type="text" value = "' + value + '" >' +
-            '<input type="button" value="Remove" onclick = "generatorBundle.removeCopy(this)" >'
+        '<input type="button" value="Remove" onclick = "generatorBundle.removeCopy(this)" >'
 }
 function AddCopyTextBox() {
     var div = document.createElement('DIV');
@@ -304,8 +398,8 @@ function RemoveCopyTextBox(div) {
 }
 
 //Body Text Boxes
-function GetDynamicBodyTextBox(value){
-    return '<textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks"> </textarea>' + '<label for = "bodylvl"> Select the body level: </label>' + '<select id="BodyLevel" name="BodyLevel" >' + '<option SELECTED value=1>1</option>' + '<option value=2>2</option>' + '<option value=3>3</option>' + '</select>' + '<input type="button" value="Remove Paragraph" onclick = "generatorBundle.removeBody(this)" >' 
+function GetDynamicBodyTextBox(value) {
+    return '<textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks"> </textarea>' + '<label for = "bodylvl"> Select the body level: </label>' + '<select id="BodyLevel" name="BodyLevel" >' + '<option SELECTED value=1>1</option>' + '<option value=2>2</option>' + '<option value=3>3</option>' + '</select>' + '<input type="button" value="Remove Paragraph" onclick = "generatorBundle.removeBody(this)" >'
 }
 
 function AddBodyTextBox() {
