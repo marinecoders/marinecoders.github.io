@@ -160,7 +160,7 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
     var output = [];
     
 
-    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("From:      " + to)], }));
+    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("From:  " + from)], }));
     output.push(new docx.Paragraph({ children: [makeDefaultTextRun("To:      " + to)], }));
 
     //Add Vias
