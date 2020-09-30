@@ -35,7 +35,7 @@ browserify naval_letter.js -t brfs --standalone generatorBundle > ./bundle.js
 
 Make sure you run this in the assets/js directory. Additionally, you will have
 to ensure that you have installed browserify and any npm modules that are used
-by the bundler. Currently, that is 'fs' and 'docx'.
+by the bundler. Currently, that is 'brfs' and 'docx'.
 
 Then, to run the server locally, you will use: 
 

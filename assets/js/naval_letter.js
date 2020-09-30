@@ -206,7 +206,7 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                 outputLetterBlock += letter + ")"
             }
             if(i == 0) { 
-                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Ref:    " + outputLetterBlock + refs[i].value)], }));
+                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Ref:    " + outputLetterBlock + " " + refs[i].value)], }));
             } else {
             output.push(new docx.Paragraph({ children: [makeDefaultTextRun(outputLetterBlock + refs[i].value)], 
                 indent: {
