@@ -8,7 +8,7 @@ Marine Coders hosted its second hackathon to finalize the Naval Letter Format Ge
 * Features added to include the "Via," "Ref," and "Encl."
 * Deployed the application to Platform One's production environment through a CI/CD pipeline.  Our application is now containerized is in compliance wiht the DoD DevSecOps Reference Design.  Thanks for the support, Jon!
   The application is now accessible here: 
-[Naval Letter Format Generator](https://naval-letter.pre-prod.dsop.io)
+[Naval Letter Format Generator](https://naval-letter.preprod.dsop.io/)
 
 In addition to the work on the Naval Letter Format Generator, the team updated content and developed a plan to implement a subscription mailing list on the [Marine Coders static site](https://marinecoders.github.io/).
 
