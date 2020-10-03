@@ -35,7 +35,11 @@ function generate() {
             bottom: "1in",
             right: "1in",
             left: "1in",
-        }
+        },
+        size:{
+            width:12240,//21.59cm US Letter size
+            height:15840,//27.94cm
+          },
     };
 
     section.headers = {
