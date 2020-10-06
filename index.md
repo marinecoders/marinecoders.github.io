@@ -36,14 +36,6 @@ feature_row:
 
 {% include paginator.html %}
 
-## Team Guidelines
-* We build code to help Marines, not our Pros/Cons or FITREPS!
-* We open source as much as possible [cio.gov](https://sourcecode.cio.gov/OSS/) [code.mil](https://code.mil)
-* We are responsible users of existing open source code
-* We help each other
-* Cybersecurity is important
-
-
 ## Have questions or want to join us?
 * Secure Chat: Our preferred communication method is via Platform One's Mattermost chat service.  First, [register for a Platform One account](https://login.dsop.io).  Once your account is setup, join the [Marine Coders' Chat Channel](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr).  If you already have an account, you can access [the Marine Coders chat channel](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr) directly.
 * E-Mail: Send an email to collin.chew [at] usmc.mil / andrew.hutcheon [at] usmc.mil.  We would love to hear from you!
