@@ -7,4 +7,5 @@ Please email peyton.cleveland.1@us.af.mil if you are interested.
 Testers must apply soonest! There are only limited licenses remaining.
 
 [Cloud Academy](https://cloudacademy.com/)
+
 [Digital U Information](https://www.fedscoop.com/air-forces-digital-university-free-technical-training/)
