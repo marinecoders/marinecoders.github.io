@@ -15,7 +15,7 @@
           <input name="entry.1938542609" type="organization" placeholder="Enter Organization"/>
           <br>
           <label>Role</label>
-          <input name="entry.1083838235" type="role" placeholder="Enter Role"/>
+          <input name="entry.1083838235" type="role" placeholder="Choose Role"/>
           <br>
           <input type="submit" value="Subscribe" />
 </form>
