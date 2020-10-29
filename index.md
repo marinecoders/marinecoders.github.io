@@ -1,7 +1,7 @@
 ---
 layout: splash
 feature_row:
-    - title: "Projects"
+  - title: "Projects"
     excerpt: "Learn more about our projects."
     url: "/projects/"
     btn_label: "Go to Projects"
