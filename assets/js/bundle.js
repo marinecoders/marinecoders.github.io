@@ -55,7 +55,7 @@ function generate() {
     };
 
     section.footer = {
-            default: new Footer({
+            default: new docx.Footer({
                 children: [
                     new Paragraph({
                         alignment: AlignmentType.CENTER,
