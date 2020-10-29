@@ -8,7 +8,7 @@ feature_row:
     btn_class: "btn--inverse"
   - title: "Join Marine Coders"
     excerpt: "Signup and join our mailing list!"
-    url: "/subscribe/"
+    url: "/_pages/subscribe/"
     btn_label: "Join"
     btn_class: "btn--inverse"
   - title: "Learn to Code"
