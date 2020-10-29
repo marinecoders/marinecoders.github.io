@@ -52,6 +52,26 @@ function generate() {
         }),
     };
 
+    section.footer = {
+            default: new Footer({
+                children: [
+                    new Paragraph({
+                        alignment: AlignmentType.CENTER,
+                        children: [
+                            new TextRun({
+                                children: [PageNumber.CURRENT],
+                            }),
+                            
+                        ],
+                    }),
+                ],
+            }),
+        properties: {
+            pageNumberStart: 2,
+            pageNumberFormatType: PageNumberFormat.DECIMAL,
+        },
+    }
+
     // document content
     section.children.push.apply(section.children, makeHeaderSection(
         document.getElementById("ssic").value,
