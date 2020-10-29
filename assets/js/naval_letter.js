@@ -281,7 +281,7 @@ function makeHeaderSection(ssic, replyCode, date) {
 function makeHeaderEntities(doc, line1, line2, line3) {
     // return a list
     entities = [];
-    const image = docx.Media.addImage(doc, fs.readFileSync("../../images/DoD Header Seal.png"), 101.92, 100, {
+    const image = docx.Media.addImage(doc, fs.readFileSync("../../images/DODb1.png"), 101.92, 100, {
         floating: {
             horizontalPosition: {
                 offset: 457200,
