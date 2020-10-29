@@ -6,7 +6,9 @@ toc: true
 
 **Deputy Commandant Information, IC4, will release a MARADMIN to formally solicit this residency opportunity to all Marines! We will post immediately when available.  The information below is what was officially published by Platform One [here](https://medium.com/@platformone/call-for-6-month-residency-candidates-d0af121ddb0b)**
 
-#### Platform One Fall Residency / Fellowship Program
+#### Update 10/5/2020, MARADMIN Posted [here](https://www.marines.mil/News/Messages/Messages-Display/Article/2371787/department-of-defense-platform-one-fellowship-opportunity/)
+
+## Platform One Fall Residency / Fellowship Program
 
 ## What do I need to do to participate?
 Are you ready to take the leap? Consider joining Platform One and the DevSecOps Initiative in the experience of a lifetime by joining us for a 6-month remote Residency. Here’s your chance to learn a skill, hone a talent, experience a different culture and put your fingerprints on the transformation of DoD in one of the most crucial moments yet.

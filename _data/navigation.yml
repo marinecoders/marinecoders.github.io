@@ -1,4 +1,6 @@
 main:
+    - title: "About"
+      url: /about/
     - title: "Opportunities"
       url: /internships/
     - title: "Projects"
