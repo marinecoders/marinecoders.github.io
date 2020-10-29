@@ -18,5 +18,5 @@
           <input name="entry.1312101970" type="role" placeholder="Enter Role"/>
           <br>
           <input type="submit" value="Subscribe" />
- /form>
+</form>
 
