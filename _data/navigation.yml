@@ -2,7 +2,7 @@ main:
     - title: "About"
       url: /about/
     - title: "Posts"
-      url: /posts/
+      url: /_posts/posts/
     - title: "Opportunities"
       url: /internships/
     - title: "Projects"
