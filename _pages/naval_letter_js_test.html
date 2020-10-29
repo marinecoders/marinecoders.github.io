@@ -46,7 +46,11 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon3">Line 1 (Unit Name):</span>
             <input class="form-control" type="text" name="line1" id="line1" size="30" >
+            <div class="input-group-append">
+                <span class="input-group-text"><a href="https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=744" target="_blank">RUC/MCC Table</a></span>
+              </div>
             </div>
+            
         </div>
         </label>
         <br/>
@@ -75,30 +79,30 @@
 
             <!-- Header Information -->
             <fieldset>
-                <legend > Header Information: </legend>
+                <legend> Header Information: </legend>
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter your SSIC:</span>
-                    <input class="form-control" type="text" name="SSIC" id="ssic" size="30" maxlength="4">
+                            <input class="form-control" type="text" name="SSIC" id="ssic" size="30" maxlength="4">
+                        </div>
+                        <div class="input-group-append">
+                            <span class="input-group-text"><a
+                                    href="https://www.marines.mil/Portals/1/Publications/SECNAV%20M-5210.2.pdf?ver=2019-08-20-091954-620"
+                                    target="_blank">SSIC Manual</a></span>
+                        </div>
                     </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text"><a href="https://www.marines.mil/Portals/1/Publications/SECNAV%20M-5210.2.pdf?ver=2019-08-20-091954-620" target="_blank">SSIC Manual</a></span>
-                      </div>
-                </div>
                 </label>
-                <br/>
-                
-                <br/>
+                <br />
                 <label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Enter Your Originator Code:</span>
-                    <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="13">
+                            <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="13">
                         </div>
-                        </div>
+                    </div>
                 </label>
-                <br/>
+                <br />
                 <label>
 
                     <div class="input-group mb-3">
@@ -181,7 +185,7 @@
 		<input type="radio" name="ifEncl" checked="checked" id="rad6" value="no" onclick="generatorBundle.showHideDiv('rad5','EnclTextBoxContainer')"> No</label>
 
 		<div style="display: none;" class="label" id="EnclTextBoxContainer">
-        <label>Enter The Enclosures (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED):
+        <label>Enter The Enclosures:
 		<input id="btnAdd" type="button" value="Add Encl" onclick="generatorBundle.addEnc()" />
 		<input class="form-control" name = "EnclTextBox"  size="60" type="text"/>
 

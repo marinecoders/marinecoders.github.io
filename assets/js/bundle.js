@@ -174,6 +174,11 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                 position: 720,
             },
         ],
+        indent: 
+            {
+                firstLine: "-720",
+                start: ".5in",
+            }
     }));
     output.push(new docx.Paragraph({ 
         children: [makeDefaultTextRun("To:"),makeDefaultTextRun("\t" + to)], 
@@ -183,6 +188,11 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                 position: 720,
             },
         ],
+        indent: 
+            {
+                firstLine: "-720",
+                start: ".5in",
+            }
     }));
 
     //Add Vias
@@ -201,6 +211,11 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                             position: 720,
                         },
                     ],
+                    indent: 
+                    {
+                        firstLine: "-720",
+                        start: ".5in",
+                    }
                     }));
             }
             else if(vias.length > 1) {//2 or more vias, add numbers
@@ -208,18 +223,34 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                     output.push(new docx.Paragraph({ 
                         children: [
                             makeDefaultTextRun("Via:"),     
-                            makeDefaultTextRun("\t(" + (i+1) + ") " + vias[i].value)], 
+                            makeDefaultTextRun("\t(" + (i+1) + ")\t" + vias[i].value)], 
                         tabStops: [
                             {
                                 type: docx.TabStopType.LEFT,
                                 position: 720,
                             },
+                            {
+                                type: docx.TabStopType.LEFT,
+                                position: 1046,
+                            },
                         ],
+                        indent: 
+                    {
+                        firstLine: "-1046",
+                        start: "1046",
+                    }
                         }));
                 } else {
-                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ") " + vias[i].value)], 
+                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ")\t" + vias[i].value)], 
+                tabStops: [
+                    {
+                        type: docx.TabStopType.LEFT,
+                        position: 1046,
+                    },
+                ],
                     indent: {
-                        start: ".5in",
+                        firstLine: "-326",
+                        start: "1046",
                     }
             }));
                 }
@@ -237,6 +268,11 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                 position: 720,
             },
         ],
+        indent: 
+            {
+                firstLine: "-720",
+                start: ".5in",
+            }
     }));
     
     //end subject
@@ -267,18 +303,28 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                 output.push(new docx.Paragraph({ 
                     children: [
                     makeDefaultTextRun("Ref:"), 
-                    makeDefaultTextRun("\t" + outputLetterBlock + " " + refs[i].value)],
+                    makeDefaultTextRun("\t" + outputLetterBlock + "\t" + refs[i].value)],
                     tabStops: [
                     {
                         type: docx.TabStopType.LEFT,
                         position: 720,
                     },
+                    {
+                        type: docx.TabStopType.LEFT,
+                        position: 1046,
+                    },
                 ],
+                indent: 
+                    {
+                        firstLine: "-1046",
+                        start: "1046",
+                    }
             }));
             } else {
-            output.push(new docx.Paragraph({ children: [makeDefaultTextRun(outputLetterBlock + refs[i].value)], 
+            output.push(new docx.Paragraph({ children: [makeDefaultTextRun(outputLetterBlock + "\t" + refs[i].value)], 
                 indent: {
-                    start: ".5in",
+                    firstLine: "-326",
+                    start: "1046",
                 }
         }));
             }
@@ -295,19 +341,28 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
         for (i = 0; i < encls.length; i++) { //Add a via line for every via Box
             if(i == 0) { 
                 output.push(new docx.Paragraph({ 
-                    children: [makeDefaultTextRun("Encl:"), makeDefaultTextRun("\t(" + (i+1) + ") " + encls[i].value)],
+                    children: [makeDefaultTextRun("Encl:"), makeDefaultTextRun("\t(" + (i+1) + ")\t" + encls[i].value)],
                     tabStops: [
                         {
                             type: docx.TabStopType.LEFT,
                             position: 720,
                         },
+                        {
+                            type: docx.TabStopType.LEFT,
+                            position: 1046,
+                        },
                     ],
-                
+                    indent: 
+                    {
+                        firstLine: "-1046",
+                        start: "1046",
+                    }
                  }));
             } else {
             output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ") " + encls[i].value)], 
                 indent: {
-                    start: ".5in",
+                    firstLine: "-326",
+                    start: "1046",
                 }
         }));
             }
