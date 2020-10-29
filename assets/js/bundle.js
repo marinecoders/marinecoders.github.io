@@ -57,10 +57,10 @@ function generate() {
     section.footer = {
             default: new docx.Footer({
                 children: [
-                    new Paragraph({
+                    new docx.Paragraph({
                         alignment: AlignmentType.CENTER,
                         children: [
-                            new TextRun({
+                            new docx.TextRun({
                                 children: [PageNumber.CURRENT],
                             }),
                             
