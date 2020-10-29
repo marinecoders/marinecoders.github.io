@@ -16,12 +16,6 @@ feature_row:
     url: "/learn/"
     btn_label: "Start Learning"
     btn_class: "btn--inverse"
-
-  - title: "DoD DevSecOps"
-    excerpt: "Learn more about the Department of Defense's software goals and enabling platforms on the Chief Software Officer's website."
-    url: "https://software.af.mil"
-    btn_label: "CSO Website"
-    btn_class: "btn--inverse"
 ---
 <br /><br />
 ![Marine Coders logo](/assets/images/Marine Coders Logo.png){: .align-center}  
