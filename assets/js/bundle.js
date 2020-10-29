@@ -54,25 +54,25 @@ function generate() {
         }),
     };
 
-    section.footer = {
-            default: new docx.Footer({
-                children: [
-                    new docx.Paragraph({
-                        alignment: AlignmentType.CENTER,
-                        children: [
-                            new docx.TextRun({
-                                children: [PageNumber.CURRENT],
-                            }),
+    // section.footer = {
+    //         default: new docx.Footer({
+    //             children: [
+    //                 new docx.Paragraph({
+    //                     alignment: AlignmentType.CENTER,
+    //                     children: [
+    //                         new docx.TextRun({
+    //                             children: [PageNumber.CURRENT],
+    //                         }),
                             
-                        ],
-                    }),
-                ],
-            }),
-        properties: {
-            pageNumberStart: 2,
-            pageNumberFormatType: PageNumberFormat.DECIMAL,
-        },
-    }
+    //                     ],
+    //                 }),
+    //             ],
+    //         }),
+    //     properties: {
+    //         pageNumberStart: 2,
+    //         pageNumberFormatType: PageNumberFormat.DECIMAL,
+    //     },
+    // }
 
     // document content
     section.children.push.apply(section.children, makeHeaderSection(
