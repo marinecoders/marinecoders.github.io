@@ -2,7 +2,7 @@ main:
     - title: "About"
       url: /about/
     - title: "Posts"
-      url: /https://github.com/marinecoders/marinecoders.github.io/tree/master/_posts/
+      url: /posts/
     - title: "Opportunities"
       url: /internships/
     - title: "Projects"
