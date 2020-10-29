@@ -9,7 +9,7 @@
           <input name="entry.1312101970" type="email" placeholder="Insert Email Here"/>
           <br>
           <label>Marine Corps Affliation</label>
-          <input name="entry.1521898974" type="affiliation" placeholder="Choose Affiliation"/>
+          <input name="entry.1521898974" type="radio" placeholder="Choose Affiliation" value="Active Duty"/>
           <br>
           <label>Organization</label>
           <input name="entry.1938542609" type="organization" placeholder="Enter Organization"/>
