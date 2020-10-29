@@ -7,6 +7,8 @@ main:
       url: /internships/
     - title: "Projects"
       url: "/projects/"
+    - title: "Events"
+      url: "/events/"
     - title: "Learn"
       url: /learn/
     - title: DoD DevSecOps
