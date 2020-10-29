@@ -194,7 +194,7 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                 output.push(new docx.Paragraph({ 
                     children: [
                         makeDefaultTextRun("Via:"),     
-                        makeDefaultTextRun("\t(" + vias[i].value)], 
+                        makeDefaultTextRun("\t" + vias[i].value)], 
                     tabStops: [
                         {
                             type: docx.TabStopType.LEFT,
@@ -292,7 +292,6 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
     //Check if encls  yes box is checked
     if (document.getElementById("rad5").checked) {
         console.log("Num encls detected: " + encls.length );
-        output.push(new docx.Paragraph({ text: "" }));
         for (i = 0; i < encls.length; i++) { //Add a via line for every via Box
             if(i == 0) { 
                 output.push(new docx.Paragraph({ 
