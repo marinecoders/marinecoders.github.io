@@ -9,14 +9,13 @@
           <input name="entry.1312101970" type="email" placeholder="Insert Email Here"/>
           <br>
           <label>Marine Corps Affliation</label>
-          <input name="entry.1312101970" type="affiliation" placeholder="Choose Affiliation"/>
+          <input name="entry.1521898974" type="affiliation" placeholder="Choose Affiliation"/>
           <br>
           <label>Organization</label>
-          <input name="entry.1312101970" type="organization" placeholder="Enter Organization"/>
+          <input name="entry.1938542609" type="organization" placeholder="Enter Organization"/>
           <br>
           <label>Role</label>
-          <input name="entry.1312101970" type="role" placeholder="Enter Role"/>
+          <input name="entry.1083838235" type="role" placeholder="Enter Role"/>
           <br>
           <input type="submit" value="Subscribe" />
 </form>
-
