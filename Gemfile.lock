@@ -35,7 +35,7 @@ GEM
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
-    github-pages (207)
+    github-pages
       github-pages-health-check (= 1.16.1)
       jekyll (= 3.9.0)
       jekyll-avatar (= 0.7.0)
