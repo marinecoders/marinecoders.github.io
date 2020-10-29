@@ -17,25 +17,6 @@ feature_row:
     btn_label: "CSO Website"
     btn_class: "btn--inverse"
 ---
-  
-<br /><br />
-![Marine Coders logo](/assets/images/MarineCoders.png){: .align-center}  
-{% include feature_row %}
-  
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% for post in posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
-
 ## Have questions or want to join us?
 * Secure Chat: Our preferred communication method is via Platform One's Mattermost chat service.  First, [register for a Platform One account](https://login.dsop.io).  Once your account is setup, join the [Marine Coders' Chat Channel](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr).  If you already have an account, you can access [the Marine Coders chat channel](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr) directly.
 * E-Mail: Send an email to collin.chew [at] usmc.mil / andrew.hutcheon [at] usmc.mil.  We would love to hear from you!
