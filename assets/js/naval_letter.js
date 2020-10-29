@@ -52,6 +52,26 @@ function generate() {
         }),
     };
 
+    // section.footer = {
+    //         default: new docx.Footer({
+    //             children: [
+    //                 new docx.Paragraph({
+    //                     alignment: AlignmentType.CENTER,
+    //                     children: [
+    //                         new docx.TextRun({
+    //                             children: [PageNumber.CURRENT],
+    //                         }),
+                            
+    //                     ],
+    //                 }),
+    //             ],
+    //         }),
+    //     properties: {
+    //         pageNumberStart: 2,
+    //         pageNumberFormatType: PageNumberFormat.DECIMAL,
+    //     },
+    // }
+
     // document content
     section.children.push.apply(section.children, makeHeaderSection(
         document.getElementById("ssic").value,
@@ -164,8 +184,34 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
     var output = [];
     
 
-    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("From:  " + from)], }));
-    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("To:      " + to)], }));
+    output.push(new docx.Paragraph({ 
+        children: [makeDefaultTextRun("From:"),makeDefaultTextRun("\t" + from)], 
+        tabStops: [
+            {
+                type: docx.TabStopType.LEFT,
+                position: 720,
+            },
+        ],
+        indent: 
+            {
+                firstLine: "-720",
+                start: ".5in",
+            }
+    }));
+    output.push(new docx.Paragraph({ 
+        children: [makeDefaultTextRun("To:"),makeDefaultTextRun("\t" + to)], 
+        tabStops: [
+            {
+                type: docx.TabStopType.LEFT,
+                position: 720,
+            },
+        ],
+        indent: 
+            {
+                firstLine: "-720",
+                start: ".5in",
+            }
+    }));
 
     //Add Vias
     //Check if via yes box is checked
@@ -173,21 +219,83 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
         console.log("Num vias detected: " + vias.length );
         for (i = 0; i < vias.length; i++) { //Add a via line for every via Box
             if(vias.length == 1) {//If only 1 via, no numbers
-                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Via:     " + vias[i].value)], }));
+                output.push(new docx.Paragraph({ 
+                    children: [
+                        makeDefaultTextRun("Via:"),     
+                        makeDefaultTextRun("\t" + vias[i].value)], 
+                    tabStops: [
+                        {
+                            type: docx.TabStopType.LEFT,
+                            position: 720,
+                        },
+                    ],
+                    indent: 
+                    {
+                        firstLine: "-720",
+                        start: ".5in",
+                    }
+                    }));
             }
             else if(vias.length > 1) {//2 or more vias, add numbers
                 if(i == 0) { 
-                    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Via:     (" + (i+1) + ") " + vias[i].value)], }));
+                    output.push(new docx.Paragraph({ 
+                        children: [
+                            makeDefaultTextRun("Via:"),     
+                            makeDefaultTextRun("\t(" + (i+1) + ")\t" + vias[i].value)], 
+                        tabStops: [
+                            {
+                                type: docx.TabStopType.LEFT,
+                                position: 720,
+                            },
+                            {
+                                type: docx.TabStopType.LEFT,
+                                position: 1046,
+                            },
+                        ],
+                        indent: 
+                    {
+                        firstLine: "-1046",
+                        start: "1046",
+                    }
+                        }));
                 } else {
-                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ") " + vias[i].value)], 
+                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ")\t" + vias[i].value)], 
+                tabStops: [
+                    {
+                        type: docx.TabStopType.LEFT,
+                        position: 1046,
+                    },
+                ],
                     indent: {
-                        start: ".5in",
+                        firstLine: "-326",
+                        start: "1046",
                     }
             }));
                 }
             }
         }
-    }
+    }//end vias
+
+    //subject
+    output.push(new docx.Paragraph({ text: "" }));
+    output.push(new docx.Paragraph({ 
+        children: [makeDefaultTextRun("Subj:"),makeDefaultTextRun("\t" + subj.toUpperCase())], 
+        tabStops: [
+            {
+                type: docx.TabStopType.LEFT,
+                position: 720,
+            },
+        ],
+        indent: 
+            {
+                firstLine: "-720",
+                start: ".5in",
+            }
+    }));
+    
+    //end subject
+    output.push(new docx.Paragraph({ text: "" }));
+
     //Add Refs
     //Check if refs yes box is checked
     if (document.getElementById("rad3").checked) {
@@ -210,39 +318,78 @@ function makeReplyBlock(from, to, subj, vias, refs, encls) {
                 outputLetterBlock += letter + ")"
             }
             if(i == 0) { 
-                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Ref:    " + outputLetterBlock + " " + refs[i].value)], }));
+                output.push(new docx.Paragraph({ 
+                    children: [
+                    makeDefaultTextRun("Ref:"), 
+                    makeDefaultTextRun("\t" + outputLetterBlock + "\t" + refs[i].value)],
+                    tabStops: [
+                    {
+                        type: docx.TabStopType.LEFT,
+                        position: 720,
+                    },
+                    {
+                        type: docx.TabStopType.LEFT,
+                        position: 1046,
+                    },
+                ],
+                indent: 
+                    {
+                        firstLine: "-1046",
+                        start: "1046",
+                    }
+            }));
             } else {
-            output.push(new docx.Paragraph({ children: [makeDefaultTextRun(outputLetterBlock + refs[i].value)], 
+            output.push(new docx.Paragraph({ children: [makeDefaultTextRun(outputLetterBlock + "\t" + refs[i].value)], 
                 indent: {
-                    start: ".5in",
+                    firstLine: "-326",
+                    start: "1046",
                 }
         }));
             }
         }
+        output.push(new docx.Paragraph({ text: "" }));
     }
+    //end refs
     
 
     //Add enclosures
     //Check if encls  yes box is checked
     if (document.getElementById("rad5").checked) {
         console.log("Num encls detected: " + encls.length );
-        output.push(new docx.Paragraph({ text: "" }));
         for (i = 0; i < encls.length; i++) { //Add a via line for every via Box
             if(i == 0) { 
-                output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Encl:   (" + (i+1) + ") " + encls[i].value)], }));
+                output.push(new docx.Paragraph({ 
+                    children: [makeDefaultTextRun("Encl:"), makeDefaultTextRun("\t(" + (i+1) + ")\t" + encls[i].value)],
+                    tabStops: [
+                        {
+                            type: docx.TabStopType.LEFT,
+                            position: 720,
+                        },
+                        {
+                            type: docx.TabStopType.LEFT,
+                            position: 1046,
+                        },
+                    ],
+                    indent: 
+                    {
+                        firstLine: "-1046",
+                        start: "1046",
+                    }
+                 }));
             } else {
             output.push(new docx.Paragraph({ children: [makeDefaultTextRun("(" + (i+1) + ") " + encls[i].value)], 
                 indent: {
-                    start: ".5in",
+                    firstLine: "-326",
+                    start: "1046",
                 }
         }));
             }
         }
+        output.push(new docx.Paragraph({ text: "" }));
     }
+    //end enclosures
 
-    output.push(new docx.Paragraph({ text: "" }));
-    output.push(new docx.Paragraph({ children: [makeDefaultTextRun("Subj:   " + subj.toUpperCase())], }));
-    output.push(new docx.Paragraph({ text: "" }));
+    
     
     return output;
 }
@@ -403,7 +550,7 @@ function RemoveCopyTextBox(div) {
 
 //Body Text Boxes
 function GetDynamicBodyTextBox(value) {
-    return '<textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks"> </textarea>' + '<label for = "bodylvl"> Select the body level: </label>' + '<select id="BodyLevel" name="BodyLevel" >' + '<option SELECTED value=1>1</option>' + '<option value=2>2</option>' + '<option value=3>3</option>' + '</select>' + '<input type="button" value="Remove Paragraph" onclick = "generatorBundle.removeBody(this)" >'
+    return '<textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks"></textarea>' + '<br/>' +'<label for = "bodylvl"> Select the body level: </label>' + '<select id="BodyLevel" name="BodyLevel" >' + '<option SELECTED value=1>1</option>' + '<option value=2>2</option>' + '<option value=3>3</option>' + '</select>' + '<input type="button" value="Remove Paragraph" onclick = "generatorBundle.removeBody(this)" >'
 }
 
 function AddBodyTextBox() {
