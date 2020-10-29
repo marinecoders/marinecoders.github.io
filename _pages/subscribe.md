@@ -9,5 +9,14 @@ target="hidden_iframe"
           <label>Email</label>
           <input name="entry.1312101970" type="email" placeholder="Insert Email Here"/>
           <br>
+          <label>Marine Corps Affliation</label>
+          <input name="entry.1312101970" type="affiliation" placeholder="Choose Affiliation"/>
+          <br>
+          <label>Organization</label>
+          <input name="entry.1312101970" type="organization" placeholder="Enter Organization"/>
+          <br>
+          <label>Role</label>
+          <input name="entry.1312101970" type="role" placeholder="Enter Role"/>
+          <br>
           <input type="submit" value="Subscribe" />
     </form>
