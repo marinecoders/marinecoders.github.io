@@ -3,7 +3,7 @@ layout: splash
 feature_row:
   - title: "Join Marine Coders"
     excerpt: "Signup and join our mailing list!"
-    url: "/subscribe/"
+    url: "/_pages/subscribe/"
     btn_label: "Join"
     btn_class: "btn--inverse"
   - title: "Projects"
