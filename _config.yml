@@ -4,8 +4,8 @@ title: MARINE CODERS
 
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Marine Coders - #ByMarinesForMarines
-subtitle: "#ByMarinesForMarines"
+  Marine Coders - #AnyMarineACoder
+subtitle: "#AnyMarineACoder"
 minimal_mistakes_skin: dark
 search: true
 
@@ -44,8 +44,7 @@ plugins:
 
 author:
   name   : "MARINE CODERS"
-  avatar : "/assets/images/Marine Coders Logo Only.png"
-  bio    : "Enabling any Marine to code"
+  avatar : "/assets/images/Marine Coders Logo Only Transparent.png"
 
 
 footer:
