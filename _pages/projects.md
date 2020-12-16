@@ -14,4 +14,8 @@ title: "Our Projects"
 [Project Repository](https://github.com/marinecoders/marinecoders.github.io)
 
 ### Suggest a Project
+* Click the blue smiley face in the middle right.
+* Press "Give Feedback" Button
+* Submit new project idea!
+
 <script src="https://sak.userreport.com/518be00889324d26a196/launcher.js" async id="userreport-launcher-script"></script>
