@@ -1,6 +1,6 @@
 ---
 permalink: /internships/
-title: "Learning Opportunities"
+title: "Opportunities"
 toc: true
 ---
 
