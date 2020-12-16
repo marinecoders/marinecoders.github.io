@@ -27,10 +27,10 @@
 	<label for="mce-MMERGE3">Affiliation </label>
 	<select name="MMERGE3" class="" id="mce-MMERGE3">
 	<option value=""></option>
-	<option value="Active Duty Marine">Active Duty Marine</option>
-<option value="Reserve Marine">Reserve Marine</option>
-<option value="U.S. Citizen">U.S. Citizen</option>
-<option value="Other">Other</option>
+	<option style="color:#5d5d5d" value="Active Duty Marine">Active Duty Marine</option>
+<option style="color:#5d5d5d" value="Reserve Marine">Reserve Marine</option>
+<option style="color:#5d5d5d" value="U.S. Citizen">U.S. Citizen</option>
+<option style="color:#5d5d5d" value="Other">Other</option>
 	</select>
 </div>
 <div class="mc-field-group input-group">
