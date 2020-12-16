@@ -1,6 +1,6 @@
 ---
 permalink: /internships/
-title: "Department of Defense Coding Internships - Platform One & Nodes"
+title: "Learning Opportunities"
 toc: true
 ---
 
