@@ -39,11 +39,12 @@ title: "Join Marine Coders"
 </div>
 <div class="mc-field-group input-group">
     <strong>Interested In: </strong>
-    <ul><li><input type="checkbox" value="1" name="group[83940][1]" id="mce-group[83940]-83940-0"><label for="mce-group[83940]-83940-0"> Learning Opportunities</label></li>
-<li><input type="checkbox" value="2" name="group[83940][2]" id="mce-group[83940]-83940-1"><label for="mce-group[83940]-83940-1"> Hackathons</label></li>
-<li><input type="checkbox" value="4" name="group[83940][4]" id="mce-group[83940]-83940-2"><label for="mce-group[83940]-83940-2"> Guest Speakers</label></li>
-<li><input type="checkbox" value="8" name="group[83940][8]" id="mce-group[83940]-83940-3"><label for="mce-group[83940]-83940-3"> Starting a Coding Project</label></li>
-<li><input type="checkbox" value="16" name="group[83940][16]" id="mce-group[83940]-83940-4"><label for="mce-group[83940]-83940-4"> Starting a Marine Coders Chapter</label></li>
+    <ul><li><input type="checkbox" value="1" name="group[83940][1]" id="mce-group[83940]-83940-0"><label for="mce-group[83940]-83940-0">Learning Opportunities</label></li>
+<li><input type="checkbox" value="2" name="group[83940][2]" id="mce-group[83940]-83940-1"><label for="mce-group[83940]-83940-1">Hackathons</label></li>
+<li><input type="checkbox" value="4" name="group[83940][4]" id="mce-group[83940]-83940-2"><label for="mce-group[83940]-83940-2">Guest Speakers</label></li>
+<li><input type="checkbox" value="8" name="group[83940][8]" id="mce-group[83940]-83940-3"><label for="mce-group[83940]-83940-3">Starting a Coding Project</label></li>
+<li><input type="checkbox" value="16" name="group[83940][16]" id="mce-group[83940]-83940-4"><label for="mce-group[83940]-83940-4">Starting a Marine Coders Chapter</label></li>
+<li><input type="checkbox" value="32" name="group[83940][32]" id="mce-group[83940]-83940-5"><label for="mce-group[83940]-83940-5">Contributing to the Codebase</label></li>
 </ul>
 </div>
 	<div id="mce-responses" class="clear">
