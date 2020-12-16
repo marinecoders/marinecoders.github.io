@@ -25,21 +25,21 @@
 </div>
 <div class="mc-field-group">
 	<label for="mce-MMERGE3">Affiliation </label>
-	<select name="MMERGE3" class="" id="mce-MMERGE3">
+	<select style="background-color:#252A34" name="MMERGE3" class="" id="mce-MMERGE3">
 	<option value=""></option>
-	<option style="color:#5d5d5d" value="Active Duty Marine">Active Duty Marine</option>
-<option style="color:#5d5d5d" value="Reserve Marine">Reserve Marine</option>
-<option style="color:#5d5d5d" value="U.S. Citizen">U.S. Citizen</option>
-<option style="color:#5d5d5d" value="Other">Other</option>
+	<option value="Active Duty Marine">Active Duty Marine</option>
+<option value="Reserve Marine">Reserve Marine</option>
+<option value="U.S. Citizen">U.S. Citizen</option>
+<option value="Other">Other</option>
 	</select>
 </div>
 <div class="mc-field-group input-group">
     <strong>Interested In: </strong>
-    <ul><li><input type="checkbox" value="1" name="group[83940][1]" id="mce-group[83940]-83940-0"><label for="mce-group[83940]-83940-0">Learning Opportunities</label></li>
-<li><input type="checkbox" value="2" name="group[83940][2]" id="mce-group[83940]-83940-1"><label for="mce-group[83940]-83940-1">Hackathons</label></li>
-<li><input type="checkbox" value="4" name="group[83940][4]" id="mce-group[83940]-83940-2"><label for="mce-group[83940]-83940-2">Guest Speakers</label></li>
-<li><input type="checkbox" value="8" name="group[83940][8]" id="mce-group[83940]-83940-3"><label for="mce-group[83940]-83940-3">Starting a Coding Project</label></li>
-<li><input type="checkbox" value="16" name="group[83940][16]" id="mce-group[83940]-83940-4"><label for="mce-group[83940]-83940-4">Starting a Marine Coders Chapter</label></li>
+    <ul><li><input type="checkbox" value="1" name="group[83940][1]" id="mce-group[83940]-83940-0"><label for="mce-group[83940]-83940-0"> Learning Opportunities</label></li>
+<li><input type="checkbox" value="2" name="group[83940][2]" id="mce-group[83940]-83940-1"><label for="mce-group[83940]-83940-1"> Hackathons</label></li>
+<li><input type="checkbox" value="4" name="group[83940][4]" id="mce-group[83940]-83940-2"><label for="mce-group[83940]-83940-2"> Guest Speakers</label></li>
+<li><input type="checkbox" value="8" name="group[83940][8]" id="mce-group[83940]-83940-3"><label for="mce-group[83940]-83940-3"> Starting a Coding Project</label></li>
+<li><input type="checkbox" value="16" name="group[83940][16]" id="mce-group[83940]-83940-4"><label for="mce-group[83940]-83940-4"> Starting a Marine Coders Chapter</label></li>
 </ul>
 </div>
 	<div id="mce-responses" class="clear">
