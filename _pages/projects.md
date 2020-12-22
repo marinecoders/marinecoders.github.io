@@ -14,7 +14,7 @@ title: "Our Projects"
 [Project Repository](https://github.com/marinecoders/marinecoders.github.io)
 
 ### Suggest a Project
-* Click the blue smiley face in the middle right.
+* Click the blue smiley face box in the middle right.
 * Press "Give Feedback" Button
 * Submit new project idea!
 
