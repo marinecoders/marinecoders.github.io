@@ -21,3 +21,6 @@ Any Marine is empowered to build software to meet mission. (Any Marine a Coder)
 
 ### Who can Join
 Marine Coders membership is open to all Active Duty/Reserve Marines, Marine Veterans, and U.S. Citizens.
+
+### Open Source
+Marine Coders follows the guidance published by the United States Chief Information Officer in 2016, the [Federal Open Source Policy](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2016/m_16_21.pdf).
