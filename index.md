@@ -7,7 +7,7 @@ feature_row:
     btn_label: "Go to Projects"
     btn_class: "btn--inverse"
   - title: "Join Marine Coders"
-    excerpt: "Signup and join our mailing list!"
+    excerpt: "Signup and join our mailing list and chat!"
     url: "/subscribe/"
     btn_label: "Join"
     btn_class: "btn--inverse"
