@@ -10,7 +10,7 @@ feature_row:
     excerpt: "Signup and join our mailing list and chat!"
     url: "/subscribe/"
     btn_label: "Join"
-    btn_class: "btn--inverse"
+    btn_class: "btn--info"
   - title: "Learn to Code"
     excerpt: "Learn more about coding, DevSecOps, and enjoy our list of free courses."
     url: "/learn/"
