@@ -3,6 +3,10 @@ permalink: /events/
 title: "Events"
 toc: true
 ---
+### Hackathon 5
+
+Coming soon during February 2021! Exact date & time TBD.
+
 ### Hackathon 4
 
 Recap of our guest speaker, Miles Tiglao:
