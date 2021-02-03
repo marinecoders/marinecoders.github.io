@@ -3,17 +3,13 @@ permalink: /events/
 title: "Events"
 toc: true
 ---
-<<<<<<< Updated upstream
-### Hackathon 5
 
 Coming soon during February 2021! Exact date & time TBD.
 =======
-### Coming soon! 
 
-Hackathon 5 and a Marine Coders Innovation Challenge.
+### Hackathon 5 and a Marine Coders Innovation Challenge.
 
 Both events are TBD but expect the next Marine Coders Hackathon sometime in February 2021 and a completely separate innovation challenge in the next few months! Brainstorming is happening now. If you have recommendations go to our project proposal page and submit an idea!
->>>>>>> Stashed changes
 
 ### Hackathon 4
 
