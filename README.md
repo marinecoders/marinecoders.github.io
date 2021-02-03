@@ -24,3 +24,8 @@ Join us in our chat channel, [Marine Coders Chat](https://chat.il2.dsop.io/signu
 This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 
 All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
+
+### How to work in open source?
+
+Check out the following resource for contributing to Open Source projects!
+https://opensource.guide/how-to-contribute/ 
