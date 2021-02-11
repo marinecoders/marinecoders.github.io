@@ -14,6 +14,10 @@ title: "Our Projects"
 ### Marine Coders Website
 [Project Repository](https://github.com/marinecoders/marinecoders.github.io)
 
+### MARADMIN Twitter Bot
+A Twitter bot to tweet Marine Administrative Messages (MARADMINS) as they are published online.  Follow 'MarineMsgBot' to get real time updates on your own Twitter feed!
+[Project Repository](https://github.com/marinecoders/maradminsTwitterBot)
+
 ### Suggest a Project
 * Click the blue smiley face box in the middle right.
 * Press "Give Feedback" Button
