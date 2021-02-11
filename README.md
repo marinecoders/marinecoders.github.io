@@ -3,7 +3,7 @@
 We are a group of U.S. Marines who use code to improve the lives of our fellow Marines.
 
 On our website we offer members links to opportunities (such as the USAF Platform One Residency Program and a free trial to Cloud Academy), as well as links to ongoing Marine Coders projects, special events, and learning resources. Resources include self guided courses for:
-* learning to code
+* Learning to code
 * Agile and DevOps methodologies
 * Web development, Mobile Development, Front End/Back End frameworks
 * Platforms and infrastructure
