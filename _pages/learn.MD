@@ -12,6 +12,7 @@ Useful links to get you started - no federal endorsement intended or implied. Co
 * [FreeCodeCamp](https://www.freecodecamp.org/)
 * [App Academy Self Guided Bootcamp](https://open.appacademy.io/)
 * [Derek Banas Youtube Channel](https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw)
+* [Harvard CS50 Course](https://cs50.harvard.edu/x/2021/)
 
 ### Methodology
 * [Agile](https://software.af.mil/training/training-agile/)
