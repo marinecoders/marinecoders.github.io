@@ -1,6 +1,11 @@
+---
+title:  "II MIG Marine Coders Cell"
+categories: [announcements, news]
+---
+
 # II MIG Marine Coders Cell Established!
 
-#### The II MIG CO, Colonel Russel, signed the II MIG Marine Coder charter today effectively establishing the first Marine Coder Cell in the Fleet Marine Force.  
+#### The II MIG CO, Colonel Russell, signed the II MIG Marine Coder charter today effectively establishing the first Marine Coder Cell in the Fleet Marine Force.  
 
 Cells are a critical component to scaling the Marine Coder movement and connecting Marines in the fleet to tools, environments, training and resources championed by Marine Coders!   
 
