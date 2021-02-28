@@ -44,6 +44,7 @@ Useful links to get you started - no federal endorsement intended or implied. Co
 
 ### Transitioning Service Members
 * [Operation Code](https://operationcode.org)
+* [Microsoft Software Systems Academy - Now Free!](https://military.microsoft.com/programs/microsoft-software-systems-academy/)
 
 ### Platforms & Infrastructure
 * [Kubernetes - AF Overview](https://software.af.mil/training/kubernetes/)
