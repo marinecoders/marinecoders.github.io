@@ -50,7 +50,7 @@ Useful links to get you started - no federal endorsement intended or implied. Co
 * [Kubernetes - Official Website](https://kubernetes.io)
 * [Ansible Learning](https://www.ansible.com/resources/get-started)
 * [Terraform - Official Website](https://www.terraform.io/)
-* [AWS Cloud Practicioner Courses](https://aws.amazon.com/training/government/us/)
+* [AWS Cloud Practicioner Course](https://aws.amazon.com/training/government/us/)
 
 ### Data Exploration
 * [Anaconda Data Science Suite - Official Website](https://www.anaconda.com/)
