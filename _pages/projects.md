@@ -3,6 +3,13 @@ permalink: /projects/
 title: "Our Projects"
 ---
 
+### COVID Tracker Scanner
+A technology based solution using Common Access Cards and a scanner to hygienically track COVID for a stand-alone location.
+[Tracker Repository](https://github.com/marinecoders/covid_tracker_scanner)
+
+### MARADMIN Twitter Bot
+A Twitter bot to tweet Marine Administrative Messages (MARADMINS) as they are published online.  Follow 'MarineMsgBot' to get real time updates on your own Twitter feed!
+[Project Repository](https://github.com/marinecoders/maradminsTwitterBot)
 
 ### Naval Letter Format Generator Application
 [Link to App - In Progress](https://marinecoders.github.io/_pages/naval_letter_js_test.html)
@@ -13,10 +20,6 @@ title: "Our Projects"
 
 ### Marine Coders Website
 [Project Repository](https://github.com/marinecoders/marinecoders.github.io)
-
-### MARADMIN Twitter Bot
-A Twitter bot to tweet Marine Administrative Messages (MARADMINS) as they are published online.  Follow 'MarineMsgBot' to get real time updates on your own Twitter feed!
-[Project Repository](https://github.com/marinecoders/maradminsTwitterBot)
 
 ### Suggest a Project
 * Click the blue smiley face box in the middle right.
