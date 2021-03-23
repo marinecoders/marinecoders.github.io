@@ -1,5 +1,5 @@
 ---
-title:  "2021 Marine Coder Innovation Challenege"
+title:  "2021 Marine Coder Innovation Challenge"
 categories: [announcements, news]
 ---
 
