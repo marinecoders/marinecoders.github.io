@@ -12,4 +12,4 @@ Marine Coders hosted its second hackathon to finalize the Naval Letter Format Ge
 
 In addition to the work on the Naval Letter Format Generator, the team updated content and developed a plan to implement a subscription mailing list on the [Marine Coders static site](https://marinecoders.github.io/).
 
-![Marine Coders Naval Letter Format Hackathon](/images/Naval Letter Hackathon 2.jpg){: .align-center}  
+![Marine Coders Naval Letter Format Hackathon](/assets/images/Naval Letter Hackathon 2.jpg){: .align-center}  
