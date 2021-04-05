@@ -18,6 +18,15 @@ A Twitter bot to tweet Marine Administrative Messages (MARADMINS) as they are pu
   * Known Issues: Header does not display correctly for page 2 and on. This will be fixed in MVP#2. Page Numbers coming soon. Known issues with javascript blocked on MCEN Internet Explorer and Edge.
   * This application will automatically format your Naval Letter Format so you don't have to waste days of your life in routing. [Source Code](https://github.com/marinecoders/marinecoders.github.io)
 
+
+### MCEN Group Automation
+[P1 GitLab Repository \(Requires Authentication\)](https://code.il2.dso.mil/marine-coders/mcen-group-automation)
+ * **Purpose**: To automate MCEN Groups by adding and removing users based on unit rosters.
+
+ * **Problem**: Information Security Clerks (ISC) are usually tasked out to update distribution lists. These distribution lists usually include hundreds to thousands of individuals. Cleaning Active Directory groups provide a clean and healthy COMSEC environment.
+
+ * **Execution**: Using [Active Directory library](https://docs.microsoft.com/en-us/powershell/module/addsadministration/?view=windowsserver2019-ps) in PowerShell automate the process of "scanning" through users, determine which users need to be added to which groups and remove users who are no longer required to be on the distribution list.
+
 ### Marine Coders Website
 [Project Repository](https://github.com/marinecoders/marinecoders.github.io)
 
