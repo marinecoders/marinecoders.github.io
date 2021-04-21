@@ -4,7 +4,7 @@ title: "Opportunities"
 toc: true
 ---
 
-##  Platform One Spring 2021 Residency / Fellowship Program
+##  Platform One Summer 2021 Residency / Fellowship Program
 
 MARADMIN 177/21 Posted [here](https://www.marines.mil/News/Messages/Messages-Display/Article/2558057/department-of-defense-platform-one-resident-opportunity/)
   * Applications due NLT 30 April [here](https://p1.dso.mil/#residency/).
