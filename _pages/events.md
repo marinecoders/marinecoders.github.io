@@ -4,12 +4,18 @@ title: "Events"
 toc: true
 ---
 
-Coming soon during February 2021! Exact date & time TBD.
+Coming soon summer 2021! Exact dates & time TBD.
 =======
 
-### Hackathon 5 and a Marine Coders Innovation Challenge.
+### Marine Coders Lunch & Learn
 
-Both events are TBD but expect the next Marine Coders Hackathon sometime in February 2021 and a completely separate innovation challenge in the next few months! Brainstorming is happening now. If you have recommendations go to our project proposal page and submit an idea!
+One of our own Marine Coders is putting together a training event to show Marines how to use the Anaconda tool. Stay tuned!
+
+### Marine Coders Innovation Challenge.
+
+Marine Coders innovation challenge is live! Brainstorming is happening now. 
+
+Separately for Marine Coders, if you have recommendations go to our project proposal page and submit an idea!
 
 ### Hackathon 4
 
