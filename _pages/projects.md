@@ -21,11 +21,11 @@ A Twitter bot to tweet Marine Administrative Messages (MARADMINS) as they are pu
 
 ### MCEN Group Automation
 [P1 GitLab Repository \(Requires Authentication\)](https://code.il2.dso.mil/marine-coders/mcen-group-automation)
- * **Purpose**: To automate MCEN Groups by adding and removing users based on unit rosters.
+ * **Purpose**: To automate MCEN Groups by adding and removing users based on unit rosters. This program seeks to improve the process of managing Active Directory groups.
 
- * **Problem**: Information Security Clerks (ISC) are usually tasked out to update distribution lists. These distribution lists usually include hundreds to thousands of individuals. Cleaning Active Directory groups provide a clean and healthy COMSEC environment.
+ * **Problem**: Information Security Clerks (ISC) are usually tasked out to update distribution lists. These distribution lists usually include hundreds to thousands of individuals, because of the size of these groups it is easy to overlook users who are not authorized.
 
- * **Execution**: Using [Active Directory library](https://docs.microsoft.com/en-us/powershell/module/addsadministration/?view=windowsserver2019-ps) in PowerShell automate the process of "scanning" through users, determine which users need to be added to which groups and remove users who are no longer required to be on the distribution list.
+ * **Execution**: Using [Active Directory library](https://docs.microsoft.com/en-us/powershell/module/addsadministration/?view=windowsserver2019-ps) in PowerShell automate the process of "scanning" through users, determine which users need to be added to which groups and remove users who are no longer required to be on the distribution list. Managing Active Directory Groups is important because it maintains a clean, healthy, and secure Active Directory environment.
 
 ### Marine Coders Website
 [Project Repository](https://github.com/marinecoders/marinecoders.github.io)
