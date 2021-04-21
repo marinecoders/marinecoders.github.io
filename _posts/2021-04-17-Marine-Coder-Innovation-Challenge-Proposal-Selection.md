@@ -11,8 +11,8 @@ categories: [announcements, news]
   * MARFORRES: Predictive Maintenance Operations
 
 Each MEF team will begin a 90 day development evolution where they will learn how to: 
-  * Plan and execute agile software development methodlogy
-  * Achieve an Authority to Operate (ATO) through the Risk Management Framework (RMF) methodlogy
+  * Plan and execute agile software development methodology
+  * Achieve an Authority to Operate (ATO) through the Risk Management Framework (RMF) methodology
   * Use Git Flow and Trunk Based Development to effectively build and collaborate on a product as a team
   * Leverage a Platform as a Service (PaaS) to build containerized apps using a DevSecOps pipeline
   * Build a web hosted static site!
