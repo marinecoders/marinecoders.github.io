@@ -4,7 +4,14 @@ title: "Opportunities"
 toc: true
 ---
 
+##  Platform One Spring 2021 Residency / Fellowship Program
 
+MARADMIN 177/21 Posted [here](https://www.marines.mil/News/Messages/Messages-Display/Article/2558057/department-of-defense-platform-one-resident-opportunity/)
+  * Applications due NLT 30 April [here](https://p1.dso.mil/#residency/).
+  * Interviews conducted between 3 - 14 May.  
+  * Offers sent to selected residents NLT 21 May.
+  * Prospective residents and their supervisors must confirm their seat NLT 28 May.
+  * Residency start date is 14 June 2021.
 
 ## Platform One Fall 2021 Residency / Fellowship Program
 
@@ -24,7 +31,5 @@ Testers must apply soonest! There are only limited licenses remaining.
 
 [Digital U Information](https://www.fedscoop.com/air-forces-digital-university-free-technical-training/)
 
-##  Platform One Spring 2021 Residency / Fellowship Program
 
-Stay tuned for MARADMIN to apply for the Spring 2021 fellowship!
 
