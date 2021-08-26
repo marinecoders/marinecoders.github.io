@@ -58,6 +58,29 @@ permalink: /subscribe/
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
+<html>
+<head>
+<style>
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
 Join us in our chat channel!  First, [register for a Platform One account](https://login.dsop.io).  
-Once your account is setup, join the [Marine Coders' Chat Channel](https://chat.il2.dso.mil/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr).  
+Once your account is setup, join the Marine Coder's Group Chat 
+<a href="https://chat.il2.dso.mil/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr" class="button">Click here</a>
+ 
+
+
 If you already have an account, you can access the Marine Coders chat channel [here](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr) directly.
