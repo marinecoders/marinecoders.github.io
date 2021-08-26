@@ -65,22 +65,24 @@ permalink: /subscribe/
   background-color: #008CBA;
   border: none;
   color: white;
-  padding: 1px 10px;
+  padding: 1px 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 1px 4px;
+  margin: 4px 4px;
   cursor: pointer;
 }
 </style>
 </head>
 <body>
 
-Join us in our chat channel!  First, [register for a Platform One account](https://login.dsop.io).  
-Once your account is setup, join the Marine Coder's Group Chat 
+Join us in our chat channel!  First, register for a Platform One account.  <a href="https://login.dsop.io" class="button">Click here</a>
+
+Once your account is setup, join the Marine Coder's Group Chat. 
 <a href="https://chat.il2.dso.mil/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr" class="button">Click here</a>
  
 
 
-If you already have an account, you can access the Marine Coders chat channel [here](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr) directly.
+If you already have an account, you can access the Marine Coders chat channel here directly. <a href="https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr" class="button">Click here</a>
+ 
