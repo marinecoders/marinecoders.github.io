@@ -10,7 +10,6 @@ If you just want to chat and learn about Marine Coders and software, we recommen
 If you are an active duty Marine and need to discuss controlled but unclassified projects, come join our private chat, powered by our partners at platform One.  
 
 <br>
-<br>
 
 | Chat         | Description |  Link     | Instructions | Chat Provider |
 | :---     	   |    :----:   |  :---: | :----:  |
