@@ -19,7 +19,6 @@ Marine Coders will have three segments at the 2021 AMCL Symposium
 
 Marine Coders were highlighted in a webinar with [Joint Software Alliance](https://www.jsoftalliance.org/) on October 20, 2021.  Video recording is located [here](https://www.jsoftalliance.org/videos/).
 
-
 ### 2021 Marine Coders Software Development Innovation Challenge
 
 The 2021 Marine Coders software development innovation challenge commenced in April 2020 via [MARADMIN 164/21](https://www.marines.mil/News/Messages/Messages-Display/Article/2549693/solicitation-for-participation-in-the-marine-corps-inaugural-micro-application/).
