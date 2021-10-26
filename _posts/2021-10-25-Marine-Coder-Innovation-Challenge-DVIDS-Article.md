@@ -15,5 +15,3 @@ I MEF Coding Team’s readiness application leveraged the Marine Corps Business 
 The Micro-Application Innovation Challenge was announced via MARADMIN 164/21 on March 25, 2021 requesting each MEF to assemble a coding team, regardless of rank or military occupational specialty (MOS), to research, engineer, test and deploy a micro-software application to optimize operations.  
 <br>
 [Read More](https://www.dvidshub.net/news/407879/mef-wins-micro-app-innovation-challenge-against-coders-across-marine-corps){: .btn .btn--info .btn--large}
-
-## DVIDS just released an article highlighting the 20+ Active Duty Marine Coders that participated in the 2021 Micro-Application Innovation Challenge.  Check it out [here](https://www.dvidshub.net/news/407879/mef-wins-micro-app-innovation-challenge-against-coders-across-marine-corps)!
