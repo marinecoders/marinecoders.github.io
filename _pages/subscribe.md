@@ -1,7 +1,40 @@
 ---
+title:  "Chat"
 permalink: /subscribe/
 ---
-<!-- Begin Mailchimp Signup Form -->
+
+### We offer two different chat locations to talk code.
+
+If you just want to chat and learn about Marine Coders and software, we recommend you join our public chat, powered by our partners at Operation Code.  
+
+If you are an active duty Marine and need to discuss controlled but unclassified projects, come join our private chat, powered by our partners at platform One.  
+
+<br>
+
+| Chat         | Description |  Link     | Instructions | Chat Provider |
+| :---     	   |    :----:   |  :---: | :----:  |
+| Open Chat     |    For all to join    | [Join Now](https://operationcode.org/join){: .btn .btn--info .btn--large}   | Join Operation Code, slack invite will be sent to e-mail. <br> In Slack, join Channel "#Marine-Coders" | <img src="../assets/images/small-blue-logo.png" alt="OperationCode" height="40"/>  |
+| Active Duty Chat (IL2)   | For active duty chat  | [1. Register account.](https://login.dsop.io){: .btn .btn--info .btn--large} [2. Then join group here.](https://chat.il2.dso.mil/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr){: .btn .btn--info .btn--large} | Common Access Card or Government E-mail required. Click button 1, register account. Click button 2 after verifying email. |<img src="../assets/images/p1-logo.png" alt="OperationCode" height="40"/> 
+
+
+<!-- <style>
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+</style> -->
+
+
+
+<!-- 
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
@@ -49,7 +82,7 @@ permalink: /subscribe/
 	<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8dbe487c747e7bf1cfe0f9a2c_ebe078e77d" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
@@ -57,30 +90,3 @@ permalink: /subscribe/
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-
-<html>
-<head>
-<style>
-.button {
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 1px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 1px 4px;
-  cursor: pointer;
-}
-</style>
-</head>
-<body>
-
-Join us in our chat channel!  First, [register for a Platform One account](https://login.dsop.io).  
-Once your account is setup, join the Marine Coder's Group Chat 
-<a href="https://chat.il2.dso.mil/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr" class="button">Click here</a>
- 
-
-
-If you already have an account, you can access the Marine Coders chat channel [here](https://chat.il2.dsop.io/signup_user_complete/?id=p65oraj9b3ysjgbxac7o7bn6fr) directly.
