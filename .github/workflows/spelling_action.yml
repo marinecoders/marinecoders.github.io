@@ -11,5 +11,5 @@ jobs:
     - uses: rojopolis/spellcheck-github-actions@0.20.0
       name: Spellcheck
       with:
-        source_files: 2020-06-25-Hello-World
+        source_files: 2020-06-25-Hello-World.md
         task_name: Markdown
