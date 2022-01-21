@@ -59,3 +59,9 @@ Useful links to get you started - no federal endorsement intended or implied. Co
 * [Getting Started with Pandas](https://riptutorial.com/pandas)
 * [Getting Started with Numpy](https://www.datacamp.com/community/tutorials/python-numpy-tutorial)
 * [Getting Started with Matplotlib](https://www.datacamp.com/community/tutorials/matplotlib-tutorial-python)
+
+### Tanzu
+* [Kube Academy](https://kube.academy/)
+* [Open Source Kubernetes Platform | Tanzu Community Edition](https://tanzucommunityedition.io/)
+* [VMware Tanzu Developer Center](https://tanzu.vmware.com/developer/)
+* [ModernApps Learning by VMware Tanzu Home](https://modernapps.ninja/)
