@@ -18,7 +18,7 @@ feature_row:
     btn_class: "btn--inverse"
 ---
 <br /><br />
-![Marine Coders logo](/assets/images/Marine Coders Logo.png){: .align-center}  
+![Marine Coders logo](/assets/images/marinecoders.png){: .align-center}  
 {% include feature_row %}
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
