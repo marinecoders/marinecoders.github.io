@@ -34,4 +34,4 @@ feature_row:
 
 {% include paginator.html %}
 
-***Pursuant to MCO 5030.3B: Neither the United States Marine Corps nor any other component of the Department of Defense has approved, endorsed or authorized this activity***
+
