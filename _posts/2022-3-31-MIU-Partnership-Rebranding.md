@@ -5,15 +5,13 @@ categories: [announcements, news]
 
 ![Marine Coders Rebrand](/assets/press/marinecoders_banner.png)
 
-Marine Coders is excited to announce that it has officially partnered with Marine Innovation Unit (MIU) to form the MIU Marine Coders Branch Office.
+Marine Coders is excited to announce that it has officially partnered with Marine Innovation Unit (MIU) to form the MIU Marine Coders.
 
-This branch office will coordinate bringing on reserve software developers as a force provider for software activities and programs in the Marine Corps. We believe that these developers will be a game changer to create a better, more lethal Marine Corps. These positions are rank and MOS agnostic, meaning anyone with the right technical experience can make a difference. The partnership with MIU will advance both MIU and Marine Coder's missionsets. We are proud to offer 2 reserve Selected Marine Corps Reserve (SMCR) positions.
+This team will coordinate bringing on reserve software developers as a force provider for software activities and programs in the Marine Corps. We believe that these developers will be a game changer to create a better, more lethal Marine Corps. These positions are rank and MOS agnostic, meaning anyone with the right technical experience can make a difference. The partnership with MIU will advance both MIU and Marine Coder's missionsets. We are proud to offer 2 reserve Selected Marine Corps Reserve (SMCR) positions.
 
-- Full Stack Software Developer
+[Marine Coders Full Stack Software Developer](https://miu.applytojob.com/apply/SARAyhWg6O/Marine-Coders-Full-Stack-Developer-Status-Open){: .btn .btn--info}
 
-- Data Scientist
-
-We will be sharing info in the coming weeks with how to apply on jazzhr. We will be offering additional billets soon!
+[Marine Coders Data Scientist](https://miu.applytojob.com/apply/EgDlyYoaAO/Data-Scientist-Status-Open){: .btn .btn--info}
 
 This partnership will bring a few changes to the Marine Coders. First, this partnership cements the Marine Coders concept into the Marine Corps through official billets assigned to the Marine Coders. This is a huge step forward for Marine Coders from unofficial concept to official organization. As such, we've decided to rebrand our logo to showcase this. Second, this partnership allows us to move from an active duty centric model to a full range of employment through the reserves. We are excited with what we can accomplish in 2022 and beyond. Third, MIU Marine Coders will work under a force provider model. We believe this will allow us to accelerate existing efforts through the directed application of software developers who understand industry best practices.
 
@@ -29,3 +27,6 @@ A special thank you to Major Jim Carlson for making this a reality.
 
 **What will I be working on at MIU Marine Coders?**
 > Software! Typing, moving, and communicating. We will ensure that you spend as much time as possible actually doing what you're good at and solving problems, rather than spending time waiting for your computer to start up.
+
+**What is the mission of the Marine Innovation Unit?**
+> The Marine Innovation Unit (MIU) leverages existing Marine talent to address advanced technology challenges in order to accelerate the development of new capabilities. More information about the unit and other open billets can be found at the [MIU website](https://www.marforres.marines.mil/MIU/). 

@@ -1,6 +1,6 @@
 ---
 title:  "Chat"
-permalink: /subscribe/
+permalink: /chat/
 ---
 
 ### We offer two different chat locations to talk code.
