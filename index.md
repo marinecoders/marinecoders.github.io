@@ -6,9 +6,9 @@ feature_row:
     url: "/projects/"
     btn_label: "Go to Projects"
     btn_class: "btn--inverse"
-  - title: "Join Marine Coders"
-    excerpt: "Signup and join our mailing list and chat!"
-    url: "/subscribe/"
+  - title: "Join Marine Coders Chat"
+    excerpt: "Let's build together."
+    url: "/chat/"
     btn_label: "Join"
     btn_class: "btn--info"
   - title: "Learn to Code"
@@ -18,7 +18,7 @@ feature_row:
     btn_class: "btn--inverse"
 ---
 <br /><br />
-![Marine Coders logo](/assets/images/Marine Coders Logo.png){: .align-center}  
+![Marine Coders logo](/assets/images/marinecoders.png){: .align-center}  
 {% include feature_row %}
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
@@ -34,4 +34,4 @@ feature_row:
 
 {% include paginator.html %}
 
-***Pursuant to MCO 5030.3B: Neither the United States Marine Corps nor any other component of the Department of Defense has approved, endorsed or authorized this activity***
+

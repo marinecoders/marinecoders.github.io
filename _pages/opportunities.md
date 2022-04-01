@@ -1,35 +1,20 @@
 ---
-permalink: /internships/
+permalink: /opportunities/
 title: "Opportunities"
 toc: true
 ---
 
-##  Platform One Summer 2021 Residency / Fellowship Program
+## Marine Coders Open Billets
+We are hiring selected Marine Corps reserve. We will have more opportunities soon!
 
-MARADMIN 177/21 Posted [here](https://www.marines.mil/News/Messages/Messages-Display/Article/2558057/department-of-defense-platform-one-resident-opportunity/)
-  * Applications due NLT 30 April [here](https://p1.dso.mil/#residency/).
-  * Interviews conducted between 3 - 14 May.  
-  * Offers sent to selected residents NLT 21 May.
-  * Prospective residents and their supervisors must confirm their seat NLT 28 May.
-  * Residency start date is 14 June 2021.
+[Marine Coders Full Stack Software Developer](https://miu.applytojob.com/apply/SARAyhWg6O/Marine-Coders-Full-Stack-Developer-Status-Open){: .btn .btn--info}
 
-## Platform One Fall 2021 Residency / Fellowship Program
+[Marine Coders Data Scientist](https://miu.applytojob.com/apply/EgDlyYoaAO/Data-Scientist-Status-Open){: .btn .btn--info}
 
-Update 10/5/2020, MARADMIN Posted [here](https://www.marines.mil/News/Messages/Messages-Display/Article/2371787/department-of-defense-platform-one-fellowship-opportunity/)
+##  Platform One Summer 2022 Residency / Fellowship Program
 
-Update 10/29/2020, Platform One selected its participants for the Fall fellowship.  (7) Marines will be joining the Platform One team this November!
+Program residents will learn and participate in the best application development practices, learn to use, manage, and build DevSecOps pipelines, and develop an appreciation of the importance of design thinking in product development. 
 
-##  Cloud Academy trial 
-
-The Air Force BESPIN unit is offering service members a 60 day trial for Cloud Academy. 
-Service members will need to be available to conduct a post trial survey and questionnaire's on the value gained.
-Please email [DigitalU](mailto:peyton.cleveland.1@us.af.mil) if you are interested.
-
-Testers must apply soonest! There are only limited licenses remaining.
-
-[Cloud Academy](https://cloudacademy.com/)
-
-[Digital U Information](https://www.fedscoop.com/air-forces-digital-university-free-technical-training/)
-
-
-
+  * 7 Marines have already taken part in this opportunity (Program Management, Software Development, Cybersecurity, Acquisitions)
+  * Applications due NLT 15 April [here](https://p1.dso.mil/#residency/).
+  * Residency start date is 2 May 2022.
