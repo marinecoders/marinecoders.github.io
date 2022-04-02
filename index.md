@@ -16,6 +16,8 @@ feature_row:
     url: "/learn/"
     btn_label: "Start Learning"
     btn_class: "btn--inverse"
+
+description: Marine Coders is a non-official organization comprised of Active Duty/Reserve Marines, Marine Veterans, and U.S. Citizens who want to help Marines through code.
 ---
 <br /><br />
 ![Marine Coders logo](/assets/images/marinecoders.png){: .align-center}  
