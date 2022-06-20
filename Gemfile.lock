@@ -274,7 +274,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (>= 224)
+  github-pages (>= 226)
   jekyll-algolia
   jekyll-feed
   jekyll-gist
@@ -285,4 +285,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.3.16
+   2.1.4
