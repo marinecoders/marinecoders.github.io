@@ -22,7 +22,7 @@ jobs:
     - name: Download and Execute Banner Injector
       run: |
         git clone https://github.com/elisoncrum/banner-injector
-        pip3 install ./banner-injector
+        sudo pip3 install ./banner-injector
         sudo bannerinjector uswds _site/ -f
 
     - name: Deploy 🚀
