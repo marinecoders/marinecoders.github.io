@@ -1,0 +1,16 @@
+name: Testing the GitHub Pages publication
+
+on:
+  push
+
+jobs:
+  jekyll:
+    name: Build and deploy Jekyll site
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      uses: jerryjvl/jekyll-build-action@v1
