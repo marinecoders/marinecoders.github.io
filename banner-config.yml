@@ -1,0 +1,20 @@
+theme:
+  background-color: "#1b1b1b"
+  text-color: white
+
+header:
+  text: Unofficial Public Marine Coders Website
+  font-size: .74rem
+  icon: us_flag_small.png
+
+content:
+  font-size: .94rem
+  image-size: 64px
+  left:
+    text:
+      <strong>Official websites use .mil</strong><br>
+      This is not an official site. A .mil website belongs to an official government organization in the United States. 
+  right:
+    text:
+      <strong>Secure .dev websites use HTTPS</strong><br>
+      A lock (&#128274;) or https:// means you've safely connected to the .dev website. Share sensitive information only on official, secure websites.
