@@ -21,10 +21,9 @@ jobs:
         python-version: 3.8
     - name: Download and Execute Banner Injector
       run: |
-        chmod -R 777 _site/
         git clone https://github.com/elisoncrum/banner-injector
         pip3 install ./banner-injector
-        bannerinjector uswds _site/ -f
+        sudo bannerinjector uswds _site/ -f
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
