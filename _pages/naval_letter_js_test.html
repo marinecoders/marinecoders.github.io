@@ -1,267 +1,223 @@
 <html>
+
 <head>
-<script src="https://unpkg.com/docx@5.0.2/build/index.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
-<!--<script src="../assets/js/naval_letter.js"></script>-->
-<script src="../assets/js/bundle.js"></script>
-<!-- Bootstrap -->
-<script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Bootstrap -->
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet"/>
+    <script src="https://unpkg.com/docx@5.0.2/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <!--<script src="../assets/js/naval_letter.js"></script>-->
+    <script src="../assets/js/bundle.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body style="background-color:#3b3b3b;"><div class="banner__outer">
-<div class="banner__inner" style="width: 80%">
-<header class="banner-header">
-<img alt="U.S. flag" class="banner-icon" src="/us_flag_small.png"/>
-<div>Unofficial Public Marine Coders Website</div>
-<a class="classification-header__link" href="#" onclick="toggleContent()">Here's how you know...</a>
-</header>
-<div class="banner-content" style="display: none;">
-<div style="width: 50%; float:left;">
-<img align="left" alt="" aria-hidden="true" class="banner-content__logo" role="img" src="/icon-dot-gov.svg"/>
-<div class="banner-content__text">
-<p>
-<strong>Official websites use .mil</strong><br/> This is not an official site. A .mil website belongs to an official government organization in the United States.
-                    </p>
-</div>
-</div>
-<div style="align-items: center; width: 50%; float:right;">
-<img align="left" alt="" aria-hidden="true" class="banner-content__logo" role="img" src="/icon-https.svg"/>
-<div class="banner-content__text">
-<p>
-<strong>Secure .dev websites use HTTPS</strong><br/> A lock (🔒) or https:// means you've safely connected to the .dev website. Share sensitive information only on official, secure websites.
-                    </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script>
-    function toggleContent() {
-        var x = document.getElementsByClassName("banner-content")[0];
-        (x.style.display === "none") ? x.style.display = "flex" : x.style.display = "none";
-    }
-</script>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    .banner__inner {
-        font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-        font-size: 1.06rem;
-        line-height: 1.5;
-        margin: 0px;
-    }
-    .banner__outer {
-        justify-content: center;
-        display: flex;
-        background-color: #1b1b1b;
-    }
-    .banner-header {
-        padding: 0px 16px;
-        display: flex;
-        color: white;
-        font-size: .74rem;
-    }
-    .banner-header a {
-        color: white;
-    }
-    .banner-header img {
-        object-fit: contain;
-    }
-    .banner-header>* {
-        padding: 5px;
-    }
-    .banner-content {
-        padding: 1em;
-    }
-    .banner-content img {
-        width: 64px;
-        -webkit-transition: none;
-        transition: none;
-    }
-    .banner-content__text {
-        font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-        color: white;
-        font-size: .94rem;
-        width: 80%;
-    }
-    .banner-content__logo {
-        margin: 1rem;
-    }
-</style>
-<div class="container" style="background-color: slategray">
-<img alt="Responsive image" class="img-fluid" src="../assets/images/Marine Coders Logo.png"/>
-<h1 style="text-align:center">Naval Letter Format Generator</h1>
-<fieldset>
-<legend> File Name Information: </legend>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Enter Your Desired Filename:</span>
-<input class="form-control" id="filename" maxlength="30" name="Filename" size="30" type="text"/>
-</div>
-</div>
-</label>
-<br/>
-</fieldset>
-<br/>
-<!-- Destination e-mail address? -->
-<!-- Header Address Information -->
-<fieldset>
-<legend> Address Information: </legend>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Line 1 (Unit Name):</span>
-<input class="form-control" id="line1" name="line1" size="30" type="text"/>
-<div class="input-group-append">
-<span class="input-group-text"><a href="https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=744" target="_blank">RUC/MCC Table</a></span>
-</div>
-</div>
-</div>
-</label>
-<br/>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Line 2 (Address Line 1):</span>
-<input class="form-control" id="line2" name="line2" size="30" type="text"/>
-</div>
-</div>
-</label>
-<br/>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Line 3 (Address Line 2):</span>
-<input class="form-control" id="line3" name="line3" size="30" type="text"/>
-</div>
-</div>
-</label>
-</fieldset>
-<br/>
-<!-- Header Information -->
-<fieldset>
-<legend> Header Information: </legend>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Enter your SSIC:</span>
-<input class="form-control" id="ssic" maxlength="4" name="SSIC" size="30" type="text"/>
-</div>
-<div class="input-group-append">
-<span class="input-group-text"><a href="https://www.marines.mil/Portals/1/Publications/SECNAV%20M-5210.2.pdf?ver=2019-08-20-091954-620" target="_blank">SSIC Manual</a></span>
-</div>
-</div>
-</label>
-<br/>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Enter Your Originator Code:</span>
-<input class="form-control" id="reply" maxlength="13" name="ReplyCode" size="30" type="text"/>
-</div>
-</div>
-</label>
-<br/>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Enter The Date (D Mmm YY):</span>
-<input class="form-control" id="date" maxlength="9" name="Date" size="30" type="text"/>
-</div>
-</div>
-</label>
-</fieldset>
-<br/>
-<!-- Reply Information -->
-<fieldset>
-<legend> Reply Block: </legend>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">From (Full Identifier or Billet and Unit Name):</span>
-<input class="form-control" id="from" maxlength="150" name="From" size="60" type="text"/>
-</div>
-</div>
-</label>
-<br/>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">To (Billet and unit Name or identifier here):</span>
-<input class="form-control" id="to" maxlength="150" name="To" size="60" type="text"/>
-</div>
-</div>
-</label>
-<br/>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Enter The Subject (ALWAYS IN ALL CAPS):</span>
-<input class="form-control" id="subj" maxlength="150" name="Subj" size="60" type="text"/>
-</div>
-</div>
-</label>
-</fieldset>
-<br/>
-<!-- Optional Portions -->
-<fieldset>
-<legend> Optional Items: </legend>
-<label>Do you have a VIA?</label>
-<input id="rad1" name="ifVia" onclick="generatorBundle.showHideDiv('rad1','ViaTextBoxContainer')" type="radio" value="yes"/> Yes 
-<input checked="checked" id="rad2" name="ifVia" onclick="generatorBundle.showHideDiv('rad1','ViaTextBoxContainer')" type="radio" value="no"/> No
-<div class="label" id="ViaTextBoxContainer" style="display: none;">
-<label>Enter The Via (Title, name of activity (Code), location when needed):
-		<input id="btnAdd" onclick="generatorBundle.addVia()" type="button" value="Add Via">
-<input class="form-control" name="ViaTextBox" size="60" type="text">
 
-</input></input></label></div>
+<body style="background-color:#3b3b3b;">
+    <div class="container" style="background-color: slategray">
+        
+    <img src="../assets/images/Marine Coders Logo.png" class="img-fluid" alt="Responsive image">
 
-<label>Do you have References ?</label>
-<input id="rad3" name="ifRef" onclick="generatorBundle.showHideDiv('rad3','RefTextBoxContainer')" type="radio" value="yes"/> Yes 
-<input checked="checked" id="rad4" name="ifRef" onclick="generatorBundle.showHideDiv('rad3','RefTextBoxContainer')" type="radio" value="no"/> No
-<div class="label" id="RefTextBoxContainer" style="display: none;">
-<label>Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED, In order they appear in text):
-        <input id="btnAdd" onclick="generatorBundle.addRef()" type="button" value="Add Ref">
-<input class="form-control" name="RefTextBox" size="60" type="text">
+    <h1  style="text-align:center">Naval Letter Format Generator</h1>
 
-</input></input></label></div>
-<br/>
-<label>Do you have Enclosures?</label>
-<input id="rad5" name="ifEncl" onclick="generatorBundle.showHideDiv('rad5','EnclTextBoxContainer')" type="radio" value="yes"/> Yes 
-<input checked="checked" id="rad6" name="ifEncl" onclick="generatorBundle.showHideDiv('rad5','EnclTextBoxContainer')" type="radio" value="no"/> No
-<div class="label" id="EnclTextBoxContainer" style="display: none;">
-<label>Enter The Enclosures:
-		<input id="btnAdd" onclick="generatorBundle.addEnc()" type="button" value="Add Encl">
-<input class="form-control" name="EnclTextBox" size="60" type="text">
+    <fieldset>  
+        <legend > File Name Information: </legend>
+        <label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Enter Your Desired Filename:</span>
+            <input class="form-control" type="text" name="Filename" id="filename" size="30" maxlength="30">
+                </div>
+            </div>
+        </label>
+        <br />
+    </fieldset>
+    <br />
 
-</input></input></label></div>
-<br/>
-</fieldset>
-<br/>
-<!-- Body of the message -->
-<fieldset>
-<legend> Body Block: </legend>
-<div>
-<label for="body">
+    <!-- Destination e-mail address? -->
+           
+    <!-- Header Address Information -->
+    <fieldset>
+        <legend > Address Information: </legend>
+        <label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Line 1 (Unit Name):</span>
+            <input class="form-control" type="text" name="line1" id="line1" size="30" >
+            <div class="input-group-append">
+                <span class="input-group-text"><a href="https://www2.manpower.usmc.mil/lookups/lookups/lookups.action?tableId=744" target="_blank">RUC/MCC Table</a></span>
+              </div>
+            </div>
+            
+        </div>
+        </label>
+        <br/>
+        <label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Line 2 (Address Line 1):</span>
+            <input class="form-control" type="text" name="line2" id="line2" size="30" >
+                </div>
+                </div>
+        </label>
+        <br/>
+        <label>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Line 3 (Address Line 2):</span>
+            <input class="form-control"  type="text" name="line3" id="line3" size="30" >
+        </div>
+    </div>
+                </label>
+    </fieldset>
+
+    <br />
+
+
+            <!-- Header Information -->
+            <fieldset>
+                <legend> Header Information: </legend>
+                <label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter your SSIC:</span>
+                            <input class="form-control" type="text" name="SSIC" id="ssic" size="30" maxlength="4">
+                        </div>
+                        <div class="input-group-append">
+                            <span class="input-group-text"><a
+                                    href="https://www.marines.mil/Portals/1/Publications/SECNAV%20M-5210.2.pdf?ver=2019-08-20-091954-620"
+                                    target="_blank">SSIC Manual</a></span>
+                        </div>
+                    </div>
+                </label>
+                <br />
+                <label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter Your Originator Code:</span>
+                            <input class="form-control" type="text" name="ReplyCode" id="reply" size="30" maxlength="13">
+                        </div>
+                    </div>
+                </label>
+                <br />
+                <label>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Date (D Mmm YY):</span>
+                    <input class="form-control" type="text" name="Date" id="date" size="30" maxlength="9">
+                </div>
+            </div>
+                        </label>
+            </fieldset>
+            
+            <br />
+            
+            <!-- Reply Information -->
+            <fieldset>
+                <legend > Reply Block: </legend>
+                <label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">From (Full Identifier or Billet and Unit Name):</span>
+                    <input class="form-control" type="text" name="From" id="from" size="60" maxlength="150">
+                    </div>
+                    </div>
+                        </label>
+                        <br/>
+                <label>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">To (Billet and unit Name or identifier here):</span>
+                    <input class="form-control" type="text" name="To" id="to" size="60" maxlength="150">
+                        </div>
+                        </div>
+                        </label>
+                        <br/>
+                <label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Subject (ALWAYS IN ALL CAPS):</span>
+                    <input class="form-control" type="text" name="Subj" id="subj" size="60" maxlength="150">
+                    </div>
+                    </div>
+                </label>
+            </fieldset>
+            
+            <br />
+            
+            <!-- Optional Portions -->
+            <fieldset>
+                <legend > Optional Items: </legend>
+                
+		<label >Do you have a VIA?</label>
+  		<input type="radio" name="ifVia" id="rad1" value="yes" onclick="generatorBundle.showHideDiv('rad1','ViaTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifVia" checked="checked" id="rad2" value="no" onclick="generatorBundle.showHideDiv('rad1','ViaTextBoxContainer')"> No</label>
+
+		<div style="display: none;" class="label" id="ViaTextBoxContainer">
+		<label>Enter The Via (Title, name of activity (Code), location when needed):
+		<input id="btnAdd" type="button" value="Add Via" onclick="generatorBundle.addVia()" />
+		<input class="form-control" name = "ViaTextBox" size="60" type="text"/>
+
+		</br>
+		</div>
+
+</br>
+		<label >Do you have References ?</label>
+  		<input type="radio" name="ifRef" id="rad3" value="yes" onclick="generatorBundle.showHideDiv('rad3','RefTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifRef" checked="checked" id="rad4" value="no" onclick="generatorBundle.showHideDiv('rad3','RefTextBoxContainer')"> No</label>
+
+		<div style="display: none;" class="label" id="RefTextBoxContainer">
+        <label>Enter The References (ALWAYS IN CAPS, ABBREVIATIONS ALLOWED, In order they appear in text):
+        <input id="btnAdd" type="button" value="Add Ref" onclick="generatorBundle.addRef()" />
+		<input class="form-control" name = "RefTextBox"  size="60" type="text"/>
+
+		</br>
+		</div>
+                <br />
+     
+		<label >Do you have Enclosures?</label>
+  		<input type="radio" name="ifEncl" id="rad5" value="yes" onclick="generatorBundle.showHideDiv('rad5','EnclTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifEncl" checked="checked" id="rad6" value="no" onclick="generatorBundle.showHideDiv('rad5','EnclTextBoxContainer')"> No</label>
+
+		<div style="display: none;" class="label" id="EnclTextBoxContainer">
+        <label>Enter The Enclosures:
+		<input id="btnAdd" type="button" value="Add Encl" onclick="generatorBundle.addEnc()" />
+		<input class="form-control" name = "EnclTextBox"  size="60" type="text"/>
+
+		</br>
+		</div>
+                <br />
+         
+            </fieldset>
+            
+            <br />
+            
+            <!-- Body of the message -->
+            <fieldset>
+                <legend > Body Block: </legend>
+                
+                <div>
+                <label  for = "body">
                     Enter a body paragraph:
                 </label>
-</div>
-<div class="label" id="BodyTextBoxContainer">
-<textarea class="form-control" cols="40" id="BodyBlocks" name="BodyBlocks" rows="8"></textarea>
-<label for="bodylvl">
+                </div>
+
+       		<div class="label" id="BodyTextBoxContainer">
+            <textarea class="form-control" rows = "8" cols = "40" id="BodyBlocks" name="BodyBlocks"></textarea>
+		            
+	<label  for = "bodylvl">
                     Select the body level:
                 </label>
-<select id="BodyLevel" name="BodyLevel">
-<option selected="" value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-</select>
+	<select id="BodyLevel" name="BodyLevel" >
+	<option SELECTED value=1>1</option>
+	<option value=2>2</option>
+	<option value=3>3</option>
+	</select>   
 <!--
 	<textarea rows = "8" cols = "80" id="BodyBlocks" name="BodyBlocks" value = "' + value + '" > 
 	</textarea>
@@ -273,40 +229,49 @@
 	</select>
 	<input type="button" value="Remove Paragraph" onclick = "RemoveBodyTextBox(this)" >  
 -->
+		</br>
+		</div>
+		</br>
+<input id="btnAdd" type="button" value="Add Another Body Paragraph" onclick="generatorBundle.addBody()" /> 
+                <br />
 
-</div>
-
-<input id="btnAdd" onclick="generatorBundle.addBody()" type="button" value="Add Another Body Paragraph">
-<br/>
-</input></fieldset>
-<br/>
-<fieldset>
-<legend> Closing Block: </legend>
-
-<div>
-<label>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon3">Enter The Signature (FI. MI. LNAME):</span>
-<input class="form-control" id="sig" maxlength="150" name="Sig" size="60" type="text"/>
-</div>
-</div>
-</label>
-</div>
-
-<label>Do you have Copy To?</label>
-<input id="rad7" name="ifCopy" onclick="generatorBundle.showHideDiv('rad7','CopyTextBoxContainer')" type="radio" value="yes"/> Yes 
-<input checked="checked" id="rad8" name="ifCopy" onclick="generatorBundle.showHideDiv('rad7','CopyTextBoxContainer')" type="radio" value="no"/> No
-<div class="label" id="CopyTextBoxContainer" style="display: none;">
-<label>
-                   Enter An Adressee (Billet and unit Name or identifier here):
-		<input id="btnAdd" onclick="generatorBundle.addCopy()" type="button" value="Add Copy To">
-<input class="form-control" name="CopyTextBox" size="60" type="text">
-
-</input></input></label></div>
-<br/>
 </fieldset>
-<br/>
-<button onclick="generatorBundle.generateDoc()" type="button">Click to generate document</button>
-</div></body>
+
+<br />
+
+<fieldset>
+                <legend > Closing Block: </legend>
+		</br>
+                <div>
+                <label >
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Enter The Signature (FI. MI. LNAME):</span>
+                    <input class="form-control" type="text" name="Sig" id="sig" size="60" maxlength="150">
+                    </div>
+                    </div>
+                </label>
+                </div>
+                
+
+</br>
+<label >Do you have Copy To?</label>
+  		<input type="radio" name="ifCopy" id="rad7" value="yes" onclick="generatorBundle.showHideDiv('rad7','CopyTextBoxContainer')"> Yes </label>
+		<input type="radio" name="ifCopy" checked="checked" id="rad8" value="no" onclick="generatorBundle.showHideDiv('rad7','CopyTextBoxContainer')"> No</label>
+
+		<div style="display: none;" class="label" id="CopyTextBoxContainer">
+                <label    >
+                   Enter An Adressee (Billet and unit Name or identifier here):
+		<input id="btnAdd" type="button" value="Add Copy To" onclick="generatorBundle.addCopy()" />
+		<input class="form-control" name = "CopyTextBox" size="60" type="text"/>
+		</br>
+		</div>
+                <br />
+
+            </fieldset>
+            <br />
+
+    <button type="button" onclick="generatorBundle.generateDoc()">Click to generate document</button>
+</body>
+
 </html>
