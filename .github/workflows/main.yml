@@ -12,14 +12,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build Jekyll
+    - name: Build Jekyll 🔨
       uses: jerryjvl/jekyll-build-action@v1
 
-    - name: Setup Python
+    - name: Setup Python 🐍
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-    - name: Download and Execute Banner Injector
+    - name: Download and Execute Banner Injector 💉 
       run: |
         git clone https://github.com/elisoncrum/banner-injector
         sudo pip3 install ./banner-injector
