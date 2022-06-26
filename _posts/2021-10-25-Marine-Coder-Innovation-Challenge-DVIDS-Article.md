@@ -2,7 +2,7 @@
 title:  "2021 Marine Coder Innovation Challenge DVIDS Article"
 categories: [announcements, news]
 ---
-![Marine Coder LCpl Crum with Gen Matos, CIO, USMC](https://cdn.dvidshub.net/media/thumbs/photos/2110/6903472/1000w_q75.jpg)
+![Marine Coder LCpl Crum with Gen Matos, CIO, USMC](https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2110/6903472/1000w_q95.jpg)
 
 > Brig. Gen. Joseph Matos, Director, Information, Command, Control Communications and Computers (IC4) presents an award to members of the I MEF Coding Team as the victor of the inaugural Micro-Application Development Innovation Challenge at the Pentagon in Arlington, Va., Aug. 27, 2021.
 
