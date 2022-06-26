@@ -1,1 +1,1 @@
-Sitemap: https://github.com/pages/marinecoders/sitemap.xml
+Sitemap: https://marines.dev/pages/marinecoders/sitemap.xml
