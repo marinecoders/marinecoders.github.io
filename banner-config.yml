@@ -3,7 +3,7 @@ theme:
   text-color: white
 
 header:
-  text: Unofficial Public Marine Coders Website
+  text: Public Mirror Marine Coders Website
   font-size: .74rem
   icon: us_flag_small.png
 
