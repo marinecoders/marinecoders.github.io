@@ -1,0 +1,35 @@
+name: Custom Jekyll Build and Banner Inject
+
+on:
+  push
+
+jobs:
+  jekyll:
+    if: github.ref == 'refs/heads/master'
+    name: Build Jekyll Site
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build Jekyll 🔨
+      uses: jerryjvl/jekyll-build-action@v1
+
+    - name: Setup Python 🐍
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Download and Execute Banner Injector 💉 
+      run: |
+        git clone https://github.com/elisoncrum/banner-injector
+        cd banner-injector
+        git checkout tags/v0.1-beta
+        sudo pip3 install .
+        sudo bannerinjector uswds _site/ -f
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: _site # The folder the action should deploy.
