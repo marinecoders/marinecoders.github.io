@@ -13,7 +13,7 @@ One of our own Marine Coders is putting together a training event to show Marine
 Marine Coders will have three segments at the 2021 AMCL Symposium
   * ["Any Marine a Coder Panel"](https://www.amclsymposium.org/Agenda/Agenda)---Thursday, November 4th, 1430 - 1500 EST
   * I MEF Application, GCSS Reconciliation Operations Organizational Tool (GROOT), On Demand Demo
-  * III MEF Appliation, Marine Logistics Planners Tool (MLPT), On Demand Demo
+  * III MEF Application, Marine Logistics Planners Tool (MLPT), On Demand Demo
 
 ### Marine Coders Webinar with Joint Software Alliance (JSOFT)
 
@@ -34,7 +34,7 @@ November 20, 2020 - [Brief](https://www.youtube.com/watch?v=XybGruUNc7s&t=5s) to
 Recap of our guest speaker, Miles Tiglao:
 
 > For our non-CAC members, [Zoom Recording](https://us02web.zoom.us/rec/share/8qntZYHsw4H1xkvCFS6YfwuYNu9eweyhi22OUYHwsQJwbFywtCqadBkYzQ_0nsFY.Szee4QhLQhLRYIGP) 
-* Passcocde: Z?E$C28k
+* Passcode: Z?E$C28k
 
 > For Marines on the MCEN, [Marine Video Services (CAC Protected)](https://www.marinenet.usmc.mil/mvs/watchVideo.aspx?id=35908B717ACD)
 
