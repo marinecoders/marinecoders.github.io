@@ -5,6 +5,7 @@ on:
 
 jobs:
   jekyll:
+    if: github.ref == 'refs/heads/master'
     name: Build Jekyll Site
     runs-on: ubuntu-latest
 
