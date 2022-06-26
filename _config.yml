@@ -1,6 +1,9 @@
 title: MARINE CODERS
 #logo: "/assets/images/Marine_Coders_Logo.jpg"
 
+url: "https://marines.dev"
+baseurl: ""
+
 repository: marinecoders/marinecoders.github.io
 email:
 description: >- # this means to ignore newlines until "baseurl:"
