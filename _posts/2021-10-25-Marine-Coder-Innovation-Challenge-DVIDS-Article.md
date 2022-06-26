@@ -8,9 +8,9 @@ categories: [announcements, news]
 
 ## DVIDS just released an article highlighting the 20+ Active Duty Marine Coders that participated in the 2021 Micro-Application Innovation Challenge.
 
-I Marine Expeditionary Force (MEF) Coding Team’s readiness application was selected the winner of the inaugural Micro-Application Development Innovation Challenge formally announced via MARADMIN number 600/21, Oct. 19, 2021.
+I Marine Expeditionary Force (MEF) Coding Team's readiness application was selected the winner of the inaugural Micro-Application Development Innovation Challenge formally announced via MARADMIN number 600/21, Oct. 19, 2021.
 
-I MEF Coding Team’s readiness application leveraged the Marine Corps Business Operations Support Services (MCBOSS) Development-Security-Operations (DevSecOps) ecosystem to rapidly create a data comprehension and visualization tool called the Global Combat Support System Marine Corps (GCSS-MC) Reconciliation Operations Organization Tool (GROOT), drastically reducing the time and effort required by Marines to understand and report on readiness.
+I MEF Coding Team's readiness application leveraged the Marine Corps Business Operations Support Services (MCBOSS) Development-Security-Operations (DevSecOps) ecosystem to rapidly create a data comprehension and visualization tool called the Global Combat Support System Marine Corps (GCSS-MC) Reconciliation Operations Organization Tool (GROOT), drastically reducing the time and effort required by Marines to understand and report on readiness.
 
 The Micro-Application Innovation Challenge was announced via MARADMIN 164/21 on March 25, 2021 requesting each MEF to assemble a coding team, regardless of rank or military occupational specialty (MOS), to research, engineer, test and deploy a micro-software application to optimize operations.  
 <br>
