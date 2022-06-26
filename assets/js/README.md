@@ -47,5 +47,5 @@ For this, you can also append `--livereload` to have the page automatically
 reload when a file changes.
 
 Once merged into master, this will be served! And live! Be careful! Also,
-remember to run the `browserify` command above prior to commiting your code.
+remember to run the `browserify` command above prior to committing your code.
 This has to be done to make sure the bundle.js file is correct.
