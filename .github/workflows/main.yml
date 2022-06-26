@@ -26,6 +26,7 @@ jobs:
         cd banner-injector
         git checkout tags/v0.1-beta
         sudo pip3 install .
+        cd ..
         sudo bannerinjector uswds _site/ -f
 
     - name: Deploy 🚀
