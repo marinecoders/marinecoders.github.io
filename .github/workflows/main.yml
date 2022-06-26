@@ -24,7 +24,7 @@ jobs:
       run: |
         git clone https://github.com/elisoncrum/banner-injector
         cd banner-injector
-        git checkout tags/v0.1-beta
+        git checkout tags/v0.2-beta
         sudo pip3 install .
         cd ..
         sudo bannerinjector uswds _site/ -f
