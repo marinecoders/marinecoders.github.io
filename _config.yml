@@ -2,8 +2,7 @@ title: MARINE CODERS
 #logo: "/assets/images/Marine_Coders_Logo.jpg"
 
 
-url: https://marines.dev
-baseurl: /
+baseurl: "https://marines.dev"
 
 repository: marinecoders/marinecoders.github.io
 email:
