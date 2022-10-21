@@ -1,8 +1,20 @@
-## Join MIU Marine Coders and contribute to critical missions as a software developer, data architect, or designer!
+---
+title:  "MIU Marine Coders FY23 Recruiting - Reserves"
+categories: [announcements, news]
+---
+
+## Join MIU Marine Coders (reserve opportunity only) and contribute to critical missions as a software developer, data architect, or designer!
 ### FY23 Applications are open through 11 November 2022 
 
+
+
+[Apply Now](https://20210826173501_9th2w6eav43dzwba.applytojob.com/apply/W73XeRgThy/FY23-MIU-Application-all-Branches-All-Positions){: .btn .btn--info}
+{: .text-center}
+
+![MIU](/assets/images/Marine Innovation Unit 600x600.png){: .align-center}
+
 #### The application now consists of two parts: 
-1. An [online form](https://20210826173501_9th2w6eav43dzwba.applytojob.com/apply/W73XeRgThy/FY23-MIU-Application-all-Branches-All-Positions) --> Select *ILB-Software Data* for the "What is your third preference for Branch / role in the unit?" drop down
+1. Apply at the link above and select *ILB-Software Data* for the "What is your third preference for Branch / role in the unit?" drop down
 2. An email with supplemental documents
  (Note: the application is not complete and will not be considered without both parts) 
 
