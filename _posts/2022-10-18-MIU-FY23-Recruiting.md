@@ -1,14 +1,14 @@
 ---
-permalink: /opportunities/
-title: "Opportunities"
-toc: true
+title:  "MIU Marine Coders FY23 Recruiting - Reserves"
+categories: [announcements, news]
 ---
 
-## Marine Coders Open Billets
+## Join MIU Marine Coders (reserve opportunity only) and contribute to critical missions as a software developer, data architect, or designer!
+### FY23 Applications are open through 11 November 2022 
 
-Join MIU Marine Coders (reserve opportunity only) and contribute to critical missions as a software developer, data architect, designer, developer advocate, or product manager!
 
-[MIU Marine Coders FY23 Application](https://20210826173501_9th2w6eav43dzwba.applytojob.com/apply/W73XeRgThy/FY23-MIU-Application-all-Branches-All-Positions){: .btn .btn--info}
+
+[Apply Now](https://20210826173501_9th2w6eav43dzwba.applytojob.com/apply/W73XeRgThy/FY23-MIU-Application-all-Branches-All-Positions){: .btn .btn--info}
 {: .text-center}
 
 ![MIU](/assets/images/Marine Innovation Unit 600x600.png){: .align-center}
