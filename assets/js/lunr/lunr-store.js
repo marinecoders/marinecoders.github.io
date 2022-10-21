@@ -106,4 +106,10 @@ var store = [{
         "tags": [],
         "url": "https://marines.dev/announcements/news/MIU-Partnership-Rebranding/",
         "teaser": null
+      },{
+        "title": "MIU Marine Coders FY23 Recruiting - Reserves",
+        "excerpt":"Join MIU Marine Coders (reserve opportunity only) and contribute to critical missions as a software developer, data architect, or designer! FY23 Applications are open through 11 November 2022 Apply Now The application now consists of two parts: Apply at the link above and select ILB-Software Data for the “What is...","categories": ["announcements","news"],
+        "tags": [],
+        "url": "https://marines.dev/announcements/news/MIU-FY23-Recruiting/",
+        "teaser": null
       }]
